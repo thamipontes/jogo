@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Aprendizagem/Primeiros Passos/Primeiros Passos.unity
+- path: "Assets/Cen\xE1rio/Teste.unity"
   isLoaded: 1
   isActive: 1
   isSubScene: 0
