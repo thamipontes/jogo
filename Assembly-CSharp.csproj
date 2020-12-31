@@ -58,16 +58,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Meninas.comp\Scripts\Armadilha.cs" />
-     <Compile Include="Assets\Meninas.comp\Scripts\FallPlat.cs" />
-     <Compile Include="Assets\Meninas.comp\Scripts\MovimentCamera.cs" />
-     <Compile Include="Assets\Meninas.comp\Scripts\inimigo.cs" />
-     <Compile Include="Assets\Meninas.comp\Scripts\moedaFinal.cs" />
-     <Compile Include="Assets\Meninas.comp\Scripts\playMoviment.cs" />
-     <Compile Include="Assets\Scripts\CameraController.cs" />
-     <Compile Include="Assets\Scripts\Coins.cs" />
-     <Compile Include="Assets\Scripts\EndOfLevelController.cs" />
-     <Compile Include="Assets\Scripts\PlayerMovimentation.cs" />
+     <Compile Include="Assets\Aprendizagem\Primeiros Passos\InimigoMovimentacao.cs" />
      <None Include="Assets\BayatGames\Free Platform Game Assets\Readme.txt" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/home/thamires/Documentos/jogo-meninas/jogo/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
