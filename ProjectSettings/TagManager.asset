@@ -8,6 +8,7 @@ TagManager:
   - Ground
   - FallPlat
   - Moeda
+  - Water
   layers:
   - Default
   - TransparentFX
