@@ -58,28 +58,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Aprendizagem\Primeiros Passos\InimigoMovimentacao.cs" />
      <Compile Include="Assets\Meninas.comp\Scripts\Armadilha.cs" />
      <Compile Include="Assets\Meninas.comp\Scripts\FallPlat.cs" />
      <Compile Include="Assets\Meninas.comp\Scripts\MovimentCamera.cs" />
      <Compile Include="Assets\Meninas.comp\Scripts\inimigo.cs" />
      <Compile Include="Assets\Meninas.comp\Scripts\moedaFinal.cs" />
      <Compile Include="Assets\Meninas.comp\Scripts\playMoviment.cs" />
-     <Compile Include="Assets\Tutorial\Part II\Scripts\PlayerMovimentation.cs" />
-     <Compile Include="Assets\Tutorial\Part III\Scripts\CameraController.cs" />
-     <Compile Include="Assets\Tutorial\Part III\Scripts\EndOfLevelController.cs" />
-     <Compile Include="Assets\Tutorial\Part III\Scripts\PlayerMovimentation.cs" />
-     <Compile Include="Assets\Tutorial\Part IV\Scripts\CameraController.cs" />
-     <Compile Include="Assets\Tutorial\Part IV\Scripts\EndOfLevelController.cs" />
-     <Compile Include="Assets\Tutorial\Part IV\Scripts\EnemyMovement.cs" />
-     <Compile Include="Assets\Tutorial\Part IV\Scripts\GoToScene.cs" />
-     <Compile Include="Assets\Tutorial\Part IV\Scripts\PlayerHealth.cs" />
-     <Compile Include="Assets\Tutorial\Part IV\Scripts\PlayerMovimentation.cs" />
-     <Compile Include="Assets\Tutorial\Part V\Scripts\CameraController.cs" />
-     <Compile Include="Assets\Tutorial\Part V\Scripts\EndOfLevelController.cs" />
-     <Compile Include="Assets\Tutorial\Part V\Scripts\EnemyMovement.cs" />
-     <Compile Include="Assets\Tutorial\Part V\Scripts\GoToScene.cs" />
-     <Compile Include="Assets\Tutorial\Part V\Scripts\PlayerHealth.cs" />
-     <Compile Include="Assets\Tutorial\Part V\Scripts\PlayerMovimentation.cs" />
+     <Compile Include="Assets\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Scripts\Coins.cs" />
+     <Compile Include="Assets\Scripts\EndOfLevelController.cs" />
+     <Compile Include="Assets\Scripts\Final.cs" />
+     <Compile Include="Assets\Scripts\GoToScene.cs" />
+     <Compile Include="Assets\Scripts\PlayerHealth.cs" />
+     <Compile Include="Assets\Scripts\PlayerMovimentation.cs" />
      <None Include="Assets\BayatGames\Free Platform Game Assets\Readme.txt" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/home/thamires/Documentos/jogo-meninas/jogo/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

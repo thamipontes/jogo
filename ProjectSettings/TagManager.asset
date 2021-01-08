@@ -7,6 +7,8 @@ TagManager:
   - Enemy
   - Ground
   - FallPlat
+  - Moeda
+  - Water
   layers:
   - Default
   - TransparentFX
