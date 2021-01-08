@@ -68,6 +68,9 @@
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\Coins.cs" />
      <Compile Include="Assets\Scripts\EndOfLevelController.cs" />
+     <Compile Include="Assets\Scripts\Final.cs" />
+     <Compile Include="Assets\Scripts\GoToScene.cs" />
+     <Compile Include="Assets\Scripts\PlayerHealth.cs" />
      <Compile Include="Assets\Scripts\PlayerMovimentation.cs" />
      <None Include="Assets\BayatGames\Free Platform Game Assets\Readme.txt" />
  <Reference Include="Unity.Timeline.Editor">
