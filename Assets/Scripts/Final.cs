@@ -8,8 +8,8 @@ public class Final : MonoBehaviour
 		 // Public attributes
    		public Text resultText;
    		public Button button;
-   
-   
+
+
    		// OnCollisionEnter2D is called whenever the player hits the end of the level
    		void OnCollisionEnter2D(Collision2D other)
    		{
