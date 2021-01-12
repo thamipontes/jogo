@@ -1,20 +1,12 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: d4dafa19b321a2f20ab9c616423d5bb5
-=======
-guid: 872b568906bb7454d83b13862be5a18d
->>>>>>> 875cfc8ba8fc3375af0cf25663dca20a99455f34
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
     mipMapMode: 0
-<<<<<<< HEAD
     enableMipMap: 0
-=======
-    enableMipMap: 1
->>>>>>> 875cfc8ba8fc3375af0cf25663dca20a99455f34
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -42,7 +34,6 @@ TextureImporter:
     filterMode: -1
     aniso: -1
     mipBias: -100
-<<<<<<< HEAD
     wrapU: 1
     wrapV: 1
     wrapW: -1
@@ -50,15 +41,6 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 1
-=======
-    wrapU: -1
-    wrapV: -1
-    wrapW: -1
-  nPOTScale: 1
-  lightmap: 0
-  compressionQuality: 50
-  spriteMode: 0
->>>>>>> 875cfc8ba8fc3375af0cf25663dca20a99455f34
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -67,15 +49,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-<<<<<<< HEAD
   alphaIsTransparency: 1
   spriteTessellationDetail: 0
   textureType: 8
-=======
-  alphaIsTransparency: 0
-  spriteTessellationDetail: -1
-  textureType: 0
->>>>>>> 875cfc8ba8fc3375af0cf25663dca20a99455f34
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
@@ -95,7 +71,6 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< HEAD
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -108,13 +83,10 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-=======
->>>>>>> 875cfc8ba8fc3375af0cf25663dca20a99455f34
   spriteSheet:
     serializedVersion: 2
     sprites: []
     outline: []
-<<<<<<< HEAD
     physicsShape:
     - - {x: 6.936982, y: 8}
       - {x: -8, y: -7}
@@ -123,11 +95,6 @@ TextureImporter:
       - {x: 8, y: 8}
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-=======
-    physicsShape: []
-    bones: []
-    spriteID: 
->>>>>>> 875cfc8ba8fc3375af0cf25663dca20a99455f34
     internalID: 0
     vertices: []
     indices: 
