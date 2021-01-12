@@ -10,6 +10,9 @@ namespace PartII {
 
 		public Boolean isJumping = false;
 
+		private int direction = 1;
+		private float originalXScale;
+
 		// Private attributes
 		Rigidbody2D rigidBody2D;
 
@@ -17,6 +20,7 @@ namespace PartII {
 		// Here you can handle with all objects in the scene
 		void Start()
 		{
+			originalXScale = transform.localScale.x;
 		}
 
 		// Awake is called before the first frame update
@@ -33,7 +37,11 @@ namespace PartII {
 			// transform.position += x * maxSpeed * transform.right * Time.deltaTime;
 			rigidBody2D.velocity = new Vector2(x * maxSpeed, rigidBody2D.velocity.y);
 
-			
+			if(x * maxSpeed * direction < 0){
+				Flip();
+			}
+
+
 			if (Input.GetAxis("Jump") == 1.0f && !isJumping){
 				//[0,1] adicionando 1 no y indo pra cima
 				isJumping = true;
@@ -41,14 +49,20 @@ namespace PartII {
 			}
 		}
 
-		
+
 		private void OnCollisionEnter2D(Collision2D other) {
-			//Quando cair no chão, ele muda isJumping pra false, ou seja, não está 
+			//Quando cair no chão, ele muda isJumping pra false, ou seja, não está
 			isJumping = false;
-			
+
+		}
+
+		private void Flip()
+		{
+			direction *= -1;
+			Vector3 scale = transform.localScale;
+			scale.x = originalXScale*direction;
+			transform.localScale = scale;
 		}
 
 	}
 }
-
-
