@@ -58,7 +58,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Aprendizagem\Primeiros Passos\InimigoMovimentacao.cs" />
      <Compile Include="Assets\Meninas.comp\Scripts\Armadilha.cs" />
      <Compile Include="Assets\Meninas.comp\Scripts\FallPlat.cs" />
      <Compile Include="Assets\Meninas.comp\Scripts\MovimentCamera.cs" />
@@ -70,6 +69,8 @@
      <Compile Include="Assets\Scripts\EndOfLevelController.cs" />
      <Compile Include="Assets\Scripts\Final.cs" />
      <Compile Include="Assets\Scripts\GoToScene.cs" />
+     <Compile Include="Assets\Scripts\InimigoMovimentacao.cs" />
+     <Compile Include="Assets\Scripts\PlatformMovement.cs" />
      <Compile Include="Assets\Scripts\PlayerHealth.cs" />
      <Compile Include="Assets\Scripts\PlayerMovimentation.cs" />
      <None Include="Assets\BayatGames\Free Platform Game Assets\Readme.txt" />

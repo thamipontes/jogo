@@ -17,10 +17,15 @@ public class InimigoMovimentacao : MonoBehaviour
 
     private Rigidbody2D _rigidbody2D;
 
+    private int directionScale = 1;
+
+    private float originalXScale;
+
     void Start()
     {
         // _rigidbody2D = GetComponent<Rigidbody2D>();
         // _rigidbody2D.position = new Vector2(start.x, start.y);
+        originalXScale = transform.localScale.x;
         transform.position = new Vector3(start.x, start.y, transform.position.z);
         direction = (end - start).normalized;
     }
@@ -33,10 +38,20 @@ public class InimigoMovimentacao : MonoBehaviour
         if (Vector2.Distance(transform.position, end) < 0.3f)
         {
             directionFactor = -1.0f;
+            Flip();
         }
         else if (Vector2.Distance(transform.position, start) < 0.3f)
         {
             directionFactor = 1.0f;
+            Flip();
         }
+    }
+
+    private void Flip()
+    {
+      directionScale *= -1;
+      Vector3 scale = transform.localScale;
+      scale.x = originalXScale*directionScale;
+      transform.localScale = scale;
     }
 }
