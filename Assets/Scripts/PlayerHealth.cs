@@ -10,6 +10,7 @@ public class PlayerHealth : MonoBehaviour
     public Text text;
     public Text resultText;
     public Button button;
+    public string tag;
 
     void Start()
     {
@@ -23,7 +24,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-      if(other.gameObject.CompareTag("Water"))
+      if(other.gameObject.CompareTag(tag))
       {
         health -= 10;
         text.text = "VIDA: " + health;
