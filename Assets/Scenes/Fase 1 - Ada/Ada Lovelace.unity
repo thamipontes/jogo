@@ -226,6 +226,11 @@ PrefabInstance:
       objectReference: {fileID: 122671333}
     - target: {fileID: 2468808227332709858, guid: d05c5290a81078531a39af724d75a052,
         type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2468808227332709858, guid: d05c5290a81078531a39af724d75a052,
+        type: 3}
       propertyPath: cameraInitialX
       value: 2.51
       objectReference: {fileID: 0}
@@ -238,6 +243,11 @@ PrefabInstance:
         type: 3}
       propertyPath: playerInitialY
       value: 1.192
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312420225884445807, guid: d05c5290a81078531a39af724d75a052,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3855237911408644586, guid: d05c5290a81078531a39af724d75a052,
         type: 3}
@@ -7838,7 +7848,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb0e3c0a52ddb044b90c65382e13afa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pena: {fileID: 4879061671199367755, guid: 1bf435992572e0e31859f981c8f988d3, type: 3}
+  pena: {fileID: 2074699284504391561, guid: af6d91d90cb47233490634f7780e1c93, type: 3}
   velocityPena: 0.25
   positionPena: {fileID: 1980367433}
   timeThrowPena: 2
@@ -8215,7 +8225,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1986850871}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a921d813ad633a23c80485f1a3d1484b, type: 3}
   m_Name: 
@@ -8231,7 +8241,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1986850871}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -8658,6 +8668,11 @@ PrefabInstance:
       objectReference: {fileID: 122671333}
     - target: {fileID: 2468808227332709858, guid: d05c5290a81078531a39af724d75a052,
         type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2468808227332709858, guid: d05c5290a81078531a39af724d75a052,
+        type: 3}
       propertyPath: cameraInitialX
       value: 1.861
       objectReference: {fileID: 0}
@@ -8670,6 +8685,11 @@ PrefabInstance:
         type: 3}
       propertyPath: playerInitialY
       value: 1.192
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312420225884445807, guid: d05c5290a81078531a39af724d75a052,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3626733669260517859, guid: d05c5290a81078531a39af724d75a052,
         type: 3}
