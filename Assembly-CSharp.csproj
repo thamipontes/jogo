@@ -64,12 +64,14 @@
      <Compile Include="Assets\Meninas.comp\Scripts\inimigo.cs" />
      <Compile Include="Assets\Meninas.comp\Scripts\moedaFinal.cs" />
      <Compile Include="Assets\Meninas.comp\Scripts\playMoviment.cs" />
+     <Compile Include="Assets\Scripts\AtirarObjeto.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\Coins.cs" />
      <Compile Include="Assets\Scripts\EndOfLevelController.cs" />
      <Compile Include="Assets\Scripts\Final.cs" />
      <Compile Include="Assets\Scripts\GoToScene.cs" />
      <Compile Include="Assets\Scripts\InimigoMovimentacao.cs" />
+     <Compile Include="Assets\Scripts\Pena.cs" />
      <Compile Include="Assets\Scripts\PlatformMovement.cs" />
      <Compile Include="Assets\Scripts\PlayerHealth.cs" />
      <Compile Include="Assets\Scripts\PlayerMovimentation.cs" />
