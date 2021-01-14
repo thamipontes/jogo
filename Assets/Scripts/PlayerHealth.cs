@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
+    public static PlayerHealth playerHealth { get; private set; } 
+    
     // Start is called before the first frame update
     private int health = 100;
     public Text text;
@@ -24,10 +26,9 @@ public class PlayerHealth : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-      if(other.gameObject.CompareTag(tag))
+      if(other.gameObject.CompareTag("Water"))
       {
-        health -= 10;
-        text.text = "VIDA: " + health;
+        TirarVida();
       }
 
       if(health <= 0)
@@ -36,6 +37,12 @@ public class PlayerHealth : MonoBehaviour
    			button.gameObject.SetActive(true);
    			resultText.text = "Derrota";
       }
+    }
+
+    public void TirarVida()
+    {
+        health -= 10;
+        text.text = "VIDA: " + health;
     }
 
 }

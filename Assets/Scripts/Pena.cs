@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class Pena : MonoBehaviour
 {
+  
   private void OnCollisionEnter2D(Collision2D other)
   {
-    if(other.gameObject.CompareTag("Player"))
+    var target = other.gameObject;
+    if(target.CompareTag("Player"))
     {
+      var health = target.GetComponent<PlayerHealth>();
+      health.TirarVida();
       // tira o rigidbody para o objeto parar na colisão e não obedecer a gravidade
       Destroy(GetComponent<Rigidbody2D>());
       Destroy(gameObject,0.2f);
