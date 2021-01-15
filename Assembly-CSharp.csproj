@@ -68,13 +68,13 @@
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\Coins.cs" />
      <Compile Include="Assets\Scripts\EndOfLevelController.cs" />
-     <Compile Include="Assets\Scripts\Final.cs" />
      <Compile Include="Assets\Scripts\GoToScene.cs" />
      <Compile Include="Assets\Scripts\InimigoMovimentacao.cs" />
      <Compile Include="Assets\Scripts\Pena.cs" />
      <Compile Include="Assets\Scripts\PlatformMovement.cs" />
      <Compile Include="Assets\Scripts\PlayerHealth.cs" />
      <Compile Include="Assets\Scripts\PlayerMovimentation.cs" />
+     <Compile Include="Assets\Scripts\VitoriaDerrota.cs" />
      <None Include="Assets\BayatGames\Free Platform Game Assets\Readme.txt" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/home/thamires/Documentos/jogo-meninas/jogo/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

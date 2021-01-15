@@ -670,6 +670,7 @@ GameObject:
   - component: {fileID: 122671340}
   - component: {fileID: 122671336}
   - component: {fileID: 122671341}
+  - component: {fileID: 122671342}
   m_Layer: 0
   m_Name: ame_4
   m_TagString: Player
@@ -843,6 +844,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &122671342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122671333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce1f80988ada2727d9d49ecb0a208d23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resultText: {fileID: 724360349}
+  button: {fileID: 565393708}
 --- !u!4 &159957639 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8592613281863762470, guid: 5f22fcc5acd6a7c96ae9ff0e0422423c,
@@ -2642,7 +2657,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 956936339}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.73, y: 0.9280586, z: -10}
+  m_LocalPosition: {x: -0.37, y: 0.45, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -8211,30 +8226,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1986850874}
   - component: {fileID: 1986850873}
-  - component: {fileID: 1986850872}
   m_Layer: 0
   m_Name: Buraco(1)
-  m_TagString: Untagged
+  m_TagString: Buraco
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1986850872
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1986850871}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a921d813ad633a23c80485f1a3d1484b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 122671333}
-  playerInitialX: 3.48
-  playerInitialY: 1.192
-  cameraInitialX: 3.48
 --- !u!61 &1986850873
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8242,10 +8240,10 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1986850871}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 1.5425256, y: -0.38018984}
@@ -8776,6 +8774,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: AbacoF4
       objectReference: {fileID: 0}
+    - target: {fileID: 8329967608645664001, guid: 47de86af73dd27bbfa65d2aeccec40b6,
+        type: 3}
+      propertyPath: m_TagString
+      value: MoedaFinal
+      objectReference: {fileID: 0}
     - target: {fileID: 8329967608645664005, guid: 47de86af73dd27bbfa65d2aeccec40b6,
         type: 3}
       propertyPath: m_RootOrder
@@ -8831,7 +8834,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8329967608645664000, guid: 47de86af73dd27bbfa65d2aeccec40b6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 47de86af73dd27bbfa65d2aeccec40b6, type: 3}
 --- !u!1001 &8601930869182811284
 PrefabInstance:
