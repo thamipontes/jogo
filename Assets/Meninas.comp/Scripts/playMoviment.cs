@@ -17,6 +17,7 @@ using UnityEngine.UI;
 
 		public Text vidaTexto;
 
+		// Declarando a animação
 		public Animator animator;
 
 
@@ -27,8 +28,7 @@ using UnityEngine.UI;
 		{
 			vidaTexto.text = "Vidas: " + vida;
 
-			//Localiza a animação do personagem quando começa o jogo
-			animator = GetComponent<Animator>();
+
 		}
 
 		// Awake is called before the first frame update
@@ -37,6 +37,8 @@ using UnityEngine.UI;
 		{
 			//Atribuindo a variável ridigBody2D a componente rigidBody2D que está no Unity
 			rigidBody2D = GetComponent<Rigidbody2D>();
+			//Localiza a animação do personagem quando começa o jogo
+			animator = GetComponent<Animator>();
 		}
 
 		// Update is called once per frame
@@ -47,7 +49,7 @@ using UnityEngine.UI;
 			rigidBody2D.velocity = new Vector2(x * maxSpeed, rigidBody2D.velocity.y);
 
 			//condição para animação
-			if (x != 0) {
+			if (Input.GetAxis("Horizontal") != 0) {
 				animator.SetBool("taAndando", true);
 			}
 			else {
@@ -64,7 +66,7 @@ using UnityEngine.UI;
 					animator.SetBool("taPulando", true);
 
 			}
-			animator.SetBool("taPulando", false);
+
 
 
 
@@ -77,6 +79,7 @@ using UnityEngine.UI;
 
 			if(other.contacts[0].normal == Vector2.up){
 				isJumping = false;
+				animator.SetBool("taPulando", false);
 			}
 
 			if(other.gameObject.CompareTag("Enemy")){
@@ -85,7 +88,7 @@ using UnityEngine.UI;
 				animator.SetBool("taSofrendo", true);
 
 			}
-			animator.SetBool("taSofrendo", false);
+
 
 		}
 

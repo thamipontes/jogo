@@ -692,6 +692,7 @@ MonoBehaviour:
   maxSpeed: 1
   jumpSpeed: 2
   isJumping: 0
+  animator: {fileID: 122671341}
 --- !u!50 &122671335
 Rigidbody2D:
   serializedVersion: 4
@@ -726,8 +727,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.013689369, y: -0.0039476827}
-  m_Size: {x: 0.079751074, y: 0.15210463}
+  m_Offset: {x: -0.016166419, y: -0.0039476827}
+  m_Size: {x: 0.048787653, y: 0.15210463}
   m_Direction: 0
 --- !u!212 &122671337
 SpriteRenderer:
@@ -787,7 +788,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 122671333}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.751, y: 0.103, z: 0}
+  m_LocalPosition: {x: -0.27, y: 0.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -808,7 +809,7 @@ MonoBehaviour:
   text: {fileID: 282069248}
   resultText: {fileID: 724360349}
   button: {fileID: 565393708}
-  tag: 
+  animator: {fileID: 122671341}
 --- !u!114 &122671340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1175,7 +1176,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 95.3, y: -27.3}
+  m_AnchoredPosition: {x: 95.29999, y: -27.299988}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &282069248
@@ -1374,7 +1375,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 956936341}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -2641,7 +2642,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 956936339}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.9280586, z: -10}
+  m_LocalPosition: {x: 0.73, y: 0.9280586, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -8844,6 +8845,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cavaloo24Pixels 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8601930867604671562, guid: b54374727e7f29515b42e3143cbc4b8c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Water
+      objectReference: {fileID: 0}
     - target: {fileID: 8601930867604671604, guid: b54374727e7f29515b42e3143cbc4b8c,
         type: 3}
       propertyPath: m_RootOrder
@@ -8898,6 +8904,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8601930867604671605, guid: b54374727e7f29515b42e3143cbc4b8c,
+        type: 3}
+      propertyPath: m_UsedByEffector
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8601930867604671606, guid: b54374727e7f29515b42e3143cbc4b8c,
         type: 3}

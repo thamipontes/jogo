@@ -5,18 +5,20 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public static PlayerHealth playerHealth { get; private set; } 
-    
+    public static PlayerHealth playerHealth { get; private set; }
+
     // Start is called before the first frame update
     private int health = 100;
     public Text text;
     public Text resultText;
     public Button button;
-    public string tag;
+
+    public Animator animator;
 
     void Start()
     {
         text.text = "VIDA: " + health;
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -28,7 +30,9 @@ public class PlayerHealth : MonoBehaviour
     {
       if(other.gameObject.CompareTag("Water"))
       {
+
         TirarVida();
+
       }
 
       if(health <= 0)
@@ -43,6 +47,19 @@ public class PlayerHealth : MonoBehaviour
     {
         health -= 10;
         text.text = "VIDA: " + health;
+        Damage();
+    }
+
+    public void Damage()
+    {
+      StartCoroutine(damageTime());
+    }
+
+    IEnumerator damageTime()
+    {
+      animator.SetBool("taSofrendo",true);
+      yield return new WaitForSecondsRealtime(0.75f);
+      animator.SetBool("taSofrendo", false);
     }
 
 }

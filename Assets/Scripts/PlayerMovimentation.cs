@@ -9,7 +9,7 @@ namespace PartII {
 		public float jumpSpeed = 5;
 
 		public Boolean isJumping = false;
-
+		public Animator animator;
 		private int direction = 1;
 		private float originalXScale;
 
@@ -28,6 +28,8 @@ namespace PartII {
 		void Awake()
 		{
 			rigidBody2D = GetComponent<Rigidbody2D>();
+			//Localiza a animação do personagem quando começa o jogo
+			animator = GetComponent<Animator>();
 		}
 
 		// Update is called once per frame
@@ -36,6 +38,14 @@ namespace PartII {
 			var x = Input.GetAxis("Horizontal");
 			// transform.position += x * maxSpeed * transform.right * Time.deltaTime;
 			rigidBody2D.velocity = new Vector2(x * maxSpeed, rigidBody2D.velocity.y);
+
+			//condição para animação
+			if (Input.GetAxis("Horizontal") != 0) {
+				animator.SetBool("taAndando", true);
+			}
+			else {
+				animator.SetBool("taAndando", false);
+			}
 
 			if(x * maxSpeed * direction < 0){
 				Flip();
@@ -46,6 +56,7 @@ namespace PartII {
 				//[0,1] adicionando 1 no y indo pra cima
 				isJumping = true;
 				rigidBody2D.velocity = new Vector2(rigidBody2D.velocity.x, jumpSpeed);
+				animator.SetBool("taPulando", true);
 			}
 		}
 
@@ -53,6 +64,7 @@ namespace PartII {
 		private void OnCollisionEnter2D(Collision2D other) {
 			//Quando cair no chão, ele muda isJumping pra false, ou seja, não está
 			isJumping = false;
+			animator.SetBool("taPulando", false);
 
 		}
 
