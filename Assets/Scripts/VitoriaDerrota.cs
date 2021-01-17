@@ -15,10 +15,11 @@ public class VitoriaDerrota : MonoBehaviour
         {
 	        if (other.gameObject.CompareTag("MoedaFinal"))
 	        {
-		        
+
 		        resultText.text = "Vitória";
 		        resultText.gameObject.SetActive(true);
 		        button.gameObject.SetActive(true);
+
 	        }
 
 	        if (other.gameObject.CompareTag("Buraco"))
