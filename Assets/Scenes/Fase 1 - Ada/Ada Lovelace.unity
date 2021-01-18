@@ -1113,7 +1113,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 122671333}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.28, y: 0.22, z: 0}
+  m_LocalPosition: {x: 19.383, y: 0.22, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1182,8 +1182,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resultText: {fileID: 285240936}
   button: {fileID: 565393708}
-  vi: {fileID: 0}
-  de: {fileID: 0}
 --- !u!1 &125894665
 GameObject:
   m_ObjectHideFlags: 0
@@ -1194,9 +1192,10 @@ GameObject:
   m_Component:
   - component: {fileID: 125894666}
   - component: {fileID: 125894667}
+  - component: {fileID: 125894670}
   m_Layer: 0
   m_Name: Ponte_esquerda (2)
-  m_TagString: Untagged
+  m_TagString: Ponte
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1265,6 +1264,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &125894670
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125894665}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: f9c7ae87c952fba7ca43e6fb8c6b39b4, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.02020979}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.1520195, y: 0.08421317}
+  m_EdgeRadius: 0
 --- !u!4 &159957639 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8592613281863762470, guid: 5f22fcc5acd6a7c96ae9ff0e0422423c,
@@ -1281,9 +1306,10 @@ GameObject:
   m_Component:
   - component: {fileID: 204617388}
   - component: {fileID: 204617389}
+  - component: {fileID: 204617392}
   m_Layer: 0
   m_Name: Ponte_esquerda (5)
-  m_TagString: Untagged
+  m_TagString: Ponte
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1352,6 +1378,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &204617392
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 204617387}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: f9c7ae87c952fba7ca43e6fb8c6b39b4, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.01057598}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.105365366}
+  m_EdgeRadius: 0
 --- !u!1 &210128507
 GameObject:
   m_ObjectHideFlags: 0
@@ -10485,9 +10537,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1172117831}
   - component: {fileID: 1172117832}
+  - component: {fileID: 1172117835}
   m_Layer: 0
   m_Name: Ponte_esquerda
-  m_TagString: Untagged
+  m_TagString: Ponte
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10500,7 +10553,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1172117830}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1561873693}
@@ -10556,6 +10609,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1172117835
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172117830}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: f9c7ae87c952fba7ca43e6fb8c6b39b4, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0030851364, y: 0.018946588}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.14726448, y: 0.08673933}
+  m_EdgeRadius: 0
 --- !u!1 &1241597571
 GameObject:
   m_ObjectHideFlags: 0
@@ -10874,9 +10953,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1306847778}
   - component: {fileID: 1306847779}
+  - component: {fileID: 1306847782}
   m_Layer: 0
   m_Name: Ponte_esquerda (1)
-  m_TagString: Untagged
+  m_TagString: Ponte
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10945,6 +11025,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1306847782
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1306847777}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: f9c7ae87c952fba7ca43e6fb8c6b39b4, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0032072067, y: 0.021943986}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.15444374, y: 0.08262923}
+  m_EdgeRadius: 0
 --- !u!1001 &1322923782
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20748,9 +20854,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1662663159}
   - component: {fileID: 1662663160}
+  - component: {fileID: 1662663163}
   m_Layer: 0
   m_Name: Ponte_esquerda (4)
-  m_TagString: Untagged
+  m_TagString: Ponte
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20819,6 +20926,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1662663163
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662663158}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: f9c7ae87c952fba7ca43e6fb8c6b39b4, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0026006699, y: 0.03361249}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.15826607, y: 0.057407767}
+  m_EdgeRadius: 0
 --- !u!1001 &1667864292
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21001,9 +21134,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1713294948}
   - component: {fileID: 1713294949}
+  - component: {fileID: 1713294952}
   m_Layer: 0
   m_Name: Ponte_esquerda (3)
-  m_TagString: Untagged
+  m_TagString: Ponte
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21072,6 +21206,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1713294952
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713294947}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: f9c7ae87c952fba7ca43e6fb8c6b39b4, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.018946767}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.08673945}
+  m_EdgeRadius: 0
 --- !u!1 &1718965845
 GameObject:
   m_ObjectHideFlags: 0
@@ -22993,6 +23153,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: MoedaFinal
       objectReference: {fileID: 0}
+    - target: {fileID: 8329967608645664003, guid: 47de86af73dd27bbfa65d2aeccec40b6,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8329967608645664005, guid: 47de86af73dd27bbfa65d2aeccec40b6,
         type: 3}
       propertyPath: m_RootOrder
@@ -23074,8 +23239,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8601930867604671604, guid: b54374727e7f29515b42e3143cbc4b8c,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8601930867604671604, guid: b54374727e7f29515b42e3143cbc4b8c,
+        type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.67
+      value: 13.9058
       objectReference: {fileID: 0}
     - target: {fileID: 8601930867604671604, guid: b54374727e7f29515b42e3143cbc4b8c,
         type: 3}

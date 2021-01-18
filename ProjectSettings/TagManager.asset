@@ -11,6 +11,7 @@ TagManager:
   - Water
   - Buraco
   - MoedaFinal
+  - Ponte
   layers:
   - Default
   - TransparentFX
