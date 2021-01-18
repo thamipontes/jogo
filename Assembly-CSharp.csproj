@@ -74,6 +74,7 @@
      <Compile Include="Assets\Scripts\PlatformMovement.cs" />
      <Compile Include="Assets\Scripts\PlayerHealth.cs" />
      <Compile Include="Assets\Scripts\PlayerMovimentation.cs" />
+     <Compile Include="Assets\Scripts\Ponte.cs" />
      <Compile Include="Assets\Scripts\VitoriaDerrota.cs" />
      <None Include="Assets\BayatGames\Free Platform Game Assets\Readme.txt" />
  <Reference Include="Unity.Timeline.Editor">
