@@ -7,17 +7,20 @@ public class Ponte : MonoBehaviour
 {
     // Start is called before the first frame update
 
+
     private Rigidbody2D _rigidbody;
     public float timeForFall = 0.5f;
     void Start()
     {
-        _rigidbody = GetComponent<Rigidbody2D>();
+
+        //transform.position = new Vector3(start.x, start.y, transform.position.z);
+        //_rigidbody = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -25,12 +28,11 @@ public class Ponte : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             Fall();
-            // Debug.Log("Entrei no tempo");
-            
+            _rigidbody = GetComponent<Rigidbody2D>();
 
         }
     }
-    
+
     public void Fall()
     {
         StartCoroutine(FallTime());
@@ -39,9 +41,9 @@ public class Ponte : MonoBehaviour
     IEnumerator FallTime()
     {
         Debug.Log("Entrei");
-        yield return new WaitForSeconds(timeForFall);
-        _rigidbody.gravityScale = 1f;
+        yield return new WaitForSecondsRealtime(timeForFall);
+        _rigidbody.gravityScale = 10f;
         Debug.Log("Sai");
-        
+
     }
 }
