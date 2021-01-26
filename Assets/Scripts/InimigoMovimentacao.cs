@@ -49,9 +49,9 @@ public class InimigoMovimentacao : MonoBehaviour
 
     private void Flip()
     {
-      directionScale *= -1;
+      // directionScale *= -1;
       Vector3 scale = transform.localScale;
-      scale.x = originalXScale*directionScale;
+      scale.x = originalXScale*directionFactor;
       transform.localScale = scale;
     }
 }

@@ -10,11 +10,11 @@ public class Ponte : MonoBehaviour
 
     private Rigidbody2D _rigidbody;
     public float timeForFall = 0.5f;
+    [SerializeField] PonteMov _ponteMov;
     void Start()
     {
-
-        //transform.position = new Vector3(start.x, start.y, transform.position.z);
-        //_rigidbody = GetComponent<Rigidbody2D>();
+        _ponteMov.enabled = false;
+        
     }
 
     // Update is called once per frame
@@ -28,8 +28,6 @@ public class Ponte : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             Fall();
-            _rigidbody = GetComponent<Rigidbody2D>();
-
         }
     }
 
@@ -42,7 +40,7 @@ public class Ponte : MonoBehaviour
     {
         Debug.Log("Entrei");
         yield return new WaitForSecondsRealtime(timeForFall);
-        _rigidbody.gravityScale = 10f;
+        _ponteMov.enabled = true;
         Debug.Log("Sai");
 
     }
