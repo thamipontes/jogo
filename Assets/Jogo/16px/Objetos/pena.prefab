@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2074699284504391561}
   m_Layer: 0
   m_Name: pena
-  m_TagString: Untagged
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,6 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed1817a2160a6d527953a075e60f0f6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pena: {fileID: 3010938074686421818}
 --- !u!61 &1712809550993648351
 BoxCollider2D:
   m_ObjectHideFlags: 0

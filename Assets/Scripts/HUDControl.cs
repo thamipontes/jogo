@@ -54,13 +54,13 @@ public class HUDControl : MonoBehaviour
         //health -= 10;
         hp --;
 
-        // if(hp <= 0)
-        // {
+        if(hp <= 1)
+        {
         //     Debug.Log("GameOver");
         //     //resultText.gameObject.SetActive(true);
-        //     GameOver.gameObject.SetActive(true);
+          gameover.gameObject.SetActive(true);
         //     //resultText.text = "Derrota";
-        // }
+        }
 
         Coracoes();
         //text.text = "VIDA: " + health;
