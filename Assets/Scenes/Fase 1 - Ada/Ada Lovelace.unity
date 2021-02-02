@@ -3168,12 +3168,12 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 6bc478bdd43bfa9a098804ecb964d3b0, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -12652,8 +12652,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -88, y: -19.761}
-  m_SizeDelta: {x: 575.76074, y: 39.521996}
+  m_AnchoredPosition: {x: -26.168, y: -13.7}
+  m_SizeDelta: {x: 721.4231, y: 97.45105}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1010237186
 MonoBehaviour:
@@ -12668,7 +12668,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -12686,7 +12686,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
+    m_LineSpacing: 1.5
   m_Text: New Text
 --- !u!222 &1010237187
 CanvasRenderer:
@@ -14652,18 +14652,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1350785969}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1722921732}
   m_Father: {fileID: 402425662}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -78.5, y: 14}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -37, y: 40.9}
+  m_SizeDelta: {x: 56.91301, y: 54.562363}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1350785972
 MonoBehaviour:
@@ -14738,8 +14738,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 1be1b08a5b4455140a11ed77f7668331, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -15055,6 +15055,12 @@ MonoBehaviour:
     name: Ame
     sentence:
     - dsahjfhsdafhuidsahfuihsduaifhushafdashufuashfudhasfhuiasd
+    - "O desenvolvimento das t\xE9cnicas de fabrica\xE7\xE3o de papel ao longo de
+      s\xE9culos possibilitou a inven\xE7\xE3o da impressa. Em 105 d.C., os chineses
+      desenvolveram o papel de farrapos, fabricado com fibras vegetais e trapos velhos,
+      constituindo uma alternativa econ\xF4mica. Os segredos desta t\xE9cnica foram
+      revelados aos \xE1rabes por prisioneiros chineses no s\xE9culo VIII, sendo
+      posteriormente introduzidos na Europa nos s\xE9culos XII e XIII. "
     - muitas letras
 --- !u!114 &1378130633
 MonoBehaviour:
@@ -25074,7 +25080,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -25087,7 +25093,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 7
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -25217,7 +25223,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -295.88, y: 14.022}
+  m_AnchoredPosition: {x: -307, y: 49}
   m_SizeDelta: {x: 160, y: 28.043636}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1745068502
@@ -25233,7 +25239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
