@@ -4,8 +4,24 @@ using UnityEngine;
 
 public class Pena : MonoBehaviour
 {
-  public GameObject pena;
   HUDControl hcontrol;
+  public float velocityPena;
+  public Rigidbody2D rb;
+
+  void Start()
+  {
+    rb = GetComponent<Rigidbody2D>();
+    Destroy(gameObject, 2f);
+  }
+
+  void Update()
+  {
+    // rb.velocity = transform.TransformDirection(Vector2.right*velocityPena);
+    if(rb != null)
+    {
+        rb.velocity = transform.up*(-1)*velocityPena;
+    }
+  }
 
   private void OnCollisionEnter2D(Collision2D other)
   {

@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class AtirarObjeto : MonoBehaviour
 {
-
-    public Rigidbody2D pena;
-    public float velocityPena;
+    public GameObject pena;
     public Transform positionPena;
     public float timeThrowPena = 2f;
     public float time = 2f;
@@ -32,10 +30,16 @@ public class AtirarObjeto : MonoBehaviour
 
     private void InstantiatePena()
     {
-      Rigidbody2D clone;
-      clone = Instantiate(pena, positionPena.transform.position, transform.rotation);
-      clone.velocity = transform.TransformDirection(Vector2.right*velocityPena);
+      // GameObject clone;
+      Instantiate(pena, positionPena.transform.position, transform.rotation);
+      // clone.velocity = transform.TransformDirection(Vector2.right*velocityPena);
+      // StartCoroutine(TempoPena(clone));
     }
-
+    //
+    // IEnumerator TempoPena(GameObject clone)
+    // {
+    //   yield return new WaitForSecondsRealtime(2f);
+    //   Destroy(clone);
+    // }
 
 }
