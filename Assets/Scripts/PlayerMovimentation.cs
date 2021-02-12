@@ -13,11 +13,12 @@ namespace PartII {
 		private int direction = 1;
 		private float originalXScale;
 
+		public bool moveRight, moveLeft;
+
 		// Private attributes
 		Rigidbody2D rigidBody2D;
 
-		// Start is called before the first frame update
-		// Here you can handle with all objects in the scene
+		
 		void Start()
 		{
 			originalXScale = transform.localScale.x;
@@ -33,24 +34,42 @@ namespace PartII {
 		}
 
 		// Update is called once per frame
-		void Update()
+		private void FixedUpdate()
 		{
-			var x = Input.GetAxis("Horizontal");
-			// transform.position += x * maxSpeed * transform.right * Time.deltaTime;
-			rigidBody2D.velocity = new Vector2(x * maxSpeed, rigidBody2D.velocity.y);
-
-			//condição para animação
-			if (Input.GetAxis("Horizontal") != 0) {
+			if (moveRight)
+			{
+				rigidBody2D.velocity = new Vector2(maxSpeed, rigidBody2D.velocity.y);
 				animator.SetBool("taAndando", true);
 			}
-			else {
+			else if (moveLeft)
+			{
+				rigidBody2D.velocity = new Vector2(-maxSpeed, rigidBody2D.velocity.y);
+				animator.SetBool("taAndando", true);
+			}
+			else
+			{
+				
 				animator.SetBool("taAndando", false);
-			}
+				var x = Input.GetAxis("Horizontal");
+				// transform.position += x * maxSpeed * transform.right * Time.deltaTime;
+				rigidBody2D.velocity = new Vector2(x * maxSpeed, rigidBody2D.velocity.y);
 
-			if(x * maxSpeed * direction < 0){
-				Flip();
-			}
 
+				//condição para animação
+				if (Input.GetAxis("Horizontal") != 0)
+				{
+					animator.SetBool("taAndando", true);
+				}
+				else
+				{
+					animator.SetBool("taAndando", false);
+				}
+
+				if (x * maxSpeed * direction < 0)
+				{
+					Flip();
+				}
+			}
 
 			if (Input.GetAxis("Jump") == 1.0f && !isJumping){
 				//[0,1] adicionando 1 no y indo pra cima
@@ -61,6 +80,28 @@ namespace PartII {
 		}
 
 
+		public void MoveRightTrue()
+		{
+			moveRight = true; 
+		}
+
+		public void MoveRightFalse()
+		{
+			moveRight = false; 
+		}
+		
+		public void MoveLeftTrue()
+		{
+			moveLeft = true; 
+		}
+
+		public void MoveLeftFalse()
+		{
+			moveLeft = false; 
+		}
+		
+		
+		
 		private void OnCollisionEnter2D(Collision2D other) {
 			//Quando cair no chão, ele muda isJumping pra false, ou seja, não está
 			isJumping = false;
