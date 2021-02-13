@@ -8,6 +8,7 @@ public class Coins : MonoBehaviour
 {
 
     public int coins = 0;
+    HUDControl hControl;
 
 
     public TextMeshProUGUI CoinText;
@@ -15,7 +16,7 @@ public class Coins : MonoBehaviour
 
     void Start()
     {
-        CoinText.text = "Moedas: " + coins;
+        CoinText.text = "" + coins;
     }
 
     void Update()
@@ -29,6 +30,7 @@ public class Coins : MonoBehaviour
                 coins++;
                 CoinText.text = "Moedas: " + coins;
                 Destroy(other.gameObject);
+                HUDControl.hControl.Moedas(coins);
             }
 
         }
