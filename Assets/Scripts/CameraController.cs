@@ -18,6 +18,10 @@ namespace PartIII
    	public float smoothTimeY;
    	public float smoothTimeX;
    	public float deltaY;
+		// public float minY;
+		// public float maxY;
+		// public float minX;
+		// public float maxX;
 
 		// Start is called before the first frame update
 		void Start()
@@ -25,6 +29,7 @@ namespace PartIII
 		}
 
 		// Update is called once per frame
+		//void Update()
 		void  FixedUpdate()
 		{
 			// if (player.transform.position.x > minX && player.transform.position.x < maxX)
@@ -34,10 +39,50 @@ namespace PartIII
 			// }
 
 
+
+				float posX = Mathf.SmoothDamp(transform.position.x, player.transform.position.x, ref velocity.x, smoothTimeX);
+				float posY = Mathf.SmoothDamp(transform.position.y, player.transform.position.y + deltaY, ref velocity.y, smoothTimeY);
+
+				if (posX <28 && posX>-5.24 && posY>0.3) {
+					transform.position = new Vector3(posX, posY, transform.position.z);
+				}
+
+				else {
+					if (posY < 0.3){
+						posY = 0.3f;
+					}
+					if (posX < -5.24){
+						posX = -5.24f;
+					}
+					if (posX > 29){
+						posX = 29f;
+					}
+					transform.position = new Vector3(posX, posY, transform.position.z);
+				}
+				// if (posY < 0.3) {
+				// 	if (posX > 28) {
+				// 		transform.position = new Vector3(28f, 0.3f, transform.position.z);
+				// 	}
+				// 	else if (posX < -5.24) {
+				// 		transform.position = new Vector3(-5.24f, 0.3f, transform.position.z);
+				// 	}
+				// 	else {
+				// 		transform.position = new Vector3(posX, 0.3f, transform.position.z);
+				// 	}
+				// }
+				// else {
+				//
+				// }
+
+
 			// Mathf.SmoothDamp(current.position, target.position, current.velocity, reaction.time)
-			float posX = Mathf.SmoothDamp(transform.position.x, player.transform.position.x, ref velocity.x, smoothTimeX);
-			float posY = Mathf.SmoothDamp(transform.position.y, player.transform.position.y + deltaY, ref velocity.y, smoothTimeY);
-			transform.position = new Vector3(posX, posY, transform.position.z);
+			// // codigo que funciona bontinho
+			// float posX = Mathf.SmoothDamp(transform.position.x, player.transform.position.x, ref velocity.x, smoothTimeX);
+			// float posY = Mathf.SmoothDamp(transform.position.y, player.transform.position.y + deltaY, ref velocity.y, smoothTimeY);
+			// transform.position = new Vector3(posX, posY, transform.position.z);
+
+
+
 		}
 	}
 }
