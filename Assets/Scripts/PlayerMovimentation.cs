@@ -18,7 +18,7 @@ namespace PartII {
 		// Private attributes
 		Rigidbody2D rigidBody2D;
 
-		
+
 		void Start()
 		{
 			originalXScale = transform.localScale.x;
@@ -39,16 +39,24 @@ namespace PartII {
 			if (moveRight)
 			{
 				rigidBody2D.velocity = new Vector2(maxSpeed, rigidBody2D.velocity.y);
+				direction = 1;
+				Vector3 scale = transform.localScale;
+				scale.x = originalXScale*direction;
+				transform.localScale = scale;
 				animator.SetBool("taAndando", true);
 			}
 			else if (moveLeft)
 			{
 				rigidBody2D.velocity = new Vector2(-maxSpeed, rigidBody2D.velocity.y);
+				direction = -1;
+				Vector3 scale = transform.localScale;
+				scale.x = originalXScale*direction;
+				transform.localScale = scale;
 				animator.SetBool("taAndando", true);
 			}
 			else
 			{
-				
+
 				animator.SetBool("taAndando", false);
 				var x = Input.GetAxis("Horizontal");
 				// transform.position += x * maxSpeed * transform.right * Time.deltaTime;
@@ -82,26 +90,26 @@ namespace PartII {
 
 		public void MoveRightTrue()
 		{
-			moveRight = true; 
+			moveRight = true;
 		}
 
 		public void MoveRightFalse()
 		{
-			moveRight = false; 
+			moveRight = false;
 		}
-		
+
 		public void MoveLeftTrue()
 		{
-			moveLeft = true; 
+			moveLeft = true;
 		}
 
 		public void MoveLeftFalse()
 		{
-			moveLeft = false; 
+			moveLeft = false;
 		}
-		
-		
-		
+
+
+
 		private void OnCollisionEnter2D(Collision2D other) {
 			//Quando cair no chão, ele muda isJumping pra false, ou seja, não está
 			isJumping = false;
@@ -115,6 +123,16 @@ namespace PartII {
 			Vector3 scale = transform.localScale;
 			scale.x = originalXScale*direction;
 			transform.localScale = scale;
+		}
+
+		public void Jump()
+		{
+			if(!isJumping)
+			{
+				isJumping = true;
+				rigidBody2D.velocity = new Vector2(rigidBody2D.velocity.x, jumpSpeed);
+				animator.SetBool("taPulando", true);
+			}
 		}
 
 	}
