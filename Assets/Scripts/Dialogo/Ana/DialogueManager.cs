@@ -1,6 +1,8 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using PartII;
 using TMPro;
 
 public class DialogueManager : MonoBehaviour
@@ -8,12 +10,14 @@ public class DialogueManager : MonoBehaviour
   public TextMeshProUGUI speakerName, dialogue, navButtonText;
   public Image speakerSprite;
 
+  [SerializeField] PlayerMovimentation ameMoviment;
   private int currentIndex;
   private Conversation currentConvo;
   private static DialogueManager instance;
   private Animator anim;
   private Coroutine typing;
 
+  
   private void Awake()
   {
     if(instance == null)
@@ -29,6 +33,8 @@ public class DialogueManager : MonoBehaviour
   public static void StartConversation(Conversation convo)
   {
     instance.anim.SetBool("isOpen", true);
+    instance.ameMoviment.MoveRightFalse();
+    instance.ameMoviment.MoveLeftFalse();
     instance.currentIndex = 0;
     instance.currentConvo = convo;
     instance.speakerName.text = "";

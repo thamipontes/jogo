@@ -4,20 +4,31 @@ using UnityEngine;
 
 public class AtirarObjeto : MonoBehaviour
 {
-    public GameObject pena;             // objeto pena
-    public Transform positionPena;      // posição pena
-    public float timeThrowPena = 2f;    // tempo de chec
+    //Objeto da pena
+    public GameObject pena;
+    //Posição da pena
+    public Transform positionPena;
+    //Tempo de espera para lançar uma nova pena
+    public float timeThrowPena = 2f;
+    //Tempo percorrido pelo jogo
     public float time = 2f;
-
-    void Start()
-    {
-        // InvokeRepeating();
-    }
-
-    // Update is called once per frame
+    
+    /*
+     * Nome: Update
+     * Parâmetros: vazio
+     * Descrição: função chamada pelo Unity a cada frame
+     */
     void Update()
     {
+      //Recebe o tempo percorrido pelo jogo
       time += Time.deltaTime;
+      
+      /*
+       * Caso o tempo percorrido pelo jogo for maior ou igual ao tempo de espera
+       * para lançar um nova pena, instância-se uma pena e zera o atributo time
+       * para poder iniciar a contagem novamente de tempo percorrido dentro do jogo para
+       * instanciar uma nova pena.
+       */
       if(time >= timeThrowPena)
       {
         InstantiatePena();
@@ -26,19 +37,13 @@ public class AtirarObjeto : MonoBehaviour
 
 
     }
-
+    
+    
+    /**/
     private void InstantiatePena()
     {
-      // GameObject clone;
-      Instantiate(pena, positionPena.transform.position, transform.rotation);
-      // clone.velocity = transform.TransformDirection(Vector2.right*velocityPena);
-      // StartCoroutine(TempoPena(clone));
+        Instantiate(pena, positionPena.transform.position, transform.rotation);
     }
-    //
-    // IEnumerator TempoPena(GameObject clone)
-    // {
-    //   yield return new WaitForSecondsRealtime(2f);
-    //   Destroy(clone);
-    // }
+
 
 }

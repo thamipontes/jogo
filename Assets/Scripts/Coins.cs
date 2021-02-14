@@ -6,6 +6,7 @@ using TMPro;
 
 public class Coins : MonoBehaviour
 {
+  
     [SerializeField] Tester teste;
     public int coins = 0;
     HUDControl hControl;
