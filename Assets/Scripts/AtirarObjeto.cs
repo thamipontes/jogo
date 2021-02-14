@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class AtirarObjeto : MonoBehaviour
 {
-    public GameObject pena;
-    public Transform positionPena;
-    public float timeThrowPena = 2f;
+    public GameObject pena;             // objeto pena
+    public Transform positionPena;      // posição pena
+    public float timeThrowPena = 2f;    // tempo de chec
     public float time = 2f;
 
-    // Start is called before the first frame update
     void Start()
     {
         // InvokeRepeating();

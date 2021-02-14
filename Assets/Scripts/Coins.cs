@@ -6,9 +6,10 @@ using TMPro;
 
 public class Coins : MonoBehaviour
 {
-
+    [SerializeField] Tester teste;
     public int coins = 0;
     HUDControl hControl;
+    int n;
 
 
     public TextMeshProUGUI CoinText;
@@ -24,14 +25,21 @@ public class Coins : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter2D(Collision2D other) {
+    private void OnCollisionEnter2D(Collision2D other)
+    {
 
             if(other.gameObject.CompareTag("Moeda")){
                 coins++;
-                CoinText.text = "Moedas: " + coins;
+                CoinText.text = "" + coins;
                 Destroy(other.gameObject);
                 HUDControl.hControl.Moedas(coins);
             }
 
-        }
+            if(coins == 53 && n == 0)
+            {
+                teste.StartConvo();
+                n++;
+            }
+
+    }
 }

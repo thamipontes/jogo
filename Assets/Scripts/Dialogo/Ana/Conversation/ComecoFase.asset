@@ -23,5 +23,5 @@ MonoBehaviour:
   - speaker: {fileID: 11400000, guid: 0ed3e62633441a6d1b85d106d4decea9, type: 2}
     dialogue: "Voc\xEA est\xE1 em 1845. Agora voc\xEA tem que achar Ada Lovelace,
       a primeira programadora, e tentar absorver o m\xE1ximo de conhecimento dela."
-  - speaker: {fileID: 11400000, guid: 2fcb98b12023fe5b1b94206c2497e909, type: 2}
+  - speaker: {fileID: 11400000, guid: d0207f4a995022966b0237cead34ac00, type: 2}
     dialogue: "Santo compilador! Trabalhador n\xE3o tem um dia de paz."

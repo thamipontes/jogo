@@ -21,6 +21,7 @@ public class VitoriaDerrota : MonoBehaviour
 		        //resultText.gameObject.SetActive(true);
 		        //button.gameObject.SetActive(true);
             resultado.gameObject.SetActive(true);
+            Destroy(other);
 
 	        }
 

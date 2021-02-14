@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05c1e90f9b7b49eb8a5fc94eb49ab1b2, type: 3}
-  m_Name: Pulo
+  m_Script: {fileID: 11500000, guid: cc8f655b84ef0a1b287f4fa181310295, type: 3}
+  m_Name: AmeDebochada
   m_EditorClassIdentifier: 
-  allLines:
-  - speaker: {fileID: 11400000, guid: 2fcb98b12023fe5b1b94206c2497e909, type: 2}
-    dialogue: "Santo compilador! Que alto! Ser\xE1 que eu consigo pular duas vezes?"
+  speakerName: Ame
+  speakerSprite: {fileID: 21300000, guid: 31dda73ceb2c54e7188fc4364079cb95, type: 3}
