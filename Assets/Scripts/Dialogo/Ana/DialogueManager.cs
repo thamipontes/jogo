@@ -68,4 +68,9 @@ public class DialogueManager : MonoBehaviour
 
   }
 
+  public void CloseDialogue()
+  {
+    instance.anim.SetBool("isOpen", false);
+  }
+
 }

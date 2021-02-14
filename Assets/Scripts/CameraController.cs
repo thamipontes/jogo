@@ -43,7 +43,7 @@ namespace PartIII
 				float posX = Mathf.SmoothDamp(transform.position.x, player.transform.position.x, ref velocity.x, smoothTimeX);
 				float posY = Mathf.SmoothDamp(transform.position.y, player.transform.position.y + deltaY, ref velocity.y, smoothTimeY);
 
-				if (posX <28 && posX>-5.24 && posY>0.3) {
+				if (posX <28 && posX>-10 && posY>0.3) {
 					transform.position = new Vector3(posX, posY, transform.position.z);
 				}
 
@@ -51,8 +51,8 @@ namespace PartIII
 					if (posY < 0.3){
 						posY = 0.3f;
 					}
-					if (posX < -5.24){
-						posX = -5.24f;
+					if (posX < -10){
+						posX = -10;
 					}
 					if (posX > 29){
 						posX = 29f;
