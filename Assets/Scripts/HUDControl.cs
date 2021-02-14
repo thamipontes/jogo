@@ -19,6 +19,7 @@ public class HUDControl : MonoBehaviour
     //public GameObject coracaoObject;
     public Sprite[] sprite = new Sprite[10];
     public Sprite[] moedaSprite = new Sprite[54];
+    public GameObject ame;
 
     //public Animator animator;
 
@@ -60,6 +61,7 @@ public class HUDControl : MonoBehaviour
         //     Debug.Log("GameOver");
         //     //resultText.gameObject.SetActive(true);
           gameover.gameObject.SetActive(true);
+          Destroy(ame);
         //     //resultText.text = "Derrota";
         }
 
