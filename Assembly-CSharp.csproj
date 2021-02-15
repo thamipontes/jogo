@@ -58,12 +58,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Meninas.comp\Scripts\Armadilha.cs" />
-     <Compile Include="Assets\Meninas.comp\Scripts\FallPlat.cs" />
-     <Compile Include="Assets\Meninas.comp\Scripts\MovimentCamera.cs" />
-     <Compile Include="Assets\Meninas.comp\Scripts\inimigo.cs" />
-     <Compile Include="Assets\Meninas.comp\Scripts\moedaFinal.cs" />
-     <Compile Include="Assets\Meninas.comp\Scripts\playMoviment.cs" />
      <Compile Include="Assets\Scripts\AtirarObjeto.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\Coins.cs" />
@@ -127,7 +121,6 @@
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
      <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
      <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
-     <None Include="Assets\BayatGames\Free Platform Game Assets\Readme.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
