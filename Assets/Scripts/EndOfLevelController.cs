@@ -1,10 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace PartIII
-{
-	public class EndOfLevelController : MonoBehaviour
+public class EndOfLevelController : MonoBehaviour
 	{
 		// Public attributes
 		public GameObject player;
@@ -12,18 +8,6 @@ namespace PartIII
 		public float playerInitialY = 3.75f;
 		public float cameraInitialX = 0;
 
-		// Start is called before the first frame update
-		void Start()
-		{
-		}
-
-		// Update is called once per frame
-		void Update()
-		{
-
-		}
-
-		// OnCollisionEnter2D is called whenever the player hits the end of the level
 		void OnCollisionEnter2D(Collision2D other)
 		{
 			
@@ -34,4 +18,4 @@ namespace PartIII
 			Camera.main.transform.position = new Vector3(cameraInitialX, cameraPosition.y, cameraPosition.z);
 		}
 	}
-}
+

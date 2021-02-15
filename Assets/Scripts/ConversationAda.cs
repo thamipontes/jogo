@@ -1,22 +1,22 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-
+/*
+ * Classe: ConversationAda
+ * Descrição: Ao colidir com o player, abra-se uma caixa de diálogo
+ */
 public class ConversationAda : MonoBehaviour
 {
+    //Expõe um campo para conectar o Script Tester e usar suas funções/atributos
     [SerializeField] Tester _tester;
-
-    void Start()
-    {
-
-    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-      if(other.gameObject.CompareTag("Player"))
-      {
-        _tester.StartConvo();
-      }
+        /*
+         * Se o objeto colidido tiver a tag Player, chama-se a função StartConvo que abre uma caixa de diálogo
+         */
+        if (other.gameObject.CompareTag("Player"))
+        {
+            _tester.StartConvo();
+        }
     }
 }
