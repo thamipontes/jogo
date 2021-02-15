@@ -10,6 +10,7 @@ public class VitoriaDerrota : MonoBehaviour
    		//public Text resultText;
    		//public Button button;
       public GameObject resultado;
+      public GameObject player;
 
         // OnCollisionEnter2D is called whenever the player hits the end of the level
         private void OnTriggerEnter2D(Collider2D other)
@@ -21,7 +22,7 @@ public class VitoriaDerrota : MonoBehaviour
 		        //resultText.gameObject.SetActive(true);
 		        //button.gameObject.SetActive(true);
             resultado.gameObject.SetActive(true);
-            Destroy(other);
+            Destroy(player);
 
 	        }
 
