@@ -3,73 +3,75 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/*
+ * Classe: HUDControl
+ * Descrição: Controla a vida do player e suas respectivas imagens e imagem das moedas
+ */
 public class HUDControl : MonoBehaviour
 {
+    //
+    //
+    //
+    //
     public static HUDControl hControl { get; private set; }
 
-    // Start is called before the first frame update
+    //Vida do player
     public int hp = 10;
-    //public int health = 100;
-    //public Text text;
-    // public Text resultText;
+
+    //Atributo do objeto gameover
     public GameObject gameover;
+
+    //Imagem moedas
     public Image moeda;
-    //vida por coracao
+
+    //Imagem dos corações
     public Image coracao;
-    //public GameObject coracaoObject;
+
+    //
+    //
+    //
+    //
+    //
     public Sprite[] sprite = new Sprite[10];
     public Sprite[] moedaSprite = new Sprite[54];
+
+    //Atributo do objeto ame
     public GameObject ame;
 
-    //public Animator animator;
-
-    //no video fala que precisa ter isso, ainda não aprendi sobre o que é não
+    //Garante que hControl sempre tenha o valor this
     private void Awake()
     {
         if (hControl == null)
         {
-          hControl = this;
+            hControl = this;
         }
-        // else
-        // {
-        //   Destroy(gameObject);
-        // }
-        // DontDestroyOnLoad(GameObject);
     }
 
-    void Start()
-    {
-        //text.text = "VIDA: " + health;
-
-        //coracao = GetComponent<Image>().sprite;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
+    /*
+     * Nome: TirarVida
+     * Parâmetro: não há
+     * Descrição: Tira vida do player, se a vida chegar a 0 destrói o player
+     */
     public void TirarVida()
     {
         Debug.Log("TirouVida");
-
-        //health -= 10;
         hp --;
 
+        //Se vida do player menor ou igual a 1, carrega tela de derrota e destrói player
         if(hp <= 1)
         {
-        //     Debug.Log("GameOver");
-        //     //resultText.gameObject.SetActive(true);
-          gameover.gameObject.SetActive(true);
-          Destroy(ame);
-        //     //resultText.text = "Derrota";
+            gameover.gameObject.SetActive(true);
+            Destroy(ame);
         }
 
         Coracoes();
-        //text.text = "VIDA: " + health;
-
     }
 
+    /*
+     * Nome: Coracoes
+     * Parâmetro: não há
+     * Descrição: Carrega imagem dos corações correspondeste à vida
+     */
     public void Coracoes()
     {
       switch(hp)
@@ -121,6 +123,11 @@ public class HUDControl : MonoBehaviour
       }
     }
 
+    /*
+     * Nome: Coracoes
+     * Parâmetro: não há
+     * Descrição: Carrega imagem das moedas correspondestes à quantidade coletada
+     */
     public void Moedas(int a)
     {
       switch(a)
