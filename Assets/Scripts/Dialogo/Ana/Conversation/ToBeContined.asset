@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allLines:
   - speaker: {fileID: 11400000, guid: 874244cb71fc154b1bce32e5f9e08493, type: 2}
-    dialogue: "Parab\xE9ns Ame por coletar essas argolas, agora poderemos ir para
+    dialogue: "Parab\xE9ns Tati por coletar essas argolas, agora poderemos ir para
       o pr\xF3ximo est\xE1gio da aventura!"
   - speaker: {fileID: 11400000, guid: 874244cb71fc154b1bce32e5f9e08493, type: 2}
     dialogue: "Voc\xEA est\xE1 pronta?"

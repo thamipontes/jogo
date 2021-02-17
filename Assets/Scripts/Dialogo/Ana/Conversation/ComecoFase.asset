@@ -18,10 +18,10 @@ MonoBehaviour:
   - speaker: {fileID: 11400000, guid: 863d7c718e6cca3f09e103ab76e21efe, type: 2}
     dialogue: E por que eu sou feita de quadradinhos?
   - speaker: {fileID: 11400000, guid: 913485f2ab20c7af9b6dbef3bea964f5, type: 2}
-    dialogue: "N\xE3o chore Ame. Como Lorde Byron uma vez disse: \"O melhor profeta
+    dialogue: "N\xE3o chore Tati. Como Lorde Byron uma vez disse: \"O melhor profeta
       do futuro \xE9 o passado\". A m\xE1quina funcionou!"
   - speaker: {fileID: 11400000, guid: 0ed3e62633441a6d1b85d106d4decea9, type: 2}
-    dialogue: "Voc\xEA est\xE1 em 1845. Agora voc\xEA tem que achar Ada Lovelace,
-      a primeira programadora, e tentar absorver o m\xE1ximo de conhecimento dela."
+    dialogue: "Voc\xEA est\xE1 em 1845. Agora voc\xEA tem que achar Ada Lovelace
+      e tentar absorver o m\xE1ximo de conhecimento dela."
   - speaker: {fileID: 11400000, guid: d0207f4a995022966b0237cead34ac00, type: 2}
     dialogue: "Santo compilador! Trabalhador n\xE3o tem um dia de paz."

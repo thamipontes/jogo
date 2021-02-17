@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc8f655b84ef0a1b287f4fa181310295, type: 3}
   m_Name: AmeChorando
   m_EditorClassIdentifier: 
-  speakerName: Ame
+  speakerName: Tati
   speakerSprite: {fileID: 21300000, guid: d0176c9ee20cd9b409b54c94801c37ac, type: 3}

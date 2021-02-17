@@ -16,7 +16,7 @@ MonoBehaviour:
   - speaker: {fileID: 11400000, guid: 2fcb98b12023fe5b1b94206c2497e909, type: 2}
     dialogue: "SANTO COMPILADOR! \xC9 A ADA!"
   - speaker: {fileID: 11400000, guid: f08be701e6ccd561ba66992b0d6e405d, type: 2}
-    dialogue: "Ada Lovelace, eu sou Ame Bit Byte e eu vim do futuro e preciso muito
+    dialogue: "Ada Lovelace, eu sou Tati Bit Byte e eu vim do futuro e preciso muito
       de seus conhecimentos l\xF3gicos!"
   - speaker: {fileID: 11400000, guid: 874244cb71fc154b1bce32e5f9e08493, type: 2}
     dialogue: "Um conselho irei te contar\nSe as argolas do meu \xE1baco voc\xEA

@@ -17,6 +17,7 @@ public class ConversationAda : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             _tester.StartConvo();
+            Destroy(gameObject);
         }
     }
 }

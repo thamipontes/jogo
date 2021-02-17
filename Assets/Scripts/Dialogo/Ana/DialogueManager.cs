@@ -17,7 +17,7 @@ public class DialogueManager : MonoBehaviour
   private Animator anim;
   private Coroutine typing;
 
-  
+
   private void Awake()
   {
     if(instance == null)
@@ -52,11 +52,7 @@ public class DialogueManager : MonoBehaviour
       return;
     }
     speakerName.text = currentConvo.GetLineByIndex(currentIndex).speaker.GetName();
-    //
-    // if(typing != null)
-    // {
-    //   typing = instance.StartCoroutine(TypeText(currentConvo.GetLineByIndex(currentIndex).dialogue));
-    // }
+
     StopAllCoroutines();
     instance.StartCoroutine(TypeText(currentConvo.GetLineByIndex(currentIndex).dialogue));
     speakerSprite.sprite = currentConvo.GetLineByIndex(currentIndex).speaker.GetSprite();
