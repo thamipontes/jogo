@@ -11,7 +11,7 @@ public class GoToScene : MonoBehaviour
 {
     public void ChangeScene(string sceneName)
     {
-        //Muda para a cena passada nos parâmetros 
+        //Muda para a cena passada nos parâmetros
         SceneManager.LoadScene(sceneName);
     }
 }

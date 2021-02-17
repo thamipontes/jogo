@@ -8,16 +8,7 @@ public class PlayerHealth : MonoBehaviour
     public static PlayerHealth playerHealth { get; private set; }
     HUDControl hControl;
 
-    // Start is called before the first frame update
-    //public int health = 100;
-    //public Text text;
-    //public Text resultText;
-    //public Button button;
-
-
     public Animator animator;
-
-
 
     void Start()
     {
@@ -42,24 +33,8 @@ public class PlayerHealth : MonoBehaviour
         Damage();
       }
 
-      // if(health <= 0)
-      // {
-      //   //resultText.gameObject.SetActive(true);
-   		// 	button.gameObject.SetActive(true);
-   		// 	//resultText.text = "Derrota";
-      // }
     }
-    // coloquei tudo do HUDControl
-    // public void TirarVida()
-    // {
-    //     health -= 10;
-    //     //text.text = "VIDA: " + health;
-    //
-    //     Damage();
-    //     hControl.Coracoes();
-    //
-    // }
-    //
+
     public void Damage()
     {
       StartCoroutine(damageTime());
