@@ -19,7 +19,7 @@ public class Coins : MonoBehaviour
     //Atributo para garantir que o if seja executado uma única vez
     int n;
 
-    //Atributo recebe o texto que irá para interface gráfica    
+    //Atributo recebe o texto que irá para interface gráfica
     public TextMeshProUGUI CoinText;
 
 
@@ -34,7 +34,7 @@ public class Coins : MonoBehaviour
      * Parâmetro: Objeto colidido
      * Descrição: função que percebe que houve uma colisão entre dois ou mais objetos
      */
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         /*
          * Se o objeto colidido tiver a tag moeda, acrescenta
