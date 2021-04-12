@@ -102,3 +102,10 @@ Assets/AmplifyShaderEditor.meta
 Assets/_TerrainAutoUpgrade
 Assets/_TerrainAutoUpgrade.meta
 Assets/FR2_Cache.asset
+
+
+
+Assembly-CSharp.csproj
+Packages/manifest.json
+Packages/packages-lock.json
+obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache
