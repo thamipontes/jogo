@@ -9,6 +9,9 @@ TagManager:
   - FallPlat
   - Moeda
   - Water
+  - Buraco
+  - MoedaFinal
+  - Ponte
   layers:
   - Default
   - TransparentFX

@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace PartIV
+/*
+ * Classe: GoToScene
+ * Descrição: Muda para cena
+ */
+public class GoToScene : MonoBehaviour
 {
-    public class GoToScene : MonoBehaviour
+    public void ChangeScene(string sceneName)
     {
-        public void ChangeScene(string sceneName)
-        {
-            SceneManager.LoadScene(sceneName);
-        }
-    } 
+        //Muda para a cena passada nos parâmetros
+        SceneManager.LoadScene(sceneName);
+    }
 }

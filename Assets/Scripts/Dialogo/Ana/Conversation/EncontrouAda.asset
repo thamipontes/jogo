@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c1e90f9b7b49eb8a5fc94eb49ab1b2, type: 3}
+  m_Name: EncontrouAda
+  m_EditorClassIdentifier: 
+  allLines:
+  - speaker: {fileID: 11400000, guid: 2fcb98b12023fe5b1b94206c2497e909, type: 2}
+    dialogue: "SANTO COMPILADOR! \xC9 A ADA!"
+  - speaker: {fileID: 11400000, guid: f08be701e6ccd561ba66992b0d6e405d, type: 2}
+    dialogue: "Ada Lovelace, eu sou Tati Bit Byte e eu vim do futuro e preciso muito
+      de seus conhecimentos l\xF3gicos!"
+  - speaker: {fileID: 11400000, guid: 874244cb71fc154b1bce32e5f9e08493, type: 2}
+    dialogue: "Um conselho irei te contar\nSe as argolas do meu \xE1baco voc\xEA
+      coletar"
+  - speaker: {fileID: 11400000, guid: 2fcb98b12023fe5b1b94206c2497e909, type: 2}
+    dialogue: "Nossa voc\xEA rimou!"
+  - speaker: {fileID: 11400000, guid: 874244cb71fc154b1bce32e5f9e08493, type: 2}
+    dialogue: "\xC9 que eu gosto muito dos livros do meu pai. Agora v\xE1 pegar as
+      argolas. E CUIDADO COM OS CAVALOS!"
