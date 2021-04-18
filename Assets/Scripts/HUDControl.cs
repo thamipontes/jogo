@@ -9,10 +9,6 @@ using UnityEngine.UI;
  */
 public class HUDControl : MonoBehaviour
 {
-    //
-    //
-    //
-    //
     public static HUDControl hControl { get; private set; }
 
     //Vida do player

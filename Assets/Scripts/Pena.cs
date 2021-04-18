@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Pena : MonoBehaviour
 {
-  HUDControl hcontrol;
   public float velocityPena;
   public Rigidbody2D rb;
 
@@ -29,14 +28,14 @@ public class Pena : MonoBehaviour
     if(target.CompareTag("Player"))
     {
       // tira o rigidbody para o objeto parar na colisão e não obedecer a gravidade
-      Destroy(GetComponent<Rigidbody2D>());
-      Destroy(gameObject, 0.2f);
+      if(gameObject != null)
+      {
+          Destroy(GetComponent<Rigidbody2D>());
+          Destroy(gameObject);
+      }
 
       var healthPlayer = target.GetComponent<PlayerHealth>();
-      hcontrol.TirarVida();
       healthPlayer.Damage();
-
-
 
     }
   }
