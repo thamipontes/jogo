@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8723352879182559305}
   - component: {fileID: 1712809550993648351}
   - component: {fileID: 2074699284504391561}
-  - component: {fileID: 1549977560567568865}
+  - component: {fileID: 2028784798551896173}
   m_Layer: 0
   m_Name: pena
   m_TagString: Water
@@ -147,7 +147,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!61 &1549977560567568865
+--- !u!61 &2028784798551896173
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -156,11 +156,11 @@ BoxCollider2D:
   m_GameObject: {fileID: 3010938074686421818}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: e9727dce48b8113ab8fd88dfb2642434, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0015729368, y: -0.014680207}
+  m_Offset: {x: 0.00445655, y: -0.014006257}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -171,5 +171,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.1337853, y: 0.11595929}
+  m_Size: {x: 0.10524815, y: 0.08614874}
   m_EdgeRadius: 0
