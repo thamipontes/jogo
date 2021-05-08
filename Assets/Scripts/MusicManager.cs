@@ -19,6 +19,7 @@ public class MusicManager : MonoBehaviour
         {
             case "coin1":
                 _audioSource.PlayOneShot(_audioCoin);
+                _audioSource.volume = 0.3f;
                 break;
             case "pulo1":
                 _audioSource.PlayOneShot(_audioPulo);
