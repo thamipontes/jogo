@@ -14,7 +14,7 @@ public class Ponte : MonoBehaviour
     void Start()
     {
         _ponteMov.enabled = false;
-        
+
     }
 
     // Update is called once per frame
@@ -33,7 +33,9 @@ public class Ponte : MonoBehaviour
 
     public void Fall()
     {
+        MusicManager.playSound("PONTE");
         StartCoroutine(FallTime());
+
     }
 
     IEnumerator FallTime()
