@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class MusicManager : MonoBehaviour
 {
-    public static AudioClip _audioCoin, _audioPulo;
+    public static AudioClip _audioCoin, _audioPulo, _audioIn, _audioOut;
     public static AudioSource _audioSource;
 
     private void Start()
@@ -10,7 +10,9 @@ public class MusicManager : MonoBehaviour
         _audioSource = GetComponent<AudioSource>();
         _audioCoin = Resources.Load<AudioClip>("MOEDAS_01");
         _audioPulo = Resources.Load<AudioClip>("PULO_01");
-        
+        _audioIn = Resources.Load<AudioClip>("MENSAGEM_IN_01");
+        _audioOut = Resources.Load<AudioClip>("MENSAGEM_OUT_01");
+
     }
 
     public static void playSound (string som)
@@ -23,6 +25,12 @@ public class MusicManager : MonoBehaviour
                 break;
             case "pulo1":
                 _audioSource.PlayOneShot(_audioPulo);
+                break;
+            case "open":
+                _audioSource.PlayOneShot(_audioIn);
+                break;
+            case "close":
+                _audioSource.PlayOneShot(_audioOut);
                 break;
         }
     }
