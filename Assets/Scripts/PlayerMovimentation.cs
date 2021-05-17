@@ -82,6 +82,7 @@ namespace PartII {
 			if (Input.GetAxis("Jump") == 1.0f && !isJumping){
 				//[0,1] adicionando 1 no y indo pra cima
 				isJumping = true;
+				MusicManager.playSound("pulo1");
 				rigidBody2D.velocity = new Vector2(rigidBody2D.velocity.x, jumpSpeed);
 				animator.SetBool("taPulando", true);
 			}
@@ -114,6 +115,7 @@ namespace PartII {
 			//Quando cair no chão, ele muda isJumping pra false, ou seja, não está
 			isJumping = false;
 			animator.SetBool("taPulando", false);
+			Debug.Log("Fim de pulo");
 
 		}
 
@@ -125,15 +127,16 @@ namespace PartII {
 			transform.localScale = scale;
 		}
 
-		public void Jump()
-		{
-			if(!isJumping)
-			{
-				isJumping = true;
-				rigidBody2D.velocity = new Vector2(rigidBody2D.velocity.x, jumpSpeed);
-				animator.SetBool("taPulando", true);
-			}
-		}
+		// public void Jump()
+		// {
+		// 	if(!isJumping)
+		// 	{
+		// 		isJumping = true;
+		// 		MusicManager.playSound("pulo1");
+		// 		rigidBody2D.velocity = new Vector2(rigidBody2D.velocity.x, jumpSpeed);
+		// 		animator.SetBool("taPulando", true);
+		// 	}
+		//}
 
 	}
 }

@@ -10,7 +10,7 @@ public class MusicManager : MonoBehaviour
         _audioSource = GetComponent<AudioSource>();
         _audioCoin = Resources.Load<AudioClip>("MOEDAS_01");
         _audioPulo = Resources.Load<AudioClip>("PULO_01");
-        
+
     }
 
     public static void playSound (string som)
