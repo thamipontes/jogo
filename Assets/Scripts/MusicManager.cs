@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class MusicManager : MonoBehaviour
 {
-    public static AudioClip _audioCoin, _audioPulo, _audioMovimentation, _audioMachucar, _audioPonteCaindo;
+    public static AudioClip _audioCoin, _audioPulo, _audioMovimentation, _audioMachucar, _audioPonteCaindo, _audioIn, _audioOut;
     public static AudioSource _audioSource;
 
     private void Start()
@@ -13,6 +13,8 @@ public class MusicManager : MonoBehaviour
         _audioMachucar = Resources.Load<AudioClip>("MACHUCAR_01");
         _audioMovimentation = Resources.Load<AudioClip>("PASSOS_01");
         _audioPonteCaindo = Resources.Load<AudioClip>("PONTE_DESMORONANDO_01");
+        _audioIn = Resources.Load<AudioClip>("MENSAGEM_IN_01");
+        _audioOut = Resources.Load<AudioClip>("MENSAGEM_OUT_01");
     }
 
     public static void playSound (string som)
@@ -35,6 +37,12 @@ public class MusicManager : MonoBehaviour
                 break;
             case "PONTE":
             _audioSource.PlayOneShot(_audioPonteCaindo);
+                break;
+            case "open":
+                _audioSource.PlayOneShot(_audioIn);
+                break;
+            case "close":
+                _audioSource.PlayOneShot(_audioOut);
                 break;
         }
     }
@@ -70,4 +78,5 @@ public class MusicManager : MonoBehaviour
     //     return 85;
     // }
 }
+
 
