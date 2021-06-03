@@ -43,6 +43,7 @@ public class PlayerHealth : MonoBehaviour
     IEnumerator damageTime()
     {
       animator.SetBool("taSofrendo",true);
+      MusicManager.playSound("machucar1");
       yield return new WaitForSecondsRealtime(0.75f);
       animator.SetBool("taSofrendo", false);
     }
