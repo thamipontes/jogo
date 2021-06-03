@@ -44,6 +44,7 @@ namespace PartII {
 				scale.x = originalXScale*direction;
 				transform.localScale = scale;
 				animator.SetBool("taAndando", true);
+				MusicManager.playSound("steps1");
 			}
 			else if (moveLeft)
 			{
@@ -53,6 +54,7 @@ namespace PartII {
 				scale.x = originalXScale*direction;
 				transform.localScale = scale;
 				animator.SetBool("taAndando", true);
+				MusicManager.playSound("steps1");
 			}
 			else
 			{
@@ -67,6 +69,7 @@ namespace PartII {
 				if (Input.GetAxis("Horizontal") != 0)
 				{
 					animator.SetBool("taAndando", true);
+					MusicManager.playSound("steps1");
 				}
 				else
 				{
@@ -102,6 +105,7 @@ namespace PartII {
 		public void MoveLeftTrue()
 		{
 			moveLeft = true;
+			
 		}
 
 		public void MoveLeftFalse()

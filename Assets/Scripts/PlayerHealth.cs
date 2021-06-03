@@ -29,7 +29,6 @@ public class PlayerHealth : MonoBehaviour
       if(other.gameObject.CompareTag("Water"))
       {
         Debug.Log("Colider");
-        HUDControl.hControl.TirarVida();
         Damage();
       }
 
@@ -37,12 +36,14 @@ public class PlayerHealth : MonoBehaviour
 
     public void Damage()
     {
+      HUDControl.hControl.TirarVida();
       StartCoroutine(damageTime());
     }
 
     IEnumerator damageTime()
     {
       animator.SetBool("taSofrendo",true);
+      MusicManager.playSound("machucar1");
       yield return new WaitForSecondsRealtime(0.75f);
       animator.SetBool("taSofrendo", false);
     }
