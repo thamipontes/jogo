@@ -37,6 +37,7 @@ public class MusicManager : MonoBehaviour
                 break;
             case "PONTE":
             _audioSource.PlayOneShot(_audioPonteCaindo);
+            _audioSource.volume = 1f;
                 break;
             case "open":
                 _audioSource.PlayOneShot(_audioIn);
@@ -78,5 +79,3 @@ public class MusicManager : MonoBehaviour
     //     return 85;
     // }
 }
-
-
