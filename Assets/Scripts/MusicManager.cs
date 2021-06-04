@@ -41,9 +41,11 @@ public class MusicManager : MonoBehaviour
                 break;
             case "open":
                 _audioSource.PlayOneShot(_audioIn);
+                _audioSource.volume = 1f;
                 break;
             case "close":
                 _audioSource.PlayOneShot(_audioOut);
+                _audioSource.volume = 1f;
                 break;
         }
     }
