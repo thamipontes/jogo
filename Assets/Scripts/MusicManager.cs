@@ -27,6 +27,7 @@ public class MusicManager : MonoBehaviour
                 break;
             case  "machucar1":
                 _audioSource.PlayOneShot(_audioMachucar);
+                break;
             case "steps1":
                 _audioSource.PlayOneShot(_audioMovimentation);
                 _audioSource.volume = 0.6f;

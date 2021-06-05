@@ -4,25 +4,22 @@ using UnityEngine;
 
 public class MenuManager : MonoBehaviour
 {
-    public static bool dialogue;
+    public bool dialogue = true;
 
 
-    void Start()
-    {
-        dialogue = true;
-    }
-
-
-    public void DialogueManager()
+    public void BoolButtonDialogue()
     {
         if(dialogue){
+            PlayerPrefs.SetInt("dialogue", 1);
             dialogue = false;
+            PlayerPrefs.Save();
             Debug.Log("dialogo falso");
         } else {
+            PlayerPrefs.SetInt("dialogue", 0);
             dialogue = true;
+            PlayerPrefs.Save();
             Debug.Log("dialogo true");
         }
     }
-
 
 }
