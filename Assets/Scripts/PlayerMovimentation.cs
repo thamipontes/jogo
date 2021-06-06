@@ -105,7 +105,7 @@ namespace PartII {
 		public void MoveLeftTrue()
 		{
 			moveLeft = true;
-			
+
 		}
 
 		public void MoveLeftFalse()
@@ -131,16 +131,16 @@ namespace PartII {
 			transform.localScale = scale;
 		}
 
-		// public void Jump()
-		// {
-		// 	if(!isJumping)
-		// 	{
-		// 		isJumping = true;
-		// 		MusicManager.playSound("pulo1");
-		// 		rigidBody2D.velocity = new Vector2(rigidBody2D.velocity.x, jumpSpeed);
-		// 		animator.SetBool("taPulando", true);
-		// 	}
-		//}
+		public void Jump()
+		{
+			if(!isJumping)
+			{
+				isJumping = true;
+				MusicManager.playSound("pulo1");
+				rigidBody2D.velocity = new Vector2(rigidBody2D.velocity.x, jumpSpeed);
+				animator.SetBool("taPulando", true);
+			}
+		}
 
 	}
 }
