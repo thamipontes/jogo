@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class MusicManager : MonoBehaviour
 {
-    public static AudioClip _audioCoin, _audioPulo, _audioMovimentation, _audioMachucar;
+    public static AudioClip _audioCoin, _audioPulo, _audioMovimentation, _audioMachucar, _audioPonteCaindo, _audioIn, _audioOut;
     public static AudioSource _audioSource;
 
     private void Start()
@@ -12,6 +12,9 @@ public class MusicManager : MonoBehaviour
         _audioPulo = Resources.Load<AudioClip>("PULO_01");
         _audioMachucar = Resources.Load<AudioClip>("MACHUCAR_01");
         _audioMovimentation = Resources.Load<AudioClip>("PASSOS_01");
+        _audioPonteCaindo = Resources.Load<AudioClip>("PONTE_DESMORONANDO_01");
+        _audioIn = Resources.Load<AudioClip>("MENSAGEM_IN_01");
+        _audioOut = Resources.Load<AudioClip>("MENSAGEM_OUT_01");
     }
 
     public static void playSound (string som)
@@ -31,6 +34,18 @@ public class MusicManager : MonoBehaviour
             case "steps1":
                 _audioSource.PlayOneShot(_audioMovimentation);
                 _audioSource.volume = 0.6f;
+                break;
+            case "PONTE":
+                _audioSource.PlayOneShot(_audioPonteCaindo);
+                _audioSource.volume = 1f;
+                break;
+            case "open":
+                _audioSource.PlayOneShot(_audioIn);
+                _audioSource.volume = 1f;
+                break;
+            case "close":
+                _audioSource.PlayOneShot(_audioOut);
+                _audioSource.volume = 1f;
                 break;
         }
     }

@@ -29,7 +29,6 @@ public class PlayerHealth : MonoBehaviour
       if(other.gameObject.CompareTag("Water"))
       {
         Debug.Log("Colider");
-        HUDControl.hControl.TirarVida();
         Damage();
       }
 
@@ -37,6 +36,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void Damage()
     {
+      HUDControl.hControl.TirarVida();
       StartCoroutine(damageTime());
     }
 
