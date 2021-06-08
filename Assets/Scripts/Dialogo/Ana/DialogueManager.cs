@@ -17,6 +17,8 @@ public class DialogueManager : MonoBehaviour
   private Animator anim;
   private Coroutine typing;
 
+  public int counter = 0;
+
 
   private void Awake()
   {
@@ -44,11 +46,26 @@ public class DialogueManager : MonoBehaviour
     instance.ReadNext();
   }
 
+  public void ButtonReadNext()
+  {
+    instance.counter++;
+    if(instance.counter == 1)
+    {
+      ReadNext();
+    } else
+    {
+      StopAllCoroutines();
+      ShowNextLine();
+    }
+  }
+
   public void ReadNext()
   {
+    instance.counter++;
     if(currentIndex > currentConvo.GetLength())
     {
       instance.anim.SetBool("isOpen", false);
+      instance.counter = 0;
       return;
     }
     speakerName.text = currentConvo.GetLineByIndex(currentIndex).speaker.GetName();
@@ -56,7 +73,6 @@ public class DialogueManager : MonoBehaviour
     StopAllCoroutines();
     instance.StartCoroutine(TypeText(currentConvo.GetLineByIndex(currentIndex).dialogue));
     speakerSprite.sprite = currentConvo.GetLineByIndex(currentIndex).speaker.GetSprite();
-    currentIndex++;
   }
 
   private IEnumerator TypeText(string text)
@@ -67,7 +83,24 @@ public class DialogueManager : MonoBehaviour
       dialogue.text += letter;
       yield return new WaitForSecondsRealtime(0.025f);
     }
+    currentIndex++;
+    instance.counter = 0;
+  }
 
+  public void ShowNextLine()
+  {
+    if(currentIndex > currentConvo.GetLength())
+    {
+      instance.anim.SetBool("isOpen", false);
+      instance.counter = 0;
+      return;
+    }
+
+    speakerName.text = currentConvo.GetLineByIndex(currentIndex).speaker.GetName();
+    dialogue.text = currentConvo.GetLineByIndex(currentIndex).dialogue;
+    speakerSprite.sprite = currentConvo.GetLineByIndex(currentIndex).speaker.GetSprite();
+    currentIndex++;
+    instance.counter = 0;
   }
 
   public void CloseDialogue()
