@@ -18609,7 +18609,7 @@ GameObject:
   - component: {fileID: 1207371947}
   m_Layer: 0
   m_Name: ComecoFase
-  m_TagString: Untagged
+  m_TagString: Dialogo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31092,7 +31092,7 @@ GameObject:
   - component: {fileID: 1518989556}
   m_Layer: 0
   m_Name: Aula
-  m_TagString: Untagged
+  m_TagString: Dialogo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36029,7 +36029,7 @@ GameObject:
   - component: {fileID: 2012885665}
   m_Layer: 0
   m_Name: Tiara
-  m_TagString: Untagged
+  m_TagString: Dialogo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
