@@ -13,6 +13,7 @@ TagManager:
   - MoedaFinal
   - Ponte
   - Dialogo
+  - Music
   layers:
   - Default
   - TransparentFX
