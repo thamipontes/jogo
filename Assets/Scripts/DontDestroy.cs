@@ -12,7 +12,6 @@ public class DontDestroy : MonoBehaviour
         DontDestroyOnLoad(gameObject);
       }
       else {
-        print("ahora estamos destruindo o canvas");
         Destroy(gameObject);
       }
     }
