@@ -4733,6 +4733,7 @@ MonoBehaviour:
   navButtonText: {fileID: 0}
   speakerSprite: {fileID: 0}
   ameMoviment: {fileID: 0}
+  counter: 0
 --- !u!1 &429044438
 GameObject:
   m_ObjectHideFlags: 0
@@ -14320,6 +14321,7 @@ MonoBehaviour:
   navButtonText: {fileID: 1728227387}
   speakerSprite: {fileID: 1871972235}
   ameMoviment: {fileID: 122671334}
+  counter: 0
 --- !u!95 &752947478
 Animator:
   serializedVersion: 3
@@ -20096,8 +20098,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 752947477}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: ReadNext
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: ButtonReadNext
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
