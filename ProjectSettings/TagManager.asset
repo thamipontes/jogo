@@ -12,6 +12,9 @@ TagManager:
   - Buraco
   - MoedaFinal
   - Ponte
+  - Dialogo
+  - Music
+  - Sons
   layers:
   - Default
   - TransparentFX

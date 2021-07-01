@@ -5,9 +5,15 @@ using UnityEngine;
 public class Tester : MonoBehaviour
 {
   public Conversation convo;
+  public MenuManager menuManager;
+
 
   public void StartConvo()
   {
-    DialogueManager.StartConversation(convo);
+    Debug.Log(PlayerPrefs.GetInt("dialogue"));
+
+    if (PlayerPrefs.GetInt("dialogue") == 1) {
+      DialogueManager.StartConversation(convo);
+    }
   }
 }

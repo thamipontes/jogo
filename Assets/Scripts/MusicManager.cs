@@ -28,7 +28,7 @@ public class MusicManager : MonoBehaviour
             case "pulo1":
                 _audioSource.PlayOneShot(_audioPulo);
                 break;
-            case  "machucar1":
+            case "machucar1":
                 _audioSource.PlayOneShot(_audioMachucar);
                 break;
             case "steps1":
@@ -36,8 +36,8 @@ public class MusicManager : MonoBehaviour
                 _audioSource.volume = 0.6f;
                 break;
             case "PONTE":
-            _audioSource.PlayOneShot(_audioPonteCaindo);
-            _audioSource.volume = 1f;
+                _audioSource.PlayOneShot(_audioPonteCaindo);
+                _audioSource.volume = 1f;
                 break;
             case "open":
                 _audioSource.PlayOneShot(_audioIn);

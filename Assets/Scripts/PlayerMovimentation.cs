@@ -8,6 +8,7 @@ namespace PartII {
 		// Public attributes
 		public float maxSpeed = 5;
 		public float jumpSpeed = 5;
+		public Tester tester;
 
 		public Boolean isJumping = false;
 		public Animator animator;
@@ -91,6 +92,8 @@ namespace PartII {
 				rigidBody2D.velocity = new Vector2(rigidBody2D.velocity.x, jumpSpeed);
 				animator.SetBool("taPulando", true);
 			}
+
+
 		}
 
 
@@ -121,7 +124,10 @@ namespace PartII {
 			//Quando cair no chão, ele muda isJumping pra false, ou seja, não está
 			isJumping = false;
 			animator.SetBool("taPulando", false);
-			Debug.Log("Fim de pulo");
+
+			if (other.gameObject.CompareTag("Dialogo")) {
+				tester.StartConvo();
+			}
 
 		}
 
