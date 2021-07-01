@@ -34,6 +34,8 @@ public class DialogueManager : MonoBehaviour
 
   public static void StartConversation(Conversation convo)
   {
+    // play "open" audio
+    MusicManager.playSound("open");
     instance.anim.SetBool("isOpen", true);
     instance.ameMoviment.MoveRightFalse();
     instance.ameMoviment.MoveLeftFalse();
@@ -64,6 +66,8 @@ public class DialogueManager : MonoBehaviour
     instance.counter++;
     if(currentIndex > currentConvo.GetLength())
     {
+      // play "close" audio
+      MusicManager.playSound("close");
       instance.anim.SetBool("isOpen", false);
       instance.counter = 0;
       return;
@@ -105,6 +109,8 @@ public class DialogueManager : MonoBehaviour
 
   public void CloseDialogue()
   {
+    // play "close" audio
+    MusicManager.playSound("close");
     instance.anim.SetBool("isOpen", false);
   }
 
