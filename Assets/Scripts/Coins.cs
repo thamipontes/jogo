@@ -42,10 +42,12 @@ public class Coins : MonoBehaviour
          */
         if (other.gameObject.CompareTag("Moeda"))
         {
+            
             coins++;
             CoinText.text = "" + coins;
             Destroy(other.gameObject);
             HUDControl.hControl.Moedas(coins);
+            MusicManager.playSound("coin1");
         }
 
         //Se quantidade de moedas for igual a 53, chama-se um dialogo
