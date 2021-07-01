@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using System.Collections;
 
 namespace PartII {
 	public class PlayerMovimentation : MonoBehaviour
@@ -14,6 +15,7 @@ namespace PartII {
 		private float originalXScale;
 
 		public bool moveRight, moveLeft;
+
 
 		// Private attributes
 		Rigidbody2D rigidBody2D;
@@ -44,7 +46,7 @@ namespace PartII {
 				scale.x = originalXScale*direction;
 				transform.localScale = scale;
 				animator.SetBool("taAndando", true);
-				MusicManager.playSound("steps1");
+				PlaySteps();
 			}
 			else if (moveLeft)
 			{
@@ -54,7 +56,7 @@ namespace PartII {
 				scale.x = originalXScale*direction;
 				transform.localScale = scale;
 				animator.SetBool("taAndando", true);
-				MusicManager.playSound("steps1");
+				PlaySteps();
 			}
 			else
 			{
@@ -69,7 +71,7 @@ namespace PartII {
 				if (Input.GetAxis("Horizontal") != 0)
 				{
 					animator.SetBool("taAndando", true);
-					MusicManager.playSound("steps1");
+					PlaySteps();
 				}
 				else
 				{
@@ -85,6 +87,7 @@ namespace PartII {
 			if (Input.GetAxis("Jump") == 1.0f && !isJumping){
 				//[0,1] adicionando 1 no y indo pra cima
 				isJumping = true;
+				MusicManager.playSound("pulo1");
 				rigidBody2D.velocity = new Vector2(rigidBody2D.velocity.x, jumpSpeed);
 				animator.SetBool("taPulando", true);
 			}
@@ -104,7 +107,7 @@ namespace PartII {
 		public void MoveLeftTrue()
 		{
 			moveLeft = true;
-			
+
 		}
 
 		public void MoveLeftFalse()
@@ -118,6 +121,7 @@ namespace PartII {
 			//Quando cair no chão, ele muda isJumping pra false, ou seja, não está
 			isJumping = false;
 			animator.SetBool("taPulando", false);
+			Debug.Log("Fim de pulo");
 
 		}
 
@@ -134,8 +138,20 @@ namespace PartII {
 			if(!isJumping)
 			{
 				isJumping = true;
+				MusicManager.playSound("pulo1");
 				rigidBody2D.velocity = new Vector2(rigidBody2D.velocity.x, jumpSpeed);
 				animator.SetBool("taPulando", true);
+			}
+		}
+
+
+		// Toca o som "steps1" com um certo período de pausa entre um som e outro
+		void PlaySteps()
+		{
+			// se audio não estiver tocando então toca audio
+			if(!MusicManager._audioSource.isPlaying)
+			{
+				MusicManager.playSound("steps1");
 			}
 		}
 
