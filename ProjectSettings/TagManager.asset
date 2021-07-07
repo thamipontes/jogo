@@ -15,6 +15,7 @@ TagManager:
   - Dialogo
   - Music
   - Sons
+  - Menu
   layers:
   - Default
   - TransparentFX

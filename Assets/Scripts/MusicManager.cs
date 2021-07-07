@@ -33,11 +33,11 @@ public class MusicManager : MonoBehaviour
                 break;
             case "steps1":
                 _audioSource.PlayOneShot(_audioMovimentation);
-                _audioSource.volume = 0.6f;
+                _audioSource.volume = 1f;
                 break;
             case "PONTE":
                 _audioSource.PlayOneShot(_audioPonteCaindo);
-                _audioSource.volume = 1f;
+                _audioSource.volume = 0.2f;
                 break;
             case "open":
                 _audioSource.PlayOneShot(_audioIn);

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class UIFinal : MonoBehaviour
 {
     [SerializeField] GoToScene goToScene;
-    public GameObject demo, credito, equipe;
+    public GameObject demo, credito, equipe, sair;
     private int i = 0;
 
     public void ProximoTexto()
@@ -31,6 +31,7 @@ public class UIFinal : MonoBehaviour
         demo.gameObject.SetActive(false);
         credito.gameObject.SetActive(true);
         equipe.gameObject.SetActive(true);
+        sair.gameObject.SetActive(true);
     }
 
 }

@@ -12,7 +12,7 @@ public class Tester : MonoBehaviour
   {
     Debug.Log(PlayerPrefs.GetInt("dialogue"));
 
-    if (PlayerPrefs.GetInt("dialogue") == 1) {
+    if (PlayerPrefs.GetInt("dialogue") == 0) {
       DialogueManager.StartConversation(convo);
     }
   }
