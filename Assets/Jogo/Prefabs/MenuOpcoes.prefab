@@ -415,8 +415,6 @@ GameObject:
   - component: {fileID: 4555400204552036387}
   - component: {fileID: 4555400204552036386}
   - component: {fileID: 4555400204552036414}
-  - component: {fileID: 4555400204552036413}
-  - component: {fileID: 4555400204552036415}
   m_Layer: 5
   m_Name: MenuOpcoes
   m_TagString: Menu
@@ -520,30 +518,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: 1
---- !u!114 &4555400204552036413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4555400204552036389}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9c1ed9324cd2d1b4857387233481fc0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &4555400204552036415
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4555400204552036389}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 516ec301fc55dd072be8fb09d72cbc0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &4555400204592352611
 GameObject:
   m_ObjectHideFlags: 0
