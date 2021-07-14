@@ -32009,7 +32009,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   botaoSound: {fileID: 494936754}
   soundOn: {fileID: 21300000, guid: da539f1cd12ea70ada38dff57ee02c5e, type: 3}
-  soundOff: {fileID: 0}
+  soundOff: {fileID: 21300000, guid: 2ca9816351593f4a5985e18fc31846ea, type: 3}
 --- !u!4 &1631094882 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8031791906385755851, guid: 184424c6a5b5d024a89806483c530c8b,
