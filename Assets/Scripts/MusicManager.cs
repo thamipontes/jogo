@@ -19,6 +19,7 @@ public class MusicManager : MonoBehaviour
 
     public static void playSound (string som)
     {
+      if(PlayerPrefs.GetInt("EfeitoSonoro")==0){
         switch (som)
         {
             case "coin1":
@@ -51,6 +52,7 @@ public class MusicManager : MonoBehaviour
                 _audioSource.volume = 1f;
                 break;
         }
+      }
     }
 
 

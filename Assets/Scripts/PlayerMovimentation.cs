@@ -94,7 +94,7 @@ namespace PartII {
 			if (Input.GetAxis("Jump") == 1.0f && !isJumping){
 				//[0,1] adicionando 1 no y indo pra cima
 				isJumping = true;
-				if(PlayerPrefs.GetInt("EfeitoSonoro")==1) audiosource.PlayOneShot(pulo);
+				if(PlayerPrefs.GetInt("EfeitoSonoro")==0) audiosource.PlayOneShot(pulo);
 				rigidBody2D.velocity = new Vector2(rigidBody2D.velocity.x, jumpSpeed);
 				animator.SetBool("taPulando", true);
 			}
@@ -150,7 +150,7 @@ namespace PartII {
 			if(!isJumping)
 			{
 				isJumping = true;
-				if(PlayerPrefs.GetInt("EfeitoSonoro")==1) audiosource.PlayOneShot(pulo);
+				if(PlayerPrefs.GetInt("EfeitoSonoro")==0) audiosource.PlayOneShot(pulo);
 				rigidBody2D.velocity = new Vector2(rigidBody2D.velocity.x, jumpSpeed);
 				animator.SetBool("taPulando", true);
 			}
@@ -162,7 +162,7 @@ namespace PartII {
 		{
 			// se audio não estiver tocando então toca audio
 			int prefs = PlayerPrefs.GetInt("EfeitoSonoro");
-			if(!audiosource.isPlaying && prefs == 1)
+			if(!audiosource.isPlaying && prefs == 0)
 			{
 				audiosource.PlayOneShot(passos);
 			}
