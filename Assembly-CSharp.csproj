@@ -53,6 +53,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\AtirarObjeto.cs" />
+     <Compile Include="Assets\Scripts\StartScene.cs" />
      <Compile Include="Assets\Scripts\UIFinal.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
      <Compile Include="Assets\Scripts\ConversationAda.cs" />
@@ -65,6 +66,7 @@
      <Compile Include="Assets\Scripts\Pulo.cs" />
      <Compile Include="Assets\Scripts\HUDControl.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
+     <Compile Include="Assets\Scripts\ManagerToggle.cs" />
      <Compile Include="Assets\Scripts\InimigoMovimentacao.cs" />
      <Compile Include="Assets\VarDialogue.cs" />
      <Compile Include="Assets\Scripts\Pena.cs" />
@@ -104,6 +106,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\FecharJogo.cs" />
+     <Compile Include="Assets\Scripts\ManagerRandomNumber.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
@@ -120,9 +123,8 @@
      <Compile Include="Assets\Scripts\SoundEffect.cs" />
      <Compile Include="Assets\Scripts\Coins.cs" />
      <Compile Include="Assets\Scripts\DontDestroySound.cs" />
-     <Compile Include="Assets\Scripts\StartScene.cs" />
-     <Compile Include="Assets\Scripts\ManagerRandomNumber.cs" />
-     <Compile Include="Assets\Scripts\ManagerToggle.cs" />
+     <Compile Include="Assets\Scripts\Cronometro.cs" />
+     <Compile Include="Assets\Scripts\Constante.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />

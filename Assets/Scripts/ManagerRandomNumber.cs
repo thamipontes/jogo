@@ -7,7 +7,7 @@ public class ManagerRandomNumber : MonoBehaviour
     public char[] operadores = {'+', '-', '*'};
     public int resultado;
 
-    private SelecionaOperador(int quantOperador){
+    private void SelecionaOperador(int quantOperador){
       
     }
 }
