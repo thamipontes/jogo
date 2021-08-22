@@ -2,14 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class ManagerRandomNumber : MonoBehaviour
 {
-    [SerializeField] Text[] sinaisCanvas = new Text[5];
+    [SerializeField] TextMeshProUGUI[] sinaisCanvas = new TextMeshProUGUI[5];
+    [SerializeField] ManagerToggle[] managerToggle = new ManagerToggle[5];
 
     private char[] operadores = {'+', '-'};
     private int resultado, estado = 1;
     private string sinal;
+    private bool tudoPressionado = false;
 
     void Start(){
         switch (estado){
@@ -19,12 +22,17 @@ public class ManagerRandomNumber : MonoBehaviour
                     sinaisCanvas[i].text = "";
                 }
                 sinaisCanvas[4].text = SelecionaValorResultado(0,2).ToString("0");
+                for(int a = 2; a < 5; a++)
+                    managerToggle[a].DesativaColuna();
                 break;
-        }        
+        }
     }
 
     void Update(){
-
+        tudoPressionado = !(managerToggle[0].isActive || managerToggle[1].isActive || managerToggle[2].isActive || managerToggle[3].isActive || managerToggle[4].isActive);
+        if(tudoPressionado){
+            ValidaResultado();
+        }
     }
 
     private void SelecionaOperador(int quantOperador){
@@ -34,7 +42,7 @@ public class ManagerRandomNumber : MonoBehaviour
     }
 
     public int SelecionaValorResultado(int numeroSinaiNeg, int numeroEspacos){
-        
+
         int valorMaximo = 5*(numeroEspacos - numeroSinaiNeg) - numeroSinaiNeg;
         int valorMinimo;
         if(numeroSinaiNeg == 0){
@@ -44,5 +52,10 @@ public class ManagerRandomNumber : MonoBehaviour
         }
 
         return Random.Range(valorMinimo, valorMaximo);
+    }
+
+    public bool ValidaResultado(){
+        int resultado = 0;
+        return true;
     }
 }
