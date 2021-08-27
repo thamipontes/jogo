@@ -37,4 +37,13 @@ public class ManagerToggle : MonoBehaviour
         }
     }
 
+    public void ReiniciaToggle(){
+        isActive = true;
+        numero.text = "0";
+        canPressToggle = 1;
+        for(int i = 0; i < toggle.Length; i++){
+            toggle[i].interactable = true;
+        }
+    }
+
 }
