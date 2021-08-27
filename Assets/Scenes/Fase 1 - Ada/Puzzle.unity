@@ -329,6 +329,7 @@ MonoBehaviour:
   - {fileID: 1024343938}
   - {fileID: 1182362921}
   managerToggle:
+  - {fileID: 1416306040}
   - {fileID: 2050080011}
   - {fileID: 2052879219}
   - {fileID: 333465553}
@@ -568,6 +569,8 @@ MonoBehaviour:
   - {fileID: 215707553}
   - {fileID: 2047777727}
   - {fileID: 142760566}
+  isActive: 1
+  numeroSelecionado: 0
 --- !u!114 &333709453 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4159508089994530291, guid: 554c48a1a5ad361daba1fea22ec9c8f3,
@@ -2825,6 +2828,8 @@ MonoBehaviour:
   - {fileID: 920898469}
   - {fileID: 207263460}
   - {fileID: 2013332504}
+  isActive: 1
+  numeroSelecionado: 0
 --- !u!114 &1474924116 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7682097687569760554, guid: 554c48a1a5ad361daba1fea22ec9c8f3,
@@ -4653,6 +4658,8 @@ MonoBehaviour:
   - {fileID: 1779483150}
   - {fileID: 980845995}
   - {fileID: 164146616}
+  isActive: 1
+  numeroSelecionado: 0
 --- !u!1001 &2029930992
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4967,6 +4974,8 @@ MonoBehaviour:
   - {fileID: 74404520}
   - {fileID: 333709453}
   - {fileID: 812377824}
+  isActive: 1
+  numeroSelecionado: 0
 --- !u!1 &2052879217
 GameObject:
   m_ObjectHideFlags: 0
@@ -5019,6 +5028,8 @@ MonoBehaviour:
   - {fileID: 1638259988}
   - {fileID: 495309282}
   - {fileID: 1354216252}
+  isActive: 1
+  numeroSelecionado: 0
 --- !u!114 &2070515909 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7682097687569760554, guid: 554c48a1a5ad361daba1fea22ec9c8f3,

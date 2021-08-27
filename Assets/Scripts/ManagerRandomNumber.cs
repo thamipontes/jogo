@@ -55,7 +55,21 @@ public class ManagerRandomNumber : MonoBehaviour
     }
 
     public bool ValidaResultado(){
-        int resultado = 0;
+        int resultado = managerToggle[0].numeroSelecionado;
+        for(int i = 0; i < 4; i++){
+            if(sinaisCanvas[i].text=="+"){
+                resultado += managerToggle[i+1].numeroSelecionado;
+            } else if(sinaisCanvas[i].text=="-"){
+                resultado -= managerToggle[i+1].numeroSelecionado;
+            } else if(sinaisCanvas[i].text=="*"){
+                resultado *= managerToggle[i+1].numeroSelecionado;
+            }
+        }
+        if(resultado==(int.Parse(sinaisCanvas[4].text))){
+            Debug.Log("acertou mizeraaaaaaaaa");
+        } else {
+            Debug.Log("errou lazarentoooooooo");
+        }
         return true;
     }
 }
