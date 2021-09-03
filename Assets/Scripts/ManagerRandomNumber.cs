@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+
 public class ManagerRandomNumber : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI[] sinaisCanvas = new TextMeshProUGUI[5];
@@ -11,32 +12,38 @@ public class ManagerRandomNumber : MonoBehaviour
 
     private char[] operadores = {'+', '-'};
     private int resultado, estado = 1;
-    private string sinal;
     private bool tudoPressionado = false;
     private bool resultadoCorreto;
+    private int sinaisNegativos = 0;
 
     void Start(){
         InicializaEstado();
     }
 
-    void Update(){
+    public void GerenciaLevel(){
+        Debug.Log("AAAAAAAAAA");
         tudoPressionado = !(managerToggle[0].isActive || managerToggle[1].isActive || managerToggle[2].isActive || managerToggle[3].isActive || managerToggle[4].isActive);
         if(tudoPressionado){
-            if(!ValidaResultado()){
+            if(ValidaResultado()){
+                estado++;
+            } else{
                 for(int i = 0; i < 5; i++){
                     managerToggle[i].ReiniciaToggle();
                 }
-            } else{
-                estado++;
             }
             InicializaEstado();
         }
     }
 
-    private void SelecionaOperador(int quantOperador){
+    private string SelecionaOperador(int quantOperador){
+        string sinal = "";
         if(estado < 4){
-            sinal = operadores[Random.Range(0,1)] + "";
+            sinal = operadores[Random.Range(0,2)] + "";
         }
+        if(sinal == "-"){
+            sinaisNegativos++;
+        }
+        return sinal;
     }
 
     public int SelecionaValorResultado(int numeroSinaiNeg, int numeroEspacos){
@@ -81,6 +88,17 @@ public class ManagerRandomNumber : MonoBehaviour
                 sinaisCanvas[4].text = SelecionaValorResultado(0,2).ToString("0");
                 for(int a = 2; a < 5; a++)
                     managerToggle[a].DesativaColuna();
+                break;
+            case 2:
+                sinaisCanvas[0].text = SelecionaOperador(1);
+                for(int i = 1; i < 4; i++){
+                    sinaisCanvas[i].text = "";
+                }
+                sinaisCanvas[4].text = SelecionaValorResultado(sinaisNegativos,2).ToString("0");
+                for(int a = 2; a < 5; a++)
+                {
+                    managerToggle[a].DesativaColuna();
+                }
                 break;
         }
     }

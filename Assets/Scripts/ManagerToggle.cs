@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class ManagerToggle : MonoBehaviour
+public class ManagerToggle : ManagerRandomNumber
 {
     public TextMeshProUGUI numero;
     public Toggle[] toggle = new Toggle[5];
@@ -13,7 +13,16 @@ public class ManagerToggle : MonoBehaviour
 
     private int canPressToggle = 1;
 
-    private void Update()
+    public void Start()
+    {
+        for(int i = 0; i < toggle.Length; i++)
+        {
+            toggle[i].onValueChanged.AddListener(delegate {PressionaToggle();});
+        }
+    }
+
+
+    private void PressionaToggle()
     {
         for(int j = 0; j < toggle.Length; j++){
             if(toggle[j].isOn == true && canPressToggle == 1) {
@@ -27,6 +36,7 @@ public class ManagerToggle : MonoBehaviour
                 isActive = false;
             }
         }
+        GerenciaLevel();
     }
 
     public void DesativaColuna(){
@@ -42,6 +52,7 @@ public class ManagerToggle : MonoBehaviour
         numero.text = "0";
         canPressToggle = 1;
         for(int i = 0; i < toggle.Length; i++){
+            toggle[i].isOn = false;
             toggle[i].interactable = true;
         }
     }
