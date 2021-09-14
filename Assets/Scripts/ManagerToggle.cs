@@ -36,7 +36,6 @@ public class ManagerToggle : ManagerRandomNumber
                 isActive = false;
             }
         }
-        GerenciaLevel();
     }
 
     public void DesativaColuna(){
