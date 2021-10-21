@@ -29,18 +29,17 @@ public class Cronometro : MonoBehaviour
         cronometro.text = tempoAtual.ToString("0");
         if (tempoAtual <= 10)
         {
-            cronometro.color = Color.magenta;
+            cronometro.color = Color.yellow;
             cronometro.fontSize = 35;
         }
 
         if (tempoAtual <= 5)
         {
-            cronometro.color = Color.green;
+            cronometro.color = Color.red;
             cronometro.fontSize = 40;
         }
         if (tempoAtual <= 0)
         {
-            cronometro.color = Color.red;
             cronometro.fontSize = 50;
             tempoAtual = 0;
             tempoAcabou = true;
