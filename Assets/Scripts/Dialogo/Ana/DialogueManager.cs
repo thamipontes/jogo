@@ -70,7 +70,6 @@ public class DialogueManager : MonoBehaviour
       MusicManager.playSound("close");
       instance.anim.SetBool("isOpen", false);
       instance.counter = 0;
-      return;
     }
     speakerName.text = currentConvo.GetLineByIndex(currentIndex).speaker.GetName();
 
@@ -97,7 +96,6 @@ public class DialogueManager : MonoBehaviour
     {
       instance.anim.SetBool("isOpen", false);
       instance.counter = 0;
-      return;
     }
 
     speakerName.text = currentConvo.GetLineByIndex(currentIndex).speaker.GetName();

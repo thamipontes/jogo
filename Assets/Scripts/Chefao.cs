@@ -1,23 +1,46 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Chefao : MonoBehaviour
 {
-    public DialogueManager _dialogueManager;
     public GameObject chefao;
-
-    private bool dialogoFechado = false;
-
-    void Start()
+    public Transform _positionChefao, cavaloPosition;
+    private Animator _anim;
+    public GameObject cavalo;
+    public float posX, posY, cavY;
+    [SerializeField] private PlatformMovement _movimentacao;
+    private void Awake()
     {
-        dialogoFechado = _dialogueManager.anim.GetBool("isOpen");
+        cavaloPosition = cavalo.GetComponent<Transform>();
+        _movimentacao = GetComponent<PlatformMovement>();
+
     }
 
-    void Update()
+
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if(!dialogoFechado) {
-            Instantiate(chefao, transform.position, transform.rotation);
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Instantiate(chefao, _positionChefao.transform.position, transform.rotation);
+            _anim = chefao.GetComponent<Animator>();
+            _anim.SetBool("parado", true);
+            transform.position = new Vector3(posX, posY, transform.position.z);
+            cavaloPosition.transform.position = new Vector3(posX, cavY, cavaloPosition.transform.position.z);
         }
+        
+        // StartCoroutine(fugirTime());
+        
     }
+    
+    // IEnumerator fugirTime()
+    // {
+    //     yield return new WaitForSecondsRealtime(5f);
+    //     Destroy(gameObject);
+    //     Destroy(cavalo);
+    //
+    // }
+    
+    
 }
