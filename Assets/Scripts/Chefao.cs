@@ -10,7 +10,6 @@ public class Chefao : MonoBehaviour
     private Animator _anim;
     public GameObject cavalo;
     public float posX, posY, cavY;
-    // [SerializeField] private PlatformMovement _movimentacao;
     private void Awake()
     {
         cavaloPosition = cavalo.GetComponent<Transform>();
@@ -28,19 +27,8 @@ public class Chefao : MonoBehaviour
             _anim.SetBool("parado", true);
             transform.position = new Vector3(posX, posY, transform.position.z);
             cavaloPosition.transform.position = new Vector3(posX, cavY, cavaloPosition.transform.position.z);
+
         }
-        
-        // StartCoroutine(fugirTime());
-        
     }
-    
-    // IEnumerator fugirTime()
-    // {
-    //     yield return new WaitForSecondsRealtime(5f);
-    //     Destroy(gameObject);
-    //     Destroy(cavalo);
-    //
-    // }
-    
     
 }
