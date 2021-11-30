@@ -9,12 +9,12 @@ public class DialogueManager : MonoBehaviour
 {
   public TextMeshProUGUI speakerName, dialogue, navButtonText;
   public Image speakerSprite;
+  public Animator anim;
 
   [SerializeField] PlayerMovimentation ameMoviment;
   private int currentIndex;
   private Conversation currentConvo;
   private static DialogueManager instance;
-  private Animator anim;
   private Coroutine typing;
 
   public int counter = 0;
