@@ -4925,7 +4925,8 @@ GameObject:
   - component: {fileID: 3602000666897017416}
   - component: {fileID: 1063798739272523588}
   - component: {fileID: 2013082549600610110}
-  m_Layer: 0
+  - component: {fileID: 3208240958444434408}
+  m_Layer: 7
   m_Name: chefao
   m_TagString: Water
   m_Icon: {fileID: 0}
@@ -4940,7 +4941,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4263214110446789975}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 27.952978, y: 1.2920206, z: -1.2953305}
+  m_LocalPosition: {x: 27.952978, y: 1.389, z: -1.2953305}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4487352388463673712}
@@ -5031,7 +5032,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0105342865, y: -0.059211627}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -5042,7 +5043,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.32}
+  m_Size: {x: 0.26522064, y: 0.20157674}
   m_EdgeRadius: 0
 --- !u!50 &1063798739272523588
 Rigidbody2D:
@@ -5080,3 +5081,17 @@ MonoBehaviour:
   start: {x: 28.474, y: 0.888}
   end: {x: 26.728, y: 0.88}
   speed: 0.5
+--- !u!114 &3208240958444434408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4263214110446789975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05671a6ae442e393cb18cdf18cae52e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1703671553979358774}
+  vidaChefao: 10

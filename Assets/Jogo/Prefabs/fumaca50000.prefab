@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 4902077441144938489}
   - component: {fileID: 2667986877235661724}
   - component: {fileID: 3256113834691402748}
-  - component: {fileID: 4424320486534832048}
   - component: {fileID: 1374367191865857612}
+  - component: {fileID: 8938657779776264852}
   m_Layer: 0
   m_Name: fumaca50000
   m_TagString: Untagged
@@ -106,19 +106,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &4424320486534832048
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 238509095823425808}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cfb7a53f4ea73c5aba63cc9192ab72b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocityFumaca: 1
 --- !u!61 &1374367191865857612
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -145,3 +132,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.32}
   m_EdgeRadius: 0
+--- !u!114 &8938657779776264852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238509095823425808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b770cbfe5ec2eed1fa2d837575acb939, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distancia: 0.5
+  tempoDeVida: 3
+  layerInimigo:
+    serializedVersion: 2
+    m_Bits: 128

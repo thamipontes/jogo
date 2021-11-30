@@ -27,6 +27,7 @@ public class Chefao : MonoBehaviour
             _anim.SetBool("parado", true);
             transform.position = new Vector3(posX, posY, transform.position.z);
             cavaloPosition.transform.position = new Vector3(posX, cavY, cavaloPosition.transform.position.z);
+            Destroy(gameObject.GetComponent<BoxCollider2D>());
 
         }
     }

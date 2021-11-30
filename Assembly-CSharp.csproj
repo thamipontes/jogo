@@ -129,6 +129,9 @@
      <Compile Include="Assets\Scripts\Coins.cs" />
      <Compile Include="Assets\Scripts\DontDestroySound.cs" />
      <Compile Include="Assets\Scripts\Projectile.cs" />
+     <Compile Include="Assets\Scripts\ChefaoHealth.cs" />
+     <Compile Include="Assets\Scripts\PlayerArma.cs" />
+     <Compile Include="Assets\Scripts\Atirar.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
