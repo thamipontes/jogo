@@ -126,6 +126,7 @@
      <Compile Include="Assets\Scripts\Coins.cs" />
      <Compile Include="Assets\Scripts\DontDestroySound.cs" />
      <Compile Include="Assets\Scripts\Chefao.cs" />
+     <Compile Include="Assets\Scripts\MudaScale.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
@@ -367,13 +368,13 @@
  <HintPath>/home/thamires/Unity/Hub/Editor/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>/home/thamires/Documentos/jogo-meninas/jogo/Library/PackageCache/com.unity.analytics@3.6.11/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/PackageCache/com.unity.analytics@3.6.11/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Editor">
- <HintPath>/home/thamires/Documentos/jogo-meninas/jogo/Library/PackageCache/com.unity.analytics@3.6.11/Unity.Analytics.Editor.dll</HintPath>
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/PackageCache/com.unity.analytics@3.6.11/Unity.Analytics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Tracker">
- <HintPath>/home/thamires/Documentos/jogo-meninas/jogo/Library/PackageCache/com.unity.analytics@3.6.11/Unity.Analytics.Tracker.dll</HintPath>
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/PackageCache/com.unity.analytics@3.6.11/Unity.Analytics.Tracker.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>/home/thamires/Unity/Hub/Editor/2020.3.19f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -721,91 +722,91 @@
  <HintPath>/home/thamires/Unity/Hub/Editor/2020.3.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll</HintPath>
  </Reference>
  <Reference Include="Purchasing.Common">
- <HintPath>/home/thamires/Documentos/jogo-meninas/jogo/Library/ScriptAssemblies/Purchasing.Common.dll</HintPath>
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/ScriptAssemblies/Purchasing.Common.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>/home/thamires/Documentos/jogo-meninas/jogo/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Tilemap.Editor">
- <HintPath>/home/thamires/Documentos/jogo-meninas/jogo/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Purchasing">
- <HintPath>/home/thamires/Documentos/jogo-meninas/jogo/Library/ScriptAssemblies/UnityEngine.Purchasing.dll</HintPath>
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/ScriptAssemblies/UnityEngine.Purchasing.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>/home/thamires/Documentos/jogo-meninas/jogo/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>/home/thamires/Documentos/jogo-meninas/jogo/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Sysroot.Linux_x86_64">
- <HintPath>/home/thamires/Documentos/jogo-meninas/jogo/Library/ScriptAssemblies/Unity.Sysroot.Linux_x86_64.dll</HintPath>
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/ScriptAssemblies/Unity.Sysroot.Linux_x86_64.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>/home/thamires/Documentos/jogo-meninas/jogo/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>/home/thamires/Documentos/jogo-meninas/jogo/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Purchasing.SecurityStub">
- <HintPath>/home/thamires/Documentos/jogo-meninas/jogo/Library/ScriptAssemblies/UnityEngine.Purchasing.SecurityStub.dll</HintPath>
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/ScriptAssemblies/UnityEngine.Purchasing.SecurityStub.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Advertisements">
- <HintPath>/home/thamires/Documentos/jogo-meninas/jogo/Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>/home/thamires/Documentos/jogo-meninas/jogo/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Toolchain.Linux-x86_64">
- <HintPath>/home/thamires/Documentos/jogo-meninas/jogo/Library/ScriptAssemblies/Unity.Toolchain.Linux-x86_64.dll</HintPath>
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/ScriptAssemblies/Unity.Toolchain.Linux-x86_64.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>/home/thamires/Documentos/jogo-meninas/jogo/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PlasticSCM.Editor">
- <HintPath>/home/thamires/Documentos/jogo-meninas/jogo/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>/home/thamires/Documentos/jogo-meninas/jogo/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Analytics">
- <HintPath>/home/thamires/Documentos/jogo-meninas/jogo/Library/ScriptAssemblies/Analytics.dll</HintPath>
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/ScriptAssemblies/Analytics.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>/home/thamires/Documentos/jogo-meninas/jogo/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.DeviceSimulator.Tests.Common">
- <HintPath>/home/thamires/Documentos/jogo-meninas/jogo/Library/ScriptAssemblies/Unity.DeviceSimulator.Tests.Common.dll</HintPath>
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/ScriptAssemblies/Unity.DeviceSimulator.Tests.Common.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>/home/thamires/Documentos/jogo-meninas/jogo/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Purchasing.SecurityCore">
- <HintPath>/home/thamires/Documentos/jogo-meninas/jogo/Library/ScriptAssemblies/UnityEngine.Purchasing.SecurityCore.dll</HintPath>
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/ScriptAssemblies/UnityEngine.Purchasing.SecurityCore.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Purchasing.Codeless">
- <HintPath>/home/thamires/Documentos/jogo-meninas/jogo/Library/ScriptAssemblies/UnityEngine.Purchasing.Codeless.dll</HintPath>
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/ScriptAssemblies/UnityEngine.Purchasing.Codeless.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>/home/thamires/Documentos/jogo-meninas/jogo/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Purchasing.Stores">
- <HintPath>/home/thamires/Documentos/jogo-meninas/jogo/Library/ScriptAssemblies/UnityEngine.Purchasing.Stores.dll</HintPath>
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/ScriptAssemblies/UnityEngine.Purchasing.Stores.dll</HintPath>
  </Reference>
  <Reference Include="Unity.DeviceSimulator.Editor">
- <HintPath>/home/thamires/Documentos/jogo-meninas/jogo/Library/ScriptAssemblies/Unity.DeviceSimulator.Editor.dll</HintPath>
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/ScriptAssemblies/Unity.DeviceSimulator.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Monetization">
- <HintPath>/home/thamires/Documentos/jogo-meninas/jogo/Library/ScriptAssemblies/UnityEngine.Monetization.dll</HintPath>
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/ScriptAssemblies/UnityEngine.Monetization.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Purchasing">
- <HintPath>/home/thamires/Documentos/jogo-meninas/jogo/Library/ScriptAssemblies/UnityEditor.Purchasing.dll</HintPath>
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/ScriptAssemblies/UnityEditor.Purchasing.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Advertisements.Editor">
- <HintPath>/home/thamires/Documentos/jogo-meninas/jogo/Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.dll</HintPath>
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.SysrootPackage.Editor">
- <HintPath>/home/thamires/Documentos/jogo-meninas/jogo/Library/ScriptAssemblies/Unity.SysrootPackage.Editor.dll</HintPath>
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/ScriptAssemblies/Unity.SysrootPackage.Editor.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

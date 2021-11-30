@@ -10,11 +10,11 @@ public class Chefao : MonoBehaviour
     private Animator _anim;
     public GameObject cavalo;
     public float posX, posY, cavY;
-    [SerializeField] private PlatformMovement _movimentacao;
+    // [SerializeField] private PlatformMovement _movimentacao;
     private void Awake()
     {
         cavaloPosition = cavalo.GetComponent<Transform>();
-        _movimentacao = GetComponent<PlatformMovement>();
+        // _movimentacao = GetComponent<PlatformMovement>();
 
     }
 
