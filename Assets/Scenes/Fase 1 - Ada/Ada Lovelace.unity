@@ -1538,7 +1538,7 @@ GameObject:
   - component: {fileID: 122671342}
   - component: {fileID: 122671343}
   - component: {fileID: 122671344}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ame_4
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -20206,7 +20206,7 @@ GameObject:
   m_Layer: 0
   m_Name: Chefao
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
