@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Chefao
   m_EditorClassIdentifier: 
   speakerName: Ventoinha
-  speakerSprite: {fileID: 21300000, guid: 1ee2a2d85363696c2aa5558aa090fe45, type: 3}
+  speakerSprite: {fileID: 21300000, guid: 300dfa182e631ca2ba019fd6bb77b977, type: 3}

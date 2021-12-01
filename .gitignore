@@ -44,13 +44,6 @@ Assets/Data/Metagame/Items/Editor/*.csv.meta
 # Visual Studio cache directory
 .vs/
 .history
-.vscode/*
-*.vscode
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-*.code-workspace
 
 # Gradle cache directory
 .gradle/
@@ -77,7 +70,6 @@ ExportedObj/
 *.pidb.meta
 *.pdb.meta
 *.mdb.meta
-*.meta
 
 # Unity3D generated file on crash reports
 sysinfo.txt
@@ -103,10 +95,3 @@ Assets/AmplifyShaderEditor.meta
 Assets/_TerrainAutoUpgrade
 Assets/_TerrainAutoUpgrade.meta
 Assets/FR2_Cache.asset
-
-
-
-Assembly-CSharp.csproj
-Packages/manifest.json
-Packages/packages-lock.json
-obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache
