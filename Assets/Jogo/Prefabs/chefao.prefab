@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3049886600449488296}
   - component: {fileID: 6619188149667551983}
   - component: {fileID: 7671460756516669114}
-  - component: {fileID: 540487344241722212}
+  - component: {fileID: 3165143071487015262}
   m_Layer: 6
   m_Name: Particle System
   m_TagString: Untagged
@@ -4806,7 +4806,7 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!114 &540487344241722212
+--- !u!114 &3165143071487015262
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4815,11 +4815,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2116943239640656121}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 238fe613d2ab05f06a13dadb9f2b2a21, type: 3}
+  m_Script: {fileID: 11500000, guid: 8df7963d8941badc08d875b59160c074, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeThrowPena: 2
-  time: 2
 --- !u!1 &2451975381642361614
 GameObject:
   m_ObjectHideFlags: 0
@@ -4861,7 +4859,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4487352388463673712}
   - component: {fileID: 8907127691344994176}
-  - component: {fileID: 4663176850510249220}
+  - component: {fileID: 4038015691730762868}
   m_Layer: 0
   m_Name: Collider Circulo
   m_TagString: Untagged
@@ -4899,7 +4897,7 @@ CircleCollider2D:
   m_Offset: {x: -0.29092503, y: 0}
   serializedVersion: 2
   m_Radius: 1.3008566
---- !u!114 &4663176850510249220
+--- !u!114 &4038015691730762868
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4908,7 +4906,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3459814610184033298}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 727431d50fd84be17ba1d4d5e68aa5f2, type: 3}
+  m_Script: {fileID: 11500000, guid: b5129a2a253394afc8fd7de329f89d96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &4263214110446789975
@@ -4925,7 +4923,7 @@ GameObject:
   - component: {fileID: 3602000666897017416}
   - component: {fileID: 1063798739272523588}
   - component: {fileID: 2013082549600610110}
-  - component: {fileID: 3208240958444434408}
+  - component: {fileID: 574040705024729368}
   m_Layer: 7
   m_Name: chefao
   m_TagString: Water
@@ -5081,7 +5079,7 @@ MonoBehaviour:
   start: {x: 28.474, y: 0.888}
   end: {x: 26.728, y: 0.88}
   speed: 0.5
---- !u!114 &3208240958444434408
+--- !u!114 &574040705024729368
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5090,7 +5088,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4263214110446789975}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05671a6ae442e393cb18cdf18cae52e0, type: 3}
+  m_Script: {fileID: 11500000, guid: 77b66fc12eeafc52eb9579e7a4e5bad0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1703671553979358774}

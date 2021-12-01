@@ -1878,16 +1878,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 122671333}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4063be5cd610572f3baebdd7ff898f62, type: 3}
+  m_Script: {fileID: 11500000, guid: 72ef2c54410e9c73987d6cbf438d6a6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectil: {fileID: 238509095823425808, guid: a6956ef6396fe99ce9c662f1a004a621,
+  projectil: {fileID: 238509095823425808, guid: 4c1a706a4ef4600469245d668ad605ed,
     type: 3}
   positionProjectil: {fileID: 60099267}
   velocidadeProjetil: 2
   timePassado: 2
   tempoEspera: 1
-  isShooting: 0
 --- !u!1001 &141321264
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3523,7 +3522,7 @@ GameObject:
   - component: {fileID: 265655582}
   - component: {fileID: 265655580}
   - component: {fileID: 265655579}
-  - component: {fileID: 265655584}
+  - component: {fileID: 265655583}
   - component: {fileID: 265655581}
   m_Layer: 0
   m_Name: Ada16Pixes
@@ -3622,7 +3621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f5d30b931cf41c28cd13d16865b9cdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  convo: {fileID: 11400000, guid: 68ad21a6035b57e7b8ab0fd5a89938e7, type: 2}
+  convo: {fileID: 11400000, guid: b08d19288a8b1f135ae2e51b3828e541, type: 2}
   menuManager: {fileID: 403681904}
 --- !u!114 &265655581
 MonoBehaviour:
@@ -3633,7 +3632,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 265655576}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61adbba016884f63828e7c5f8eff9a0e, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a9a3c60aa2d64ef8a9987f3ce0ee384, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   otherGameObject: {fileID: 1719423078}
@@ -3663,7 +3662,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.733, y: 0.3142774}
   m_EdgeRadius: 0
---- !u!114 &265655584
+--- !u!114 &265655583
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3672,10 +3671,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 265655576}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67ef7c6783d94da484caba4554a71bc9, type: 3}
+  m_Script: {fileID: 11500000, guid: 10937c4fdcea67c859853c1416f4431d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chefao: {fileID: 4263214110446789975, guid: c57d505d5e93cb5f39e3052a7c046519, type: 3}
+  chefao: {fileID: 4263214110446789975, guid: 0d7e9271df5f841a280e3f9babec84ef, type: 3}
   _positionChefao: {fileID: 1345331585}
   cavaloPosition: {fileID: 1719423080}
   cavalo: {fileID: 1719423078}
@@ -4855,10 +4854,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b9c2df61cfb1dca3a514b3a4454ed22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speakerName: {fileID: 0}
-  dialogue: {fileID: 0}
-  navButtonText: {fileID: 0}
-  speakerSprite: {fileID: 0}
+  speakerName: {fileID: 1845545429}
+  dialogue: {fileID: 365801829}
+  navButtonText: {fileID: 1728227387}
+  speakerSprite: {fileID: 1871972235}
   anim: {fileID: 0}
   counter: 0
 --- !u!1 &403681899 stripped
@@ -15169,7 +15168,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -250.00006, y: 14.9999695}
+  m_AnchoredPosition: {x: -250.00006, y: 15}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &810034789
@@ -20496,7 +20495,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1345331583}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 28.561, y: 0.888, z: 0}
+  m_LocalPosition: {x: 28.561, y: 1.848, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -34816,7 +34815,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1719423078}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61adbba016884f63828e7c5f8eff9a0e, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a9a3c60aa2d64ef8a9987f3ce0ee384, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   otherGameObject: {fileID: 265655576}

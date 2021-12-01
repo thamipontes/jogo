@@ -12,10 +12,6 @@ public class Projectile : MonoBehaviour
         _particleSystem = GetComponent<ParticleSystem>();
     }
     
-
-    public float timeThrowPena = 6f;
-
-    public float time = 2f;
     
     void Update()
     {
