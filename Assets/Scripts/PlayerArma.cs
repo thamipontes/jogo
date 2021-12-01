@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,6 +10,8 @@ public class PlayerArma : MonoBehaviour
     public float tempoDeVida;
 
     public LayerMask layerInimigo;
+    
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +24,7 @@ public class PlayerArma : MonoBehaviour
         RaycastHit2D bateu = Physics2D.Raycast(transform.position, transform.right, distancia, layerInimigo);
         if (bateu.collider != null)
         {
-            if (bateu.collider.CompareTag("chefao"))
+            if (bateu.collider.CompareTag("Water"))
             {
                 bateu.collider.GetComponent<ChefaoHealth>().Damage();
             }

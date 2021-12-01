@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using PartII;
 using UnityEngine;
 
@@ -11,20 +8,37 @@ public class Atirar : MonoBehaviour
     public Transform positionProjectil;
 
     public float velocidadeProjetil;
-    
+
+    public float timePassado;
+    public float tempoEspera;
+
+    private void Update()
+    {
+        timePassado += Time.deltaTime;
+    }
+
+    public void Dispara()
+    {
+        if (timePassado >= tempoEspera)
+        {
+            AtirarProjetil();
+            timePassado = 0;
+        }
+    }
 
     public void AtirarProjetil()
     {
-        Instantiate(projectil, positionProjectil.transform.position, transform.rotation);
-        
-        bool moveRight = gameObject.GetComponent<PlayerMovimentation>().moveRight;
-        if (moveRight)
+        GameObject projetil = Instantiate(projectil, positionProjectil.transform.position, transform.rotation);
+
+        Vector3 moveRight = gameObject.GetComponent<PlayerMovimentation>().transform.localScale;
+
+        if (moveRight.x == 1)
         {
-            projectil.GetComponent<Rigidbody2D>().velocity = new Vector2(velocidadeProjetil,0);
+            projetil.GetComponent<Rigidbody2D>().velocity = new Vector2(velocidadeProjetil, 0);
         }
         else
         {
-            projectil.GetComponent<Rigidbody2D>().velocity = new Vector2(-1*velocidadeProjetil,0);
+            projetil.GetComponent<Rigidbody2D>().velocity = new Vector2(-velocidadeProjetil, 0);
         }
     }
 }
