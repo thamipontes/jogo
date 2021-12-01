@@ -18,3 +18,5 @@ MonoBehaviour:
       o pr\xF3ximo est\xE1gio da aventura!"
   - speaker: {fileID: 11400000, guid: 874244cb71fc154b1bce32e5f9e08493, type: 2}
     dialogue: "Voc\xEA est\xE1 pronta?"
+  - speaker: {fileID: 11400000, guid: f08be701e6ccd561ba66992b0d6e405d, type: 2}
+    dialogue: Santo compilador! Claro que estou!!!

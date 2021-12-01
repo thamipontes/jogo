@@ -42,7 +42,7 @@ public class Coins : MonoBehaviour
          */
         if (other.gameObject.CompareTag("Moeda"))
         {
-            
+
             coins++;
             CoinText.text = "" + coins;
             Destroy(other.gameObject);
@@ -50,11 +50,5 @@ public class Coins : MonoBehaviour
             MusicManager.playSound("coin1");
         }
 
-        //Se quantidade de moedas for igual a 53, chama-se um dialogo
-        if (coins == 53 && n == 0)
-        {
-            teste.StartConvo();
-            n++;
-        }
     }
 }

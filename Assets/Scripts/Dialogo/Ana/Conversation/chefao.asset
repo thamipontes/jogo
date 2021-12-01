@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c1e90f9b7b49eb8a5fc94eb49ab1b2, type: 3}
+  m_Name: chefao
+  m_EditorClassIdentifier: 
+  allLines:
+  - speaker: {fileID: 11400000, guid: 381530813de9b84a1a3a4e4e4ef6e440, type: 2}
+    dialogue: "Arrrrrrrgggg, n\xE3o achem que v\xE3o escapar f\xE1cil daqui!! "
+  - speaker: {fileID: 11400000, guid: 381530813de9b84a1a3a4e4e4ef6e440, type: 2}
+    dialogue: "Quero ver voc\xEA me derrotar! "
+  - speaker: {fileID: 11400000, guid: 874244cb71fc154b1bce32e5f9e08493, type: 2}
+    dialogue: "Eu acredito em voc\xEA, Tati! Nos vemos no final da batalha!"
+  - speaker: {fileID: 11400000, guid: 863d7c718e6cca3f09e103ab76e21efe, type: 2}
+    dialogue: "Sempre o trabalhador n\xE3o tendo um dia de paz!"

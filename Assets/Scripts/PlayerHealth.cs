@@ -28,7 +28,6 @@ public class PlayerHealth : MonoBehaviour
       //if(collision.gameObject.tag == "Water")
       if(other.gameObject.CompareTag("Water"))
       {
-        Debug.Log("Colider");
         Damage();
       }
 
