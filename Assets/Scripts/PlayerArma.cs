@@ -27,6 +27,7 @@ public class PlayerArma : MonoBehaviour
             if (bateu.collider.CompareTag("Water"))
             {
                 bateu.collider.GetComponent<ChefaoHealth>().Damage();
+                Invoke("DestruirProjetil", 0.5f);
             }
         }
     }
