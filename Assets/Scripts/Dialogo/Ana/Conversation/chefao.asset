@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: chefao
   m_EditorClassIdentifier: 
   allLines:
-  - speaker: {fileID: 11400000, guid: 381530813de9b84a1a3a4e4e4ef6e440, type: 2}
+  - speaker: {fileID: 11400000, guid: 735927feb6bfcf7499c2150dd0d2e8ba, type: 2}
     dialogue: "Arrrrrrrgggg, n\xE3o achem que v\xE3o escapar f\xE1cil daqui!! "
-  - speaker: {fileID: 11400000, guid: 381530813de9b84a1a3a4e4e4ef6e440, type: 2}
+  - speaker: {fileID: 11400000, guid: 735927feb6bfcf7499c2150dd0d2e8ba, type: 2}
     dialogue: "Quero ver voc\xEA me derrotar! "
   - speaker: {fileID: 11400000, guid: 874244cb71fc154b1bce32e5f9e08493, type: 2}
     dialogue: "Eu acredito em voc\xEA, Tati! Nos vemos no final da batalha!"

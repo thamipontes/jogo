@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465785, g: 0.49641252, b: 0.574817, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1878,10 +1878,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 122671333}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72ef2c54410e9c73987d6cbf438d6a6a, type: 3}
+  m_Script: {fileID: 11500000, guid: f5a0c50cf508abd408392dc4c4c5d62c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectil: {fileID: 238509095823425808, guid: 4c1a706a4ef4600469245d668ad605ed,
+  projectil: {fileID: 238509095823425808, guid: ed8917e8c4b28a748abe7caece464000,
     type: 3}
   positionProjectil: {fileID: 60099267}
   velocidadeProjetil: 2
@@ -3621,7 +3621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f5d30b931cf41c28cd13d16865b9cdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  convo: {fileID: 11400000, guid: b08d19288a8b1f135ae2e51b3828e541, type: 2}
+  convo: {fileID: 0}
   menuManager: {fileID: 403681904}
 --- !u!114 &265655581
 MonoBehaviour:
@@ -3632,7 +3632,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 265655576}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a9a3c60aa2d64ef8a9987f3ce0ee384, type: 3}
+  m_Script: {fileID: 11500000, guid: ab2a7936bd1a4a9429560301080e0df9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   otherGameObject: {fileID: 1719423078}
@@ -3671,10 +3671,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 265655576}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10937c4fdcea67c859853c1416f4431d, type: 3}
+  m_Script: {fileID: 11500000, guid: 201a3d1f83a39434683be5ad0e749d76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chefao: {fileID: 4263214110446789975, guid: 0d7e9271df5f841a280e3f9babec84ef, type: 3}
+  chefao: {fileID: 4263214110446789975, guid: 9bbfa55822726bd489e9f36ea0265d79, type: 3}
   _positionChefao: {fileID: 1345331585}
   cavaloPosition: {fileID: 1719423080}
   cavalo: {fileID: 1719423078}
@@ -34815,7 +34815,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1719423078}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a9a3c60aa2d64ef8a9987f3ce0ee384, type: 3}
+  m_Script: {fileID: 11500000, guid: ab2a7936bd1a4a9429560301080e0df9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   otherGameObject: {fileID: 265655576}
