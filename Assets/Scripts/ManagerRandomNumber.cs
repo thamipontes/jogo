@@ -4,13 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-
 public class ManagerRandomNumber : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI[] sinaisCanvas = new TextMeshProUGUI[5];
     [SerializeField] ManagerToggle[] managerToggle = new ManagerToggle[5];
 
-    private char[] operadores = {'+', '-'};
+    public int resultadoEtapa4, resultadoEtapa5;
+
+    private char[] operadores = {'+', '-', '*'};
     private int resultado, estado = 1;
     private bool tudoPressionado = false;
     private bool resultadoCorreto;
@@ -20,22 +21,39 @@ public class ManagerRandomNumber : MonoBehaviour
         InicializaEstado();
     }
 
-    public void GerenciaLevel(){
-        Debug.Log("AAAAAAAAAA");
+    void Update(){
         tudoPressionado = !(managerToggle[0].isActive || managerToggle[1].isActive || managerToggle[2].isActive || managerToggle[3].isActive || managerToggle[4].isActive);
-        if(tudoPressionado){
-            if(ValidaResultado()){
-                estado++;
-            } else{
-                for(int i = 0; i < 5; i++){
-                    managerToggle[i].ReiniciaToggle();
-                }
-            }
-            InicializaEstado();
+        if(tudoPressionado) {
+            Time.timeScale = 0;
+            GerenciaLevel();
+            Time.timeScale = 0.5f;
+            tudoPressionado = false;
         }
+        Debug.Log(estado);
     }
 
-    private string SelecionaOperador(int quantOperador){
+    public void GerenciaLevel(){
+        Debug.Log("AAAAAAAAAA");
+
+        if(ValidaResultado()){
+            estado++;
+            if(estado == 6) {
+
+                string scene = "Ada Lovelace";
+                GoToScene go = new GoToScene();
+                go.ChangeScene(scene);
+            }
+        }
+
+        for(int i = 0; i < 5; i++){
+            managerToggle[i].ReiniciaToggle();
+        }
+
+        InicializaEstado();
+
+    }
+
+    private string SelecionaOperador(){
         string sinal = "";
         if(estado < 4){
             sinal = operadores[Random.Range(0,2)] + "";
@@ -61,15 +79,29 @@ public class ManagerRandomNumber : MonoBehaviour
 
     public bool ValidaResultado(){
         int resultado = managerToggle[0].numeroSelecionado;
-        for(int i = 0; i < 4; i++){
-            if(sinaisCanvas[i].text=="+"){
-                resultado += managerToggle[i+1].numeroSelecionado;
-            } else if(sinaisCanvas[i].text=="-"){
-                resultado -= managerToggle[i+1].numeroSelecionado;
-            } else if(sinaisCanvas[i].text=="*"){
-                resultado *= managerToggle[i+1].numeroSelecionado;
+        if(estado < 4){
+            for(int i = 0; i < 4; i++){
+                if(sinaisCanvas[i].text=="+"){
+                    resultado += managerToggle[i+1].numeroSelecionado;
+                } else if(sinaisCanvas[i].text=="-"){
+                    resultado -= managerToggle[i+1].numeroSelecionado;
+                } else if(sinaisCanvas[i].text=="*"){
+                    resultado *= managerToggle[i+1].numeroSelecionado;
+                }
             }
+        } else if(estado == 4){
+            resultado = managerToggle[0].numeroSelecionado
+                        + managerToggle[1].numeroSelecionado
+                        - managerToggle[2].numeroSelecionado
+                        * managerToggle[3].numeroSelecionado;
+        } else {
+            resultado = managerToggle[0].numeroSelecionado
+                        + managerToggle[1].numeroSelecionado
+                        - (managerToggle[2].numeroSelecionado
+                        * managerToggle[3].numeroSelecionado)
+                        + managerToggle[4].numeroSelecionado;
         }
+
         if(resultado==(int.Parse(sinaisCanvas[4].text))){
             return true;
         } else {
@@ -90,7 +122,9 @@ public class ManagerRandomNumber : MonoBehaviour
                     managerToggle[a].DesativaColuna();
                 break;
             case 2:
-                sinaisCanvas[0].text = SelecionaOperador(1);
+                sinaisNegativos = 0;
+                sinaisCanvas[0].text = SelecionaOperador();
+
                 for(int i = 1; i < 4; i++){
                     sinaisCanvas[i].text = "";
                 }
@@ -99,6 +133,32 @@ public class ManagerRandomNumber : MonoBehaviour
                 {
                     managerToggle[a].DesativaColuna();
                 }
+                break;
+            case 3:
+                sinaisNegativos = 0;
+                sinaisCanvas[0].text = SelecionaOperador();
+                sinaisCanvas[1].text = SelecionaOperador();
+                sinaisCanvas[2].text = SelecionaOperador();
+                sinaisCanvas[3].text = "";
+                sinaisCanvas[4].text = SelecionaValorResultado(sinaisNegativos,4).ToString("0");
+
+                managerToggle[4].DesativaColuna();
+                break;
+            case 4:
+                sinaisCanvas[0].text = "+";
+                sinaisCanvas[1].text = "-";
+                sinaisCanvas[2].text = "*";
+                sinaisCanvas[3].text = "";
+                sinaisCanvas[4].text = resultadoEtapa4 + "";
+
+                managerToggle[4].DesativaColuna();
+                break;
+            case 5:
+                sinaisCanvas[0].text = "+";
+                sinaisCanvas[1].text = "-";
+                sinaisCanvas[2].text = "*";
+                sinaisCanvas[3].text = "+";
+                sinaisCanvas[4].text = resultadoEtapa5 + "";
                 break;
         }
     }
