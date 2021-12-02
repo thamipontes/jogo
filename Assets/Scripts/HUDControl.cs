@@ -112,10 +112,10 @@ public class HUDControl : MonoBehaviour
           coracao.GetComponent<Image>().sprite = sprite[9];
           break;
 
-        default:
-          coracao.GetComponent<Image>().sprite = sprite[10];
-          gameover.gameObject.SetActive(true);
-          break;
+        // default:
+        //   coracao.GetComponent<Image>().sprite = sprite[10];
+        //   gameover.gameObject.SetActive(true);
+        //   break;
       }
     }
 

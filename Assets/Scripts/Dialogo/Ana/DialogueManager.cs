@@ -9,12 +9,12 @@ public class DialogueManager : MonoBehaviour
 {
   public TextMeshProUGUI speakerName, dialogue, navButtonText;
   public Image speakerSprite;
+  public Animator anim;
 
-  [SerializeField] PlayerMovimentation ameMoviment;
+  // [SerializeField] PlayerMovimentation ameMoviment;
   private int currentIndex;
   private Conversation currentConvo;
   private static DialogueManager instance;
-  private Animator anim;
   private Coroutine typing;
 
   public int counter = 0;
@@ -30,15 +30,18 @@ public class DialogueManager : MonoBehaviour
     else{
       Destroy(gameObject);
     }
+
   }
 
   public static void StartConversation(Conversation convo)
   {
     // play "open" audio
     MusicManager.playSound("open");
-    instance.anim.SetBool("isOpen", true);
-    instance.ameMoviment.MoveRightFalse();
-    instance.ameMoviment.MoveLeftFalse();
+    // instance.anim.SetBool("isOpen", true);
+    var child = instance.transform.GetChild(0);
+    child.gameObject.SetActive(true);
+    // instance.ameMoviment.MoveRightFalse();
+    // instance.ameMoviment.MoveLeftFalse();
     instance.currentIndex = 0;
     instance.currentConvo = convo;
     instance.speakerName.text = "";
@@ -68,15 +71,19 @@ public class DialogueManager : MonoBehaviour
     {
       // play "close" audio
       MusicManager.playSound("close");
-      instance.anim.SetBool("isOpen", false);
+      // instance.anim.SetBool("isOpen", false);
+      var child = instance.transform.GetChild(0);
+      child.gameObject.SetActive(false);
       instance.counter = 0;
-      return;
+      Time.timeScale = 1;
     }
     speakerName.text = currentConvo.GetLineByIndex(currentIndex).speaker.GetName();
 
     StopAllCoroutines();
     instance.StartCoroutine(TypeText(currentConvo.GetLineByIndex(currentIndex).dialogue));
     speakerSprite.sprite = currentConvo.GetLineByIndex(currentIndex).speaker.GetSprite();
+    Time.timeScale = 0;
+
   }
 
   private IEnumerator TypeText(string text)
@@ -95,9 +102,11 @@ public class DialogueManager : MonoBehaviour
   {
     if(currentIndex > currentConvo.GetLength())
     {
-      instance.anim.SetBool("isOpen", false);
+      // instance.anim.SetBool("isOpen", false);
+      var child = instance.transform.GetChild(0);
+      child.gameObject.SetActive(false);
       instance.counter = 0;
-      return;
+      Time.timeScale = 1;
     }
 
     speakerName.text = currentConvo.GetLineByIndex(currentIndex).speaker.GetName();
@@ -105,13 +114,18 @@ public class DialogueManager : MonoBehaviour
     speakerSprite.sprite = currentConvo.GetLineByIndex(currentIndex).speaker.GetSprite();
     currentIndex++;
     instance.counter = 0;
+    Time.timeScale = 0;
   }
 
   public void CloseDialogue()
   {
     // play "close" audio
     MusicManager.playSound("close");
-    instance.anim.SetBool("isOpen", false);
+    // instance.anim.SetBool("isOpen", false);
+    var child = instance.transform.GetChild(0);
+    child.gameObject.SetActive(false);
+    Time.timeScale = 1;
+
   }
 
 }
