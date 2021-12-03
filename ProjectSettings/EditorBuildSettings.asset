@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FasesEconquistas.unity
     guid: 5d2f1c00238598512af6ffe22d0a80ae
+  - enabled: 1
+    path: Assets/Scenes/primeiraHistoria.unity
+    guid: e3024eacb9ffae3fca5960b6106d442b
   m_configObjects: {}

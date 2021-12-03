@@ -85,6 +85,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
      <Compile Include="Assets\Scripts\Dialogo\Ana\Speaker.cs" />
      <Compile Include="Assets\Scripts\Dialogo\Ana\DialogueManager.cs" />
+     <Compile Include="Assets\Scripts\MorteVoltarCena.cs" />
      <Compile Include="Assets\Scripts\ShowTHings.cs" />
      <Compile Include="Assets\Scripts\Dialogo\Dialoge.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
@@ -136,7 +137,6 @@
      <Compile Include="Assets\Scripts\SoundEffect.cs" />
      <Compile Include="Assets\Scripts\Coins.cs" />
      <Compile Include="Assets\Scripts\DontDestroySound.cs" />
-     <Compile Include="Assets\Scripts\MorteVoltarCena.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
