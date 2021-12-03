@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Fase 1 - Ada/Puzzle.unity
     guid: 2273d940716d20479837fb7bf705ab9c
+  - enabled: 1
+    path: Assets/Scenes/FasesEconquistas.unity
+    guid: 5d2f1c00238598512af6ffe22d0a80ae
   m_configObjects: {}
