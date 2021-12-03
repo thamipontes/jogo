@@ -2,13 +2,15 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Checkpoint : MonoBehaviour
 {
-    public SalvarPosicao _salvarPosicao;
-    // Start is called before the first frame update
     private void OnTriggerEnter2D(Collider2D other)
     {
-        _salvarPosicao.SalvarLocalizacao();
+        if (other.gameObject.CompareTag("Player"))
+        {
+            other.gameObject.GetComponent<SalvarPosicao>().SalvarLocalizacao();
+        }
     }
 }

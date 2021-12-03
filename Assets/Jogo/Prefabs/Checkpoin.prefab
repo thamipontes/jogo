@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5745351148094793011}
   - component: {fileID: 4716708222174335659}
-  - component: {fileID: 3072801458488360991}
   - component: {fileID: 3863068993109701232}
   m_Layer: 0
   m_Name: Checkpoin
@@ -43,19 +42,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a1bd5e693a8246fa2912d39240089bec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _salvarPosicao: {fileID: 3072801458488360991}
---- !u!114 &3072801458488360991
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2131410705426778516}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10c01f416d1069658839d8412dbe25df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!58 &3863068993109701232
