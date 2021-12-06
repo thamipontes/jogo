@@ -22,7 +22,7 @@ public class SalvarPosicao : MonoBehaviour
             PlayerPrefs.HasKey(cenaAtual + "y") &&
             PlayerPrefs.HasKey(cenaAtual + "z"))
         {
-            transform.position = new Vector3(PlayerPrefs.GetFloat(cenaAtual + "x") + 0.02f,
+            transform.position = new Vector3(PlayerPrefs.GetFloat(cenaAtual + "x") + 0.05f,
                 PlayerPrefs.GetFloat(cenaAtual + "y"), PlayerPrefs.GetFloat(cenaAtual + "z"));
         }
     }

@@ -4,20 +4,15 @@ using UnityEngine;
 
 public class MorteVoltarCena : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    public GameObject portal;
+
+    public Transform portalPosition;
+
+    public void InstanciarPortal()
     {
-        
+        Instantiate(portal, portalPosition.transform.position, transform.rotation);
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void PosicaoCheckpoint()
-    {
-        
-    }
 }

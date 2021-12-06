@@ -4,9 +4,8 @@ using UnityEngine;
 public class ChefaoHealth : MonoBehaviour
 {
     public Animator animator;
-    public int vidaChefao = 10;
-
-    public
+    public int vidaChefao = 200;
+    public GameObject portal;
 
         // Start is called before the first frame update
         void Start()
@@ -22,6 +21,7 @@ public class ChefaoHealth : MonoBehaviour
 
         if (vidaChefao <= 1)
         {
+            Instantiate(portal, portal.transform.position, transform.rotation);
             Destroy(gameObject);
         }
     }
