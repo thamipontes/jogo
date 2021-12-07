@@ -10,7 +10,6 @@ public class SalvarPosicao : MonoBehaviour
         cenaAtual = SceneManager.GetActiveScene().name;
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         FazerLoad();
@@ -33,5 +32,12 @@ public class SalvarPosicao : MonoBehaviour
         PlayerPrefs.SetFloat(cenaAtual + "x", transform.position.x);
         PlayerPrefs.SetFloat(cenaAtual + "y", transform.position.y);
         PlayerPrefs.SetFloat(cenaAtual + "z", transform.position.z);
+    }
+
+    public void SalvarLocalizacao(float x, float y, float z = 0)
+    {
+        PlayerPrefs.SetFloat(cenaAtual + "x", x);
+        PlayerPrefs.SetFloat(cenaAtual + "y", y);
+        PlayerPrefs.SetFloat(cenaAtual + "z", z);
     }
 }
