@@ -9,6 +9,8 @@ public class ManagerRandomNumber : MonoBehaviour
     [SerializeField] TextMeshProUGUI[] sinaisCanvas = new TextMeshProUGUI[5];
     [SerializeField] ManagerToggle[] managerToggle = new ManagerToggle[5];
 
+    public GameObject vitoria; 
+
     public int resultadoEtapa4, resultadoEtapa5;
 
     private char[] operadores = {'+', '-', '*'};
@@ -38,10 +40,10 @@ public class ManagerRandomNumber : MonoBehaviour
         if(ValidaResultado()){
             estado++;
             if(estado == 6) {
-
-                string scene = "Ada Lovelace";
-                GoToScene go = new GoToScene();
-                go.ChangeScene(scene);
+                vitoria.SetActive(true);
+                // string scene = "Ada Lovelace";
+                // GoToScene go = new GoToScene();
+                // go.ChangeScene(scene);
             }
         }
 
