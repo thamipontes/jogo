@@ -23,6 +23,7 @@ public class PortaPuzzle : MonoBehaviour
         {
             other.GetComponent<SalvarPosicao>().SalvarLocalizacao(22f,1.5f);
             _animator.SetBool("abrindo", true);
+            Coins.SalvaMoedas();
             Invoke("goToScena", 0.8f);
         }
 
