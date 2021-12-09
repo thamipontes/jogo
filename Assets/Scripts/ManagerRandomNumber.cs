@@ -26,7 +26,7 @@ public class ManagerRandomNumber : MonoBehaviour
         if(tudoPressionado) {
             Time.timeScale = 0;
             GerenciaLevel();
-            Time.timeScale = 0.5f;
+            Time.timeScale = 1;
             tudoPressionado = false;
         }
         Debug.Log(estado);
