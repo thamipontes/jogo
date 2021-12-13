@@ -11,7 +11,7 @@ public class Coins : MonoBehaviour
     [SerializeField] Tester teste;
 
     //Atributo de contagem das moedas
-    public int coins = 0;
+    public static int coins = 0;
 
     //Declaração da classe HUDControl
     HUDControl hControl;
@@ -50,5 +50,14 @@ public class Coins : MonoBehaviour
             MusicManager.playSound("coin1");
         }
 
+    }
+
+    public static void SalvaMoedas(){
+        PlayerPrefs.SetInt("moedas", coins);
+        PlayerPrefs.Save();
+    }
+
+    public static void GetMoedas(){
+        coins = PlayerPrefs.GetInt("moedas");
     }
 }
