@@ -40,6 +40,8 @@ public class ManagerRandomNumber : MonoBehaviour
         if(ValidaResultado()){
             estado++;
             if(estado == 6) {
+                PlayerPrefs.SetInt("Conquista 1", 1);
+                PlayerPrefs.Save();
                 vitoria.SetActive(true);
                 // string scene = "Ada Lovelace";
                 // GoToScene go = new GoToScene();
