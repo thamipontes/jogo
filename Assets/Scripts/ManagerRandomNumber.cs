@@ -9,6 +9,8 @@ public class ManagerRandomNumber : MonoBehaviour
     [SerializeField] TextMeshProUGUI[] sinaisCanvas = new TextMeshProUGUI[5];
     [SerializeField] ManagerToggle[] managerToggle = new ManagerToggle[5];
 
+    public GameObject vitoria, fase1, fase2, fase3, fase4, fase5; 
+
     public int resultadoEtapa4, resultadoEtapa5;
 
     private char[] operadores = {'+', '-', '*'};
@@ -38,10 +40,10 @@ public class ManagerRandomNumber : MonoBehaviour
         if(ValidaResultado()){
             estado++;
             if(estado == 6) {
-
-                string scene = "Ada Lovelace";
-                GoToScene go = new GoToScene();
-                go.ChangeScene(scene);
+                vitoria.SetActive(true);
+                // string scene = "Ada Lovelace";
+                // GoToScene go = new GoToScene();
+                // go.ChangeScene(scene);
             }
         }
 
@@ -120,6 +122,7 @@ public class ManagerRandomNumber : MonoBehaviour
                 sinaisCanvas[4].text = SelecionaValorResultado(0,2).ToString("0");
                 for(int a = 2; a < 5; a++)
                     managerToggle[a].DesativaColuna();
+                fase1.SetActive(true);
                 break;
             case 2:
                 sinaisNegativos = 0;
@@ -133,6 +136,7 @@ public class ManagerRandomNumber : MonoBehaviour
                 {
                     managerToggle[a].DesativaColuna();
                 }
+                fase2.SetActive(true);
                 break;
             case 3:
                 sinaisNegativos = 0;
@@ -143,6 +147,7 @@ public class ManagerRandomNumber : MonoBehaviour
                 sinaisCanvas[4].text = SelecionaValorResultado(sinaisNegativos,4).ToString("0");
 
                 managerToggle[4].DesativaColuna();
+                fase3.SetActive(true);
                 break;
             case 4:
                 sinaisCanvas[0].text = "+";
@@ -152,6 +157,7 @@ public class ManagerRandomNumber : MonoBehaviour
                 sinaisCanvas[4].text = resultadoEtapa4 + "";
 
                 managerToggle[4].DesativaColuna();
+                fase4.SetActive(true);
                 break;
             case 5:
                 sinaisCanvas[0].text = "+";
@@ -159,6 +165,7 @@ public class ManagerRandomNumber : MonoBehaviour
                 sinaisCanvas[2].text = "*";
                 sinaisCanvas[3].text = "+";
                 sinaisCanvas[4].text = resultadoEtapa5 + "";
+                fase5.SetActive(true);
                 break;
         }
     }
