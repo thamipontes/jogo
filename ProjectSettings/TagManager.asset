@@ -17,6 +17,7 @@ TagManager:
   - Sons
   - Menu
   - chefao
+  - portal
   layers:
   - Default
   - TransparentFX

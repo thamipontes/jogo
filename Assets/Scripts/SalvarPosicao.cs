@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class SalvarPosicao : MonoBehaviour
 {
-    private string cenaAtual;
+    public string cenaAtual;
 
     private void Awake()
     {
@@ -13,7 +13,7 @@ public class SalvarPosicao : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        FazerLoad();
     }
 
     public void FazerLoad()
@@ -22,7 +22,7 @@ public class SalvarPosicao : MonoBehaviour
             PlayerPrefs.HasKey(cenaAtual + "y") &&
             PlayerPrefs.HasKey(cenaAtual + "z"))
         {
-            transform.position = new Vector3(PlayerPrefs.GetFloat(cenaAtual + "x") + 0.001f,
+            transform.position = new Vector3(PlayerPrefs.GetFloat(cenaAtual + "x") + 0.05f,
                 PlayerPrefs.GetFloat(cenaAtual + "y"), PlayerPrefs.GetFloat(cenaAtual + "z"));
         }
     }
