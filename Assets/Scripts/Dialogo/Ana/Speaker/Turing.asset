@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cc8f655b84ef0a1b287f4fa181310295, type: 3}
-  m_Name: Sidekick
+  m_Name: Turing
   m_EditorClassIdentifier: 
   speakerName: Turing
   speakerSprite: {fileID: 21300000, guid: bfb669cf8b644da6ea8d4bd910483ede, type: 3}
