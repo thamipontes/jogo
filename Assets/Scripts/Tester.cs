@@ -5,7 +5,7 @@ using UnityEngine;
 public class Tester : MonoBehaviour
 {
   public Conversation convo;
-  public MenuManager menuManager;
+  
 
 
   public void StartConvo()
