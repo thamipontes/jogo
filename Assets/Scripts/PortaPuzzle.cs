@@ -21,17 +21,18 @@ public class PortaPuzzle : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            other.GetComponent<SalvarPosicao>().SalvarLocalizacao();
+            other.GetComponent<SalvarPosicao>().SalvarLocalizacao(22f,1.5f);
             _animator.SetBool("abrindo", true);
+            Coins.SalvaMoedas();
             Invoke("goToScena", 0.8f);
         }
-        
+
     }
 
     void goToScena()
     {
         _goToScene.ChangeScene(scene);
     }
-    
+
 
 }

@@ -58,6 +58,8 @@ public class HUDControl : MonoBehaviour
         {
             gameover.gameObject.SetActive(true);
             Destroy(ame);
+            Coins.coins = 0;
+            Coins.SalvaMoedas();
         }
 
         Coracoes();

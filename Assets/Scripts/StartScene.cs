@@ -9,6 +9,7 @@ public class StartScene : MonoBehaviour
   void Awake()
   {
     AwakeMusic();
+    Coins.GetMoedas();
   }
 
   private void AwakeMusic(){
