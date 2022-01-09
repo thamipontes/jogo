@@ -5072,7 +5072,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 4384226557396870610}
-  vidaChefao: 1
+  vidaChefao: 200
   portal: {fileID: 341057631783484472, guid: c24b43e7081c880d28cd02291956101c, type: 3}
 --- !u!95 &4384226557396870610
 Animator:
