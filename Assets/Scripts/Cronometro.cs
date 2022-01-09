@@ -7,6 +7,7 @@ public class Cronometro : MonoBehaviour
     public float cronometroIncial = Constante.CRONOMETRO_TEMPO;
     public float tempoAtual;
     public bool tempoAcabou;
+    public GameObject jogarNovamente;
 
         // Start is called before the first frame update
     void Start()
@@ -20,6 +21,8 @@ public class Cronometro : MonoBehaviour
         if (!tempoAcabou)
         {
             ContagemRegressiva();
+        }else {
+            jogarNovamente.SetActive(true);
         }
     }
 
