@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class MusicManager : MonoBehaviour
 {
-    public static AudioClip _audioCoin, _audioPulo, _audioMovimentation, _audioMachucar, _audioPonteCaindo, _audioIn, _audioOut;
+    public static AudioClip _audioCoin, _audioPulo, _audioMovimentation, 
+        _audioMachucar, _audioPonteCaindo, _audioIn, _audioOut, _audioBoss;
     public static AudioSource _audioSource;
 
     private void Start()
@@ -15,6 +16,7 @@ public class MusicManager : MonoBehaviour
         _audioPonteCaindo = Resources.Load<AudioClip>("PONTE_DESMORONANDO_01");
         _audioIn = Resources.Load<AudioClip>("MENSAGEM_IN_01");
         _audioOut = Resources.Load<AudioClip>("MENSAGEM_OUT_01");
+        _audioBoss = Resources.Load<AudioClip>("boss_som");
     }
 
     public static void playSound (string som)
@@ -51,38 +53,11 @@ public class MusicManager : MonoBehaviour
                 _audioSource.PlayOneShot(_audioOut);
                 _audioSource.volume = 1f;
                 break;
+            case "boss":
+                _audioSource.PlayOneShot(_audioBoss);
+                _audioSource.volume = 1f;
+                break;
         }
       }
     }
-
-
-    // public static void comprasShein(string roupa)
-    // {
-    //     switch (roupa)
-    //     {
-    //         case "vestido": print("Tais");
-    //             break;
-    //         case "jeans": print("Ana Sofia");
-    //             break;
-    //         case "short": print("Ana julia");
-    //             break;
-    //         default: print("Hanani");
-    //             break;
-    //     }
-    // }
-
-    // bool somosBonitas()
-    // {
-    //     return true;
-    // }
-
-    // void elogio()
-    // {
-    //     printf("SOMOS GOSTOSAS");
-    // }
-
-    // int idadeAnaSofia()
-    // {
-    //     return 85;
-    // }
 }

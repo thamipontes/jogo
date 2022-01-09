@@ -31,6 +31,7 @@ public class ChefaoHealth : MonoBehaviour
     IEnumerator damageTime()
     {
         animator.SetBool("dano", true);
+        MusicManager.playSound("boss");
         // MusicManager.playSound("machucar1");
         yield return new WaitForSecondsRealtime(0.75f);
         animator.SetBool("dano", false);
