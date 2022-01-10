@@ -6,22 +6,21 @@ using UnityEngine;
 public class PortalDialogo : MonoBehaviour
 {
     public Tester _tester; 
-    // Start is called before the first frame update
+    int indicador;
+
     void Start()
     {
-        
+        indicador = 1;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player")) {
-            _tester.StartConvo();
+            if (indicador == 1) {
+                _tester.StartConvo();
+                indicador = 2;
+            }
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
+
