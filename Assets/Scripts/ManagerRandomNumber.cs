@@ -9,10 +9,11 @@ public class ManagerRandomNumber : MonoBehaviour
     [SerializeField] TextMeshProUGUI[] sinaisCanvas = new TextMeshProUGUI[5];
     [SerializeField] ManagerToggle[] managerToggle = new ManagerToggle[5];
 
-    public GameObject vitoria, fase1, fase2, fase3, fase4, fase5; 
+    public GameObject vitoria, fase1, fase2, fase3, fase4, fase5, errou, acertou; 
 
     public int resultadoEtapa4, resultadoEtapa5;
-
+    public float time = 0.5f;
+    
     private char[] operadores = {'+', '-', '*'};
     private int resultado, estado = 1;
     private bool tudoPressionado = false;
@@ -38,6 +39,8 @@ public class ManagerRandomNumber : MonoBehaviour
         Debug.Log("AAAAAAAAAA");
 
         if(ValidaResultado()){
+            acertou.SetActive(true);
+            StartCoroutine(AcertouErrouTimer());
             estado++;
             if(estado == 6) {
                 vitoria.SetActive(true);
@@ -45,6 +48,9 @@ public class ManagerRandomNumber : MonoBehaviour
                 // GoToScene go = new GoToScene();
                 // go.ChangeScene(scene);
             }
+        }else { 
+            errou.SetActive(true);
+            StartCoroutine(AcertouErrouTimer());
         }
 
         for(int i = 0; i < 5; i++){
@@ -169,4 +175,13 @@ public class ManagerRandomNumber : MonoBehaviour
                 break;
         }
     }
+
+    IEnumerator AcertouErrouTimer()
+    {
+        yield return new WaitForSecondsRealtime(time);
+        acertou.SetActive(false);
+        errou.SetActive(false);
+
+    }
+
 }
