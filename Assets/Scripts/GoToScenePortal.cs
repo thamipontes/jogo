@@ -10,10 +10,13 @@ using UnityEngine.SceneManagement;
 public class GoToScenePortal : MonoBehaviour
 {
     public string sceneName;
+
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.gameObject.CompareTag("Player"))
         {
-            //Muda para a cena passada nos parâmetros
+            PlayerPrefs.SetFloat("Ada Lovelacex", -9f);
+            PlayerPrefs.SetFloat("Ada Lovelacey", 1.3f);
+            PlayerPrefs.SetFloat("Ada Lovelacez", 0f);
             SceneManager.LoadScene(sceneName);
         }
     }

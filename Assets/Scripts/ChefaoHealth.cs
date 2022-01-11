@@ -21,9 +21,9 @@ public class ChefaoHealth : MonoBehaviour
 
         if (vidaChefao <= 1)
         {
-            Instantiate(portal, portal.transform.position, transform.rotation);
+            Instantiate(portal, transform.position, transform.rotation);
             // portal.SetActive(true);
-            
+
             Destroy(gameObject);
         }
     }
