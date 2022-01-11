@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.35872743, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -173,6 +173,7 @@ GameObject:
   - component: {fileID: 474140284}
   - component: {fileID: 474140283}
   - component: {fileID: 474140282}
+  - component: {fileID: 474140285}
   - component: {fileID: 474140281}
   m_Layer: 5
   m_Name: Sair
@@ -209,9 +210,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 474140279}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9be78f1bd6498a4ab63d1a5f78da9e5, type: 3}
+  m_Script: {fileID: 11500000, guid: 10c01f416d1069658839d8412dbe25df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cenaAtual: Ada Lovelace
 --- !u!114 &474140282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,8 +258,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 474140281}
-        m_TargetAssemblyTypeName: Quit, Assembly-CSharp
+      - m_Target: {fileID: 474140285}
+        m_TargetAssemblyTypeName: FecharJogo, Assembly-CSharp
         m_MethodName: FechaJogo
         m_Mode: 1
         m_Arguments:
@@ -306,6 +308,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 474140279}
   m_CullTransparentMesh: 0
+--- !u!114 &474140285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474140279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46ae59f65d998282da3b81ae1748ec50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _salvarPosicao: {fileID: 474140281}
 --- !u!1 &1017278737
 GameObject:
   m_ObjectHideFlags: 0
