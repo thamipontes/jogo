@@ -173,7 +173,7 @@ GameObject:
   - component: {fileID: 474140284}
   - component: {fileID: 474140283}
   - component: {fileID: 474140282}
-  - component: {fileID: 474140281}
+  - component: {fileID: 474140285}
   m_Layer: 5
   m_Name: Sair
   m_TagString: Untagged
@@ -200,18 +200,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 313, y: 107}
   m_Pivot: {x: 0.5, y: 0}
---- !u!114 &474140281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 474140279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46ae59f65d998282da3b81ae1748ec50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &474140282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,7 +244,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 474140281}
+      - m_Target: {fileID: 474140285}
         m_TargetAssemblyTypeName: FecharJogo, Assembly-CSharp
         m_MethodName: FechaJogo
         m_Mode: 1
@@ -306,6 +294,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 474140279}
   m_CullTransparentMesh: 0
+--- !u!114 &474140285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474140279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46ae59f65d998282da3b81ae1748ec50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _salvarPosicao: {fileID: 1801051776}
 --- !u!1 &1017278737
 GameObject:
   m_ObjectHideFlags: 0
@@ -1564,6 +1565,7 @@ RectTransform:
   - {fileID: 1168749136}
   - {fileID: 1017278738}
   - {fileID: 1329011840}
+  - {fileID: 1801051775}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1638,6 +1640,55 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1801051774
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1801051775}
+  - component: {fileID: 1801051776}
+  m_Layer: 5
+  m_Name: SalvarPosicao
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1801051775
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801051774}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1640221603}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1801051776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801051774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10c01f416d1069658839d8412dbe25df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cenaAtual: Ada Lovelace
 --- !u!1 &1808314014
 GameObject:
   m_ObjectHideFlags: 0

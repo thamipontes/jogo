@@ -17,15 +17,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MenuPrincipal.unity
     guid: 48cf489abd7a337ada1930d51776c55f
-  - enabled: 0
-    path: Assets/Scenes/Fase 1 - Ada/Ada - Menu.unity
-    guid: 611d7aa60a17e184ba2a231f66bea905
   - enabled: 1
-    path: Assets/Scenes/Fase 1 - Ada/Ada Lovelace.unity
-    guid: a98e2b2cd926f0c2abef2c613958a1b0
+    path: Assets/Scenes/Fase 1 - Ada/Ada - Vitoria.unity
+    guid: 611d7aa60a17e184ba2a231f66bea905
   - enabled: 1
     path: Assets/Scenes/Fase 1 - Ada/Ada - FInal.unity
     guid: 5c3c10ad7ff9234748d52817675155bf
+  - enabled: 1
+    path: Assets/Scenes/Fase 1 - Ada/Ada Lovelace.unity
+    guid: a98e2b2cd926f0c2abef2c613958a1b0
   - enabled: 1
     path: Assets/Scenes/Fase 1 - Ada/Puzzle.unity
     guid: 2273d940716d20479837fb7bf705ab9c

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class MusicManager : MonoBehaviour
 {
-    public static AudioClip _audioCoin, _audioPulo, _audioMovimentation, 
+    public static AudioClip _audioCoin, 
         _audioMachucar, _audioPonteCaindo, _audioIn, _audioOut, _audioBoss;
     public static AudioSource _audioSource;
 
@@ -55,7 +55,7 @@ public class MusicManager : MonoBehaviour
                 break;
             case "boss":
                 _audioSource.PlayOneShot(_audioBoss);
-                _audioSource.volume = 1f;
+                _audioSource.volume = 0.2f;
                 break;
         }
       }
