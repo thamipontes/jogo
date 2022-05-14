@@ -71,6 +71,7 @@
      <Compile Include="Assets\Scripts\ChefaoMovimentation.cs" />
      <Compile Include="Assets\Scripts\ManagerToggle.cs" />
      <Compile Include="Assets\Scripts\InimigoMovimentacao.cs" />
+     <Compile Include="Assets\Scripts\PlatformStay.cs" />
      <Compile Include="Assets\VarDialogue.cs" />
      <Compile Include="Assets\Scripts\Constante.cs" />
      <Compile Include="Assets\Scripts\Pena.cs" />
