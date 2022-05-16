@@ -71,7 +71,6 @@
      <Compile Include="Assets\Scripts\ChefaoMovimentation.cs" />
      <Compile Include="Assets\Scripts\ManagerToggle.cs" />
      <Compile Include="Assets\Scripts\InimigoMovimentacao.cs" />
-     <Compile Include="Assets\Scripts\PlatformStay.cs" />
      <Compile Include="Assets\VarDialogue.cs" />
      <Compile Include="Assets\Scripts\Constante.cs" />
      <Compile Include="Assets\Scripts\Pena.cs" />
@@ -141,6 +140,8 @@
      <Compile Include="Assets\Scripts\SoundEffect.cs" />
      <Compile Include="Assets\Scripts\Coins.cs" />
      <Compile Include="Assets\Scripts\DontDestroySound.cs" />
+     <Compile Include="Assets\Scripts\Lanterna.cs" />
+     <Compile Include="Assets\Scripts\Bateria.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
@@ -815,6 +816,42 @@
  </Reference>
  <Reference Include="Unity.SysrootPackage.Editor">
  <HintPath>/home/thamires/Documentos/mbb/jogo/Library/ScriptAssemblies/Unity.SysrootPackage.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Universal.Shaders">
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Core.Runtime">
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Searcher.Editor">
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Universal.Editor">
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Mathematics.Editor">
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Core.Editor">
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Mathematics">
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ShaderGraph.Editor">
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+ <HintPath>/home/thamires/Documentos/mbb/jogo/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
