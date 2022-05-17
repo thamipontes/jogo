@@ -57,6 +57,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
      <Compile Include="Assets\Scripts\MusicManager.cs" />
+     <Compile Include="Assets\Scripts\TremFantasma.cs" />
      <Compile Include="Assets\Scripts\Pulo.cs" />
      <Compile Include="Assets\Scripts\HUDControl.cs" />
      <Compile Include="Assets\Scripts\ChefaoMovimentation.cs" />
