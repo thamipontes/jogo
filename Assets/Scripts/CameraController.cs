@@ -19,6 +19,10 @@ public class CameraController : MonoBehaviour
     public float smoothTimeX;
     public float deltaY;
 
+    public float posXMax = 29f;
+    public float posXMin = -10f;
+    public float posYMin = 0.3f;
+
 
     void FixedUpdate()
     {
@@ -30,26 +34,26 @@ public class CameraController : MonoBehaviour
         /* Confere se o player está dentro desse intervalo, caso esteja, a câmera
          * recebe a mesma posisção do player
          */
-        if (posX < 28 && posX > -10 && posY > 0.3)
+        if (posX < posXMax && posX > posXMin && posY > posYMin)
         {
             transform.position = new Vector3(posX, posY, transform.position.z);
         }
         //Caso contrário recebe valores fixos, ou seja, para que não passe as posições pré-definidas
         else
         {
-            if (posY < 0.3)
+            if (posY < posYMin)
             {
-                posY = 0.3f;
+                posY = posYMin;
             }
 
-            if (posX < -10)
+            if (posX < posXMin)
             {
-                posX = -10;
+                posX = posXMin;
             }
 
-            if (posX > 29)
+            if (posX > posXMax)
             {
-                posX = 29f;
+                posX = posXMax;
             }
 
             transform.position = new Vector3(posX, posY, transform.position.z);

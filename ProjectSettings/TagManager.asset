@@ -18,6 +18,7 @@ TagManager:
   - Menu
   - chefao
   - portal
+  - platform
   layers:
   - Default
   - TransparentFX

@@ -159,6 +159,7 @@ PlayerSettings:
   applicationIdentifier:
     Android: com.Baitts.MundoBitByte
     Standalone: com.Meninas.Comp.MundoBitByte
+    iPhone: com.Baitts.MundoBitByte
   buildNumber:
     Standalone: 0
     iPhone: 0
