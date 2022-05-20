@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 6967134135136804988}
   - component: {fileID: 6967134135136804989}
   m_Layer: 5
-  m_Name: GameObject
+  m_Name: Caixa Dialogo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
