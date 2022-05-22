@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7488830215428055385}
   - component: {fileID: 7488830215428055384}
   m_Layer: 0
-  m_Name: jogarNovamente
+  m_Name: BotaoJogarNovamente
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
