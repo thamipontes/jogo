@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,17 +5,21 @@ public class GameController : MonoBehaviour
 {
     public Sprite[] playerIcons; //caso seja 1 = X e 0 = O
     public Button[] jogoDaVelhaSpaces;
-    public int vezJogar;
     public int[] gridMarcada;
     private int count;
     private int vezJogarCount;
+    public GameObject[] linhasVermelhas;
+    public GameObject panel;
+    private bool alguemGanhou;
+    private const int figuraX = 0;
+    private const int figuraO = 1;
 
     // Start is called before the first frame update
     void Start()
     {
-        vezJogar = 0;
         count = 0;
         vezJogarCount = 0;
+        alguemGanhou = true;
 
         for (int i = 0; i < jogoDaVelhaSpaces.Length; i++)
         {
@@ -31,35 +33,10 @@ public class GameController : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
     public void jogoDaVelhaGrid(int NumeroGrid)
     {
-        jogoDaVelhaSpaces[NumeroGrid].image.sprite = playerIcons[0];
-        jogoDaVelhaSpaces[NumeroGrid].interactable = false;
-
-        gridMarcada[NumeroGrid] = vezJogarCount + 1;
-        count++;
-
-        if (count > 4)
-        {
-            ganhador();
-        }
-
-        if (vezJogarCount == 0)
-        {
-            vezJogarCount = 1;
-        }
-        else
-        {
-            vezJogarCount = 0;
-        }
-
+        marcarFiguraNoGrid(NumeroGrid, figuraX);
         computerTurn();
-        
     }
 
     public void ganhador()
@@ -78,43 +55,53 @@ public class GameController : MonoBehaviour
         for (int i = 0; i < solutions.Length; i++)
             if (solutions[i] == 3 * (vezJogarCount + 1))
             {
+                alguemGanhou = false;
                 Debug.Log("ganhou");
+                escolherLinhasVermelhas(i);
                 return;
             }
     }
 
     void computerTurn()
     {
+        int randomNumber = Random.Range(0, 8);
 
-             int randomNumber = Random.Range(0, 8);
-        
-            if (jogoDaVelhaSpaces[randomNumber].GetComponent<Button>().IsInteractable())
-            {
-                jogoDaVelhaSpaces[randomNumber].image.sprite = playerIcons[1];
-                jogoDaVelhaSpaces[randomNumber].interactable = false;
+        if (jogoDaVelhaSpaces[randomNumber].GetComponent<Button>().IsInteractable())
+        {
+            marcarFiguraNoGrid(randomNumber, figuraO);
+        }
+        else
+        {
+            computerTurn();
+        }
+    }
 
-                gridMarcada[randomNumber] = vezJogarCount + 1;
-                count++;
+    void marcarFiguraNoGrid(int index, int figura)
+    {
+        jogoDaVelhaSpaces[index].image.sprite = playerIcons[figura];
+        jogoDaVelhaSpaces[index].interactable = false;
 
-                if (count > 4)
-                {
-                    ganhador();
-                }
-                
-                if (vezJogarCount == 0)
-                {
-                    vezJogarCount = 1;
-                }
-                else
-                {
-                    vezJogarCount = 0;
-                }
+        gridMarcada[index] = vezJogarCount + 1;
+        count++;
 
-                
-            }
-            else
-            {
-                computerTurn();
-            }
+        if (count > 4 && alguemGanhou)
+        {
+            ganhador();
+        }
+
+        if (vezJogarCount == 0)
+        {
+            vezJogarCount = 1;
+        }
+        else
+        {
+            vezJogarCount = 0;
+        }
+    }
+
+    void escolherLinhasVermelhas(int index)
+    {
+        panel.SetActive(true);
+        linhasVermelhas[index].SetActive(true);
     }
 }
