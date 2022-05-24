@@ -48,7 +48,7 @@ public class GameController : MonoBehaviour
         int s5 = gridMarcada[1] + gridMarcada[4] + gridMarcada[7];
         int s6 = gridMarcada[2] + gridMarcada[5] + gridMarcada[8];
         int s7 = gridMarcada[0] + gridMarcada[4] + gridMarcada[8];
-        int s8 = gridMarcada[0] + gridMarcada[4] + gridMarcada[6];
+        int s8 = gridMarcada[2] + gridMarcada[4] + gridMarcada[6];
 
         var solutions = new int[] { s1, s2, s3, s4, s5, s6, s7, s8 };
 

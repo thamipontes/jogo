@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -22,17 +23,17 @@ public class HUDControl : MonoBehaviour
 
     //Imagem dos corações
     public Image coracao;
-
-    //
-    //
-    //
-    //
-    //
+  
     public Sprite[] sprite = new Sprite[10];
     public Sprite[] moedaSprite = new Sprite[54];
 
     //Atributo do objeto ame
     public GameObject ame;
+
+    public Transform gasolinaBarTransform;
+
+    private Vector3 gasolinaBarScale;
+    private Vector3 gasolinaBarScaleAtual;
 
     //Garante que hControl sempre tenha o valor this
     private void Awake()
@@ -41,6 +42,18 @@ public class HUDControl : MonoBehaviour
         {
             hControl = this;
         }
+    }
+
+    private void Start()
+    {
+      gasolinaBarScale = new Vector3(1f, gasolinaBarTransform.localScale.y, gasolinaBarTransform.localScale.z);
+    }
+    
+    public void UpdateGasolinaBar(float porcentagem)
+    {
+      
+      gasolinaBarScale.x = gasolinaBarScale.x + porcentagem;
+      gasolinaBarTransform.localScale = gasolinaBarScale;
     }
 
     /*
