@@ -14,4 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allLines:
   - speaker: {fileID: 11400000, guid: 9957bc7e61f7b8495b7be80c5b0789a1, type: 2}
-    dialogue: QUE ISSO GENTE
+    dialogue: 'AONDE ESTOU?! '
+  - speaker: {fileID: 11400000, guid: 9957bc7e61f7b8495b7be80c5b0789a1, type: 2}
+    dialogue: "TATI? TATI ... Cad\xEA voc\xEA?!"
+  - speaker: {fileID: 11400000, guid: b53e8ab01298f8573861a2b274ec1ae3, type: 2}
+    dialogue: "Fique tranquila, Elaine! Tati est\xE1 bem..."
+  - speaker: {fileID: 11400000, guid: f59e882f09746eaa8923af55a8a951f3, type: 2}
+    dialogue: 'RAMM... estou me sentindo estranha e parece que estou em um jogo do
+      Atari! '
+  - speaker: {fileID: 11400000, guid: b53e8ab01298f8573861a2b274ec1ae3, type: 2}
+    dialogue: "Agora voc\xEA precisa encontrar a Carol Shawn. CORRA!! Pois sua lanterna
+      est\xE1 acabando a bateria."
