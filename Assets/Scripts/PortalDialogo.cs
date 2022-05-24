@@ -6,7 +6,7 @@ using UnityEngine;
 public class PortalDialogo : MonoBehaviour
 {
     public Tester _tester; 
-    int indicador;
+    public int indicador;
 
     void Start()
     {
@@ -19,8 +19,11 @@ public class PortalDialogo : MonoBehaviour
             if (indicador == 1) {
                 _tester.StartConvo();
                 indicador = 2;
+                PlayerPrefs.SetInt("Planeta 2", 2);
+                PlayerPrefs.Save();
             }
         }
     }
+
 }
 
