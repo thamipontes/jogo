@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60f369baacb151b42b53b6291f865c73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Ada - Vitoria
+  sceneName: FasesEconquistas
 --- !u!1 &341057631783484472
 GameObject:
   m_ObjectHideFlags: 0
@@ -263,3 +263,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _tester: {fileID: 3395672425741869043}
+  indicador: 0
