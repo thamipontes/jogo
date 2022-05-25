@@ -87,6 +87,10 @@ public class GameController : MonoBehaviour
         if (count > 4 && alguemGanhou)
         {
             ganhador();
+            if (count == 9)
+            {
+                deuVelha();
+            }
         }
 
         if (vezJogarCount == 0)
@@ -103,5 +107,10 @@ public class GameController : MonoBehaviour
     {
         panel.SetActive(true);
         linhasVermelhas[index].SetActive(true);
+    }
+
+    void deuVelha()
+    {
+        panel.SetActive(true);
     }
 }
