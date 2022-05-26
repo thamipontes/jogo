@@ -23,5 +23,9 @@ MonoBehaviour:
     dialogue: 'RAMM... estou me sentindo estranha e parece que estou em um jogo do
       Atari! '
   - speaker: {fileID: 11400000, guid: b53e8ab01298f8573861a2b274ec1ae3, type: 2}
-    dialogue: "Agora voc\xEA precisa encontrar a Carol Shawn. CORRA!! Pois sua lanterna
-      est\xE1 acabando a bateria."
+    dialogue: "Agora voc\xEA precisa encontrar a Carol Shaw. E fique atenta que a
+      bateria da sua lanterna pode acabar"
+  - speaker: {fileID: 11400000, guid: 9957bc7e61f7b8495b7be80c5b0789a1, type: 2}
+    dialogue: Que?!?
+  - speaker: {fileID: 11400000, guid: b53e8ab01298f8573861a2b274ec1ae3, type: 2}
+    dialogue: CORRE MULHEEERR!!!!!!
