@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465785, g: 0.49641252, b: 0.574817, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -463,7 +463,7 @@ GameObject:
   - component: {fileID: 63413948}
   - component: {fileID: 63413949}
   - component: {fileID: 63413950}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Elaine
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -2552,7 +2552,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 10
-  gameover: {fileID: 0}
+  gameover: {fileID: 1428816526}
   moeda: {fileID: 0}
   coracao: {fileID: 42473391}
   sprite:
@@ -14144,7 +14144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidadeCarga: 50
-  gameOver: {fileID: 0}
+  gameOver: {fileID: 1428816526}
 --- !u!1001 &1201748465
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32563,13 +32563,33 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1799130699}
     m_Modifications:
+    - target: {fileID: 1927125944844492224, guid: 346c3bd28775784de9fb777634e15f8b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2296398563090495282, guid: 346c3bd28775784de9fb777634e15f8b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3924251112785443879, guid: 346c3bd28775784de9fb777634e15f8b, type: 3}
+      propertyPath: CollisionModule.collisionMessages
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4196517124653161166, guid: 346c3bd28775784de9fb777634e15f8b, type: 3}
       propertyPath: m_SortingOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4508770877342161149, guid: 346c3bd28775784de9fb777634e15f8b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4902277068842739546, guid: 346c3bd28775784de9fb777634e15f8b, type: 3}
       propertyPath: m_Name
       value: InimigoPoste
+      objectReference: {fileID: 0}
+    - target: {fileID: 5410888366077036646, guid: 346c3bd28775784de9fb777634e15f8b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6120824562139768178, guid: 346c3bd28775784de9fb777634e15f8b, type: 3}
       propertyPath: m_RootOrder
@@ -32613,6 +32633,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6120824562139768178, guid: 346c3bd28775784de9fb777634e15f8b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6433824751013420695, guid: 346c3bd28775784de9fb777634e15f8b, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6433824751013420695, guid: 346c3bd28775784de9fb777634e15f8b, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
