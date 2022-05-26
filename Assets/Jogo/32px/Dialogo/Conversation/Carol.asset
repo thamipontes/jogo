@@ -15,5 +15,28 @@ MonoBehaviour:
   allLines:
   - speaker: {fileID: 11400000, guid: 37e56f36168cbea9193565e05e83d79d, type: 2}
     dialogue: Voce e a Carol Shaw?
+  - speaker: {fileID: 11400000, guid: 7f212f05abda01f05a584559473107d8, type: 2}
+    dialogue: 'AAAAAAAAAAAAA!!!!
+
+      Santo Compilador!'
+  - speaker: {fileID: 11400000, guid: 91034107410f24d8c93f5167a45cb956, type: 2}
+    dialogue: PARA DE GRITAR!!!
   - speaker: {fileID: 11400000, guid: 8613d5f97c46a641592b2677453d3884, type: 2}
-    dialogue: 
+    dialogue: Ta bom.
+  - speaker: {fileID: 11400000, guid: 8613d5f97c46a641592b2677453d3884, type: 2}
+    dialogue: Quem e voce?
+  - speaker: {fileID: 11400000, guid: 37e56f36168cbea9193565e05e83d79d, type: 2}
+    dialogue: Cade minha neta!!!
+  - speaker: {fileID: 11400000, guid: 8613d5f97c46a641592b2677453d3884, type: 2}
+    dialogue: Nao sei do que voce esta falando. Nao vi nenhuma neta por aqui. Mas
+      posso te ajudar se voce coletar todas as gasolinas
+  - speaker: {fileID: 11400000, guid: 37e56f36168cbea9193565e05e83d79d, type: 2}
+    dialogue: Fechado.
+  - speaker: {fileID: 11400000, guid: 8613d5f97c46a641592b2677453d3884, type: 2}
+    dialogue: Perfeito te vejo no final da fase.
+  - speaker: {fileID: 11400000, guid: 9957bc7e61f7b8495b7be80c5b0789a1, type: 2}
+    dialogue: Que?!?
+  - speaker: {fileID: 11400000, guid: 8613d5f97c46a641592b2677453d3884, type: 2}
+    dialogue: 'Nada nao...
+
+      Vai logo a bateria da sua lanterna esta acabando.'
