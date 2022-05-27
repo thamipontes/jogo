@@ -14,14 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allLines:
   - speaker: {fileID: 11400000, guid: 8613d5f97c46a641592b2677453d3884, type: 2}
-    dialogue: 'Muito bem Elaine.
-
-      Voce conseguiu
-
-      Obrigada por iluminar
-      a minha noite'
+    dialogue: "Muito bem Elaine,\nvoc\xEA conseguiu!!\nObrigada por iluminar a minha
+      noite!!"
   - speaker: {fileID: 11400000, guid: 8613d5f97c46a641592b2677453d3884, type: 2}
-    dialogue: 'Agora rapido, entre no portal antes que ele feche, do outro lado encontrara
-      a sua neta '
+    dialogue: "Agora r\xE1pido... entre no portal antes que ele feche. Do outro lado
+      encontrar\xE1 a sua neta!!!"
   - speaker: {fileID: 11400000, guid: 37e56f36168cbea9193565e05e83d79d, type: 2}
     dialogue: Obrigada.......
