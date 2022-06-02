@@ -382,8 +382,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -119}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 4, y: -119}
+  m_SizeDelta: {x: 271.04, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &284442281
 MonoBehaviour:
@@ -394,31 +394,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 284442279}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: 26d6696b470f8e5c89a1346fbc558383, type: 3}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 10
-    m_MaxSize: 250
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Carol
+  m_Sprite: {fileID: 21300000, guid: c7cef8281d575844da1ed9b40c3071d7, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &284442282
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1078,6 +1074,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Botao Sair
       objectReference: {fileID: 0}
+    - target: {fileID: 2883850635332247133, guid: e0b907a67097c4cbeaef5e12d60d8bd5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8356d4e58cde2a940aee7b63bd4497a3, type: 3}
     - target: {fileID: 2883850635332247134, guid: e0b907a67097c4cbeaef5e12d60d8bd5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: Carol Shawn
@@ -1121,8 +1121,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 446, y: 122}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 459.15, y: 134}
+  m_SizeDelta: {x: 126.3, y: 122}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &954175025
 MonoBehaviour:
@@ -1927,8 +1927,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -440, y: 122}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -428.91, y: 134}
+  m_SizeDelta: {x: 122.19, y: 122.19}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1339120574
 MonoBehaviour:
@@ -2002,8 +2002,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -119}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 2.37, y: -119}
+  m_SizeDelta: {x: 299.55, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1365462492
 MonoBehaviour:
@@ -2014,31 +2014,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 1365462490}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: 26d6696b470f8e5c89a1346fbc558383, type: 3}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 10
-    m_MaxSize: 250
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Elaine
+  m_Sprite: {fileID: 21300000, guid: fc3eceab79bbf3342a43384e5a94b7bd, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1365462493
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2473,6 +2469,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: JogoDaVelha
       objectReference: {fileID: 0}
+    - target: {fileID: 7488830215428055387, guid: 3038bbc2855b848eba5ee226dba4504e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 651bc43bcfbb5214d9ca31081d274cf6, type: 3}
     - target: {fileID: 7488830215428055388, guid: 3038bbc2855b848eba5ee226dba4504e, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2503,11 +2503,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7488830215428055388, guid: 3038bbc2855b848eba5ee226dba4504e, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 865
+      value: 695.05
       objectReference: {fileID: 0}
     - target: {fileID: 7488830215428055388, guid: 3038bbc2855b848eba5ee226dba4504e, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 313
+      value: 142.43
       objectReference: {fileID: 0}
     - target: {fileID: 7488830215428055388, guid: 3038bbc2855b848eba5ee226dba4504e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2539,11 +2539,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7488830215428055388, guid: 3038bbc2855b848eba5ee226dba4504e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -24
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 7488830215428055388, guid: 3038bbc2855b848eba5ee226dba4504e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -3
+      value: 21.215
       objectReference: {fileID: 0}
     - target: {fileID: 7488830215428055388, guid: 3038bbc2855b848eba5ee226dba4504e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2560,6 +2560,10 @@ PrefabInstance:
     - target: {fileID: 7488830215428055389, guid: 3038bbc2855b848eba5ee226dba4504e, type: 3}
       propertyPath: m_Name
       value: jogarNovamente
+      objectReference: {fileID: 0}
+    - target: {fileID: 7488830215428055389, guid: 3038bbc2855b848eba5ee226dba4504e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3038bbc2855b848eba5ee226dba4504e, type: 3}
