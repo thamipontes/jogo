@@ -93,7 +93,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: taDoendo
+    m_ConditionEvent: taSofrendo
     m_EventTreshold: 0
   - m_ConditionMode: 1
     m_ConditionEvent: taAndando
@@ -256,7 +256,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: taDoendo
+    m_ConditionEvent: taSofrendo
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -4233417408523706996}
@@ -299,7 +299,7 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: taDoendo
+  - m_Name: taSofrendo
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -361,7 +361,7 @@ AnimatorStateTransition:
     m_ConditionEvent: taAndando
     m_EventTreshold: 0
   - m_ConditionMode: 2
-    m_ConditionEvent: taDoendo
+    m_ConditionEvent: taSofrendo
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -2828686659862809530}
@@ -418,7 +418,7 @@ AnimatorStateTransition:
     m_ConditionEvent: taAndando
     m_EventTreshold: 0
   - m_ConditionMode: 2
-    m_ConditionEvent: taDoendo
+    m_ConditionEvent: taSofrendo
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 3267230857683106782}
