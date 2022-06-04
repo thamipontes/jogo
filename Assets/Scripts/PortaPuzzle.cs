@@ -11,6 +11,10 @@ public class PortaPuzzle : MonoBehaviour
 
     public string scene;
 
+    public float posicaoX = 22f;
+
+    public float posicaoY = 1.5f;
+
     private void Awake()
     {
         _animator = GetComponent<Animator>();
@@ -21,7 +25,7 @@ public class PortaPuzzle : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            other.GetComponent<SalvarPosicao>().SalvarLocalizacao(22f,1.5f);
+            other.GetComponent<SalvarPosicao>().SalvarLocalizacao(posicaoX, posicaoY);
             _animator.SetBool("abrindo", true);
             Coins.SalvaMoedas();
             Invoke("goToScena", 0.8f);
