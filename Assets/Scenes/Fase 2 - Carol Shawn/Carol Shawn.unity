@@ -612,7 +612,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 63413940}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.09, y: 2.52, z: 0}
+  m_LocalPosition: {x: -8.05, y: 2.52, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1198172061}
@@ -841,7 +841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4063be5cd610572f3baebdd7ff898f62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectil: {fileID: 238509095823425808, guid: a6956ef6396fe99ce9c662f1a004a621, type: 3}
+  projectil: {fileID: 5668006814722725966, guid: 3a962d8265d34724bbdd99074389ee80, type: 3}
   positionProjectil: {fileID: 1198172061}
   velocidadeProjetil: 2
   timePassado: 2
