@@ -20,20 +20,21 @@ MonoBehaviour:
 
       Santo Compilador!'
   - speaker: {fileID: 11400000, guid: 91034107410f24d8c93f5167a45cb956, type: 2}
-    dialogue: PARA DE GRITAR!!!
+    dialogue: QUE SUSTO MULHER!! PARA DE GRITAR!!!
   - speaker: {fileID: 11400000, guid: 8613d5f97c46a641592b2677453d3884, type: 2}
-    dialogue: "T\xE1 bom."
+    dialogue: "Voc\xEA que me assutou primeiro!!"
   - speaker: {fileID: 11400000, guid: 8613d5f97c46a641592b2677453d3884, type: 2}
     dialogue: "Quem \xE9 voc\xEA?"
   - speaker: {fileID: 11400000, guid: 37e56f36168cbea9193565e05e83d79d, type: 2}
     dialogue: "Cad\xEA minha neta!!!"
   - speaker: {fileID: 11400000, guid: 8613d5f97c46a641592b2677453d3884, type: 2}
-    dialogue: "N\xE3o sei do que voc\xEA est\xE1 falando. N\xE3o vi nenhuma neta
-      por aqui, mas posso te ajudar se voc\xEA coletar todas as gasolinas"
+    dialogue: "N\xE3o sei do que voc\xEA est\xE1 falando, n\xE3o vi nenhuma neta
+      por aqui! Mas posso te ajudar se voc\xEA coletar todas as gasolinas."
   - speaker: {fileID: 11400000, guid: 37e56f36168cbea9193565e05e83d79d, type: 2}
     dialogue: Fechado.
   - speaker: {fileID: 11400000, guid: 8613d5f97c46a641592b2677453d3884, type: 2}
-    dialogue: Perfeito! Te vejo no final da fase ...
+    dialogue: "Fique de olho na sua lanterna, eu mesma n\xE3o suporto a escurid\xE3o!
+      Te vejo no final da fase ..."
   - speaker: {fileID: 11400000, guid: 9957bc7e61f7b8495b7be80c5b0789a1, type: 2}
     dialogue: "Qu\xEA?!?"
   - speaker: {fileID: 11400000, guid: 8613d5f97c46a641592b2677453d3884, type: 2}

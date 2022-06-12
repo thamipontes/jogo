@@ -23,9 +23,16 @@ MonoBehaviour:
     dialogue: 'RAMM... estou me sentindo estranha e parece que estou em um jogo do
       Atari! '
   - speaker: {fileID: 11400000, guid: b53e8ab01298f8573861a2b274ec1ae3, type: 2}
-    dialogue: "Agora voc\xEA precisa encontrar a Carol Shaw. E fique atenta que a
-      bateria da sua lanterna pode acabar"
+    dialogue: "Bem pensado! Agora voc\xEA precisa encontrar a Carol Shaw e fique
+      atenta que a bateria da sua lanterna pode acabar."
   - speaker: {fileID: 11400000, guid: 9957bc7e61f7b8495b7be80c5b0789a1, type: 2}
-    dialogue: Que?!?
+    dialogue: "Que?!? Quem \xE9 Carol Shaw?!"
   - speaker: {fileID: 11400000, guid: b53e8ab01298f8573861a2b274ec1ae3, type: 2}
-    dialogue: CORRE MULHEEERR!!!!!!
+    dialogue: "Carol Shaw \xE9 a primeira mulher desenvolvedora de jogos eletr\xF4nicos
+      no mundo! Foi ela quem desenvolveu o River Raid e o 3-D Tic-Tac-Toe."
+  - speaker: {fileID: 11400000, guid: 9957bc7e61f7b8495b7be80c5b0789a1, type: 2}
+    dialogue: "Nossa, que incr\xEDvel!! Quero conhecer logo ela!"
+  - speaker: {fileID: 11400000, guid: 37e56f36168cbea9193565e05e83d79d, type: 2}
+    dialogue: "Mas cad\xEA a minha neta, RAM?!?"
+  - speaker: {fileID: 11400000, guid: b53e8ab01298f8573861a2b274ec1ae3, type: 2}
+    dialogue: "Ela est\xE1 bem Elaine, mas agora CORRE MULHER!!"
