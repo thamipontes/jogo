@@ -36717,6 +36717,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4555400204552036414, guid: dbf3a6268788e33a89cca17ea7e05ac6, type: 3}
+      propertyPath: dialogoOn
+      value: 
+      objectReference: {fileID: 21300000, guid: 83c6be0fc3b7765559ce38465fb2efdd, type: 3}
+    - target: {fileID: 4555400204552036414, guid: dbf3a6268788e33a89cca17ea7e05ac6, type: 3}
+      propertyPath: dialogoOff
+      value: 
+      objectReference: {fileID: 21300000, guid: fab1e9deb06638a9d9876d9263ef69cd, type: 3}
     - target: {fileID: 4555400204592352608, guid: dbf3a6268788e33a89cca17ea7e05ac6, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 47
