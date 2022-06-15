@@ -83,6 +83,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 2baf2e5884a88bdeb91240608feb0367, type: 3}
+    - target: {fileID: 4144256090818911880, guid: c57d505d5e93cb5f39e3052a7c046519, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2b04188fc02600157b383b0451dc4269, type: 2}
     - target: {fileID: 4263214110446789975, guid: c57d505d5e93cb5f39e3052a7c046519, type: 3}
       propertyPath: m_Name
       value: fase 2 chefao
