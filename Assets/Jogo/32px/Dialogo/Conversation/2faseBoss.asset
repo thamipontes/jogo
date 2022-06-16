@@ -20,7 +20,7 @@ MonoBehaviour:
     dialogue: "mas, mas ... quem ... quem \xE9 voc\xEA?!"
   - speaker: {fileID: 11400000, guid: bec9f43aecc0b0f6bb3cc788a9a619f0, type: 2}
     dialogue: Serei seu pior pesadelo ... HAHAHHAHAHAHHHAHHAHA
-  - speaker: {fileID: 11400000, guid: b53e8ab01298f8573861a2b274ec1ae3, type: 2}
+  - speaker: {fileID: 11400000, guid: bec9f43aecc0b0f6bb3cc788a9a619f0, type: 2}
     dialogue: TENTE ME VENCER AHHAHAHAHAHHHA
   - speaker: {fileID: 11400000, guid: 7f212f05abda01f05a584559473107d8, type: 2}
     dialogue: "Elaine, sei que \xE9 capaz de derrotar esse fantasma ... nos vemos
