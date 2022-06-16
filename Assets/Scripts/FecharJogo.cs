@@ -6,11 +6,15 @@ public class FecharJogo : MonoBehaviour
 {
     public SalvarPosicao _salvarPosicao;
 
+    private HUDControl _hudControl;
+
     public void FechaJogo()
     {
         _salvarPosicao.SalvarLocalizacao(-9f, 1.3f);
         Coins.coins = 0;
         Coins.SalvaMoedas();
+        HUDControl.gasolinaBarScale.x = 0;
+        HUDControl.SalvaGasolina();
         Application.Quit();
     }
 }

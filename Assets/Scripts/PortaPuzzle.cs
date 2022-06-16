@@ -15,6 +15,8 @@ public class PortaPuzzle : MonoBehaviour
 
     public float posicaoY = 1.5f;
 
+    private HUDControl hudControl;
+
     private void Awake()
     {
         _animator = GetComponent<Animator>();
@@ -28,6 +30,7 @@ public class PortaPuzzle : MonoBehaviour
             other.GetComponent<SalvarPosicao>().SalvarLocalizacao(posicaoX, posicaoY);
             _animator.SetBool("abrindo", true);
             Coins.SalvaMoedas();
+            HUDControl.SalvaGasolina();
             Invoke("goToScena", 0.8f);
         }
 

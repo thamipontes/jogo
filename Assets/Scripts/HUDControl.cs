@@ -29,7 +29,7 @@ public class HUDControl : MonoBehaviour
 
     public Transform gasolinaBarTransform;
 
-    private Vector3 gasolinaBarScale;
+    public static Vector3 gasolinaBarScale;
     private Vector3 gasolinaBarScaleAtual;
 
     //Garante que hControl sempre tenha o valor this
@@ -40,17 +40,29 @@ public class HUDControl : MonoBehaviour
             hControl = this;
         }
     }
-
-    private void Start()
-    {
-      gasolinaBarScale = new Vector3(1f, gasolinaBarTransform.localScale.y, gasolinaBarTransform.localScale.z);
-    }
     
     public void UpdateGasolinaBar(float porcentagem)
     {
-      
       gasolinaBarScale.x = gasolinaBarScale.x + porcentagem;
+      gasolinaBarScale.y = 275f;
+      gasolinaBarScale.z = 357f;
       gasolinaBarTransform.localScale = gasolinaBarScale;
+      Debug.Log(gasolinaBarTransform.localScale);
+    }
+    
+    public static void SalvaGasolina(){
+      PlayerPrefs.SetFloat("gasolinaX",  gasolinaBarScale.x);
+      PlayerPrefs.SetFloat("gasolinaY",  gasolinaBarScale.y);
+      PlayerPrefs.SetFloat("gasolinaZ",  gasolinaBarScale.z);
+      PlayerPrefs.Save();
+    }
+
+    public static Vector3 GetGasolina()
+    {
+        gasolinaBarScale.x = PlayerPrefs.GetFloat("gasolinaX");
+        gasolinaBarScale.y = PlayerPrefs.GetFloat("gasolinaY");
+        gasolinaBarScale.z = PlayerPrefs.GetFloat("gasolinaZ");
+        return gasolinaBarScale;
     }
 
     /*
@@ -70,6 +82,7 @@ public class HUDControl : MonoBehaviour
             Destroy(ame);
             Coins.coins = 0;
             Coins.SalvaMoedas();
+            SalvaGasolina();
         }
 
         Coracoes();

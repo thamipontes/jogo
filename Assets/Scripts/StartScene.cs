@@ -5,11 +5,13 @@ using UnityEngine;
 public class StartScene : MonoBehaviour
 {
   public GameObject musicaDeFundo;
+  public HUDControl _hudControl;
 
   void Awake()
   {
-    AwakeMusic();
     Coins.GetMoedas();
+    _hudControl.gasolinaBarTransform.localScale = HUDControl.GetGasolina();
+    AwakeMusic();
   }
 
   private void AwakeMusic(){
