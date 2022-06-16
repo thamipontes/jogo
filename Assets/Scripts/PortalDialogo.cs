@@ -2,11 +2,13 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PortalDialogo : MonoBehaviour
 {
-    public Tester _tester; 
+    // public Tester _tester; 
     public int indicador;
+    public string sceneName;
 
     void Start()
     {
@@ -17,10 +19,11 @@ public class PortalDialogo : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player")) {
             if (indicador == 1) {
-                _tester.StartConvo();
+                // _tester.StartConvo();
                 indicador = 2;
                 PlayerPrefs.SetInt("Planeta 2", 2);
                 PlayerPrefs.Save();
+                SceneManager.LoadScene(sceneName);
             }
         }
     }

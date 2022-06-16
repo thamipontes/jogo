@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3447259283362199185, guid: c24b43e7081c880d28cd02291956101c, type: 3}
+      propertyPath: sceneName
+      value: Ada - Vitoria
+      objectReference: {fileID: 0}
     - target: {fileID: 341057631783484472, guid: c24b43e7081c880d28cd02291956101c, type: 3}
       propertyPath: m_Name
       value: fase2portalamarelo
