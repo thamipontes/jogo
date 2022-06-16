@@ -1709,6 +1709,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicaDeFundo: {fileID: 1211527578}
+  _hudControl: {fileID: 0}
 --- !u!114 &122671345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36800,7 +36801,7 @@ PrefabInstance:
     - target: {fileID: 4555400205615943596, guid: dbf3a6268788e33a89cca17ea7e05ac6, type: 3}
       propertyPath: musicOn
       value: 
-      objectReference: {fileID: 21300000, guid: da539f1cd12ea70ada38dff57ee02c5e, type: 3}
+      objectReference: {fileID: 21300000, guid: ed61fd672ad3f0812bd93936673be1f4, type: 3}
     - target: {fileID: 4555400205615943596, guid: dbf3a6268788e33a89cca17ea7e05ac6, type: 3}
       propertyPath: musicOff
       value: 

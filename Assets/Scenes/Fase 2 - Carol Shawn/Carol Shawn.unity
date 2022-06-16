@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465785, g: 0.49641252, b: 0.574817, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9820,6 +9820,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1860643435649139151, guid: dbf3a6268788e33a89cca17ea7e05ac6, type: 3}
+      propertyPath: soundOn
+      value: 
+      objectReference: {fileID: 21300000, guid: 7b35a5aed8724054384c8295c8f2dea5, type: 3}
+    - target: {fileID: 1860643435649139151, guid: dbf3a6268788e33a89cca17ea7e05ac6, type: 3}
+      propertyPath: soundOff
+      value: 
+      objectReference: {fileID: 21300000, guid: 379b59edbd9b5e04d89136aa766a91e7, type: 3}
     - target: {fileID: 4555400203807948867, guid: dbf3a6268788e33a89cca17ea7e05ac6, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -10020,6 +10028,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 4555400204592352611, guid: dbf3a6268788e33a89cca17ea7e05ac6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4555400204707050902, guid: dbf3a6268788e33a89cca17ea7e05ac6, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -18.800003
@@ -10072,6 +10084,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 79.000015
       objectReference: {fileID: 0}
+    - target: {fileID: 4555400205615943596, guid: dbf3a6268788e33a89cca17ea7e05ac6, type: 3}
+      propertyPath: musicOn
+      value: 
+      objectReference: {fileID: 21300000, guid: f47794f6cbed81f40a125beac916123b, type: 3}
+    - target: {fileID: 4555400205615943596, guid: dbf3a6268788e33a89cca17ea7e05ac6, type: 3}
+      propertyPath: musicOff
+      value: 
+      objectReference: {fileID: 21300000, guid: f2c01f561ddc5724ca1a34472778dd1e, type: 3}
     - target: {fileID: 4555400205615943596, guid: dbf3a6268788e33a89cca17ea7e05ac6, type: 3}
       propertyPath: musicaDeFundo
       value: 
@@ -15441,8 +15461,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   botaoSound: {fileID: 477922475}
-  soundOn: {fileID: 21300000, guid: da539f1cd12ea70ada38dff57ee02c5e, type: 3}
-  soundOff: {fileID: 21300000, guid: 2ca9816351593f4a5985e18fc31846ea, type: 3}
+  soundOn: {fileID: 21300000, guid: 7b35a5aed8724054384c8295c8f2dea5, type: 3}
+  soundOff: {fileID: 21300000, guid: 379b59edbd9b5e04d89136aa766a91e7, type: 3}
 --- !u!114 &1182697583
 MonoBehaviour:
   m_ObjectHideFlags: 0
