@@ -87,10 +87,11 @@ public class GameController : MonoBehaviour
         if (count > 4 && alguemGanhou)
         {
             ganhador();
-            if (count == 9)
-            {
-                deuVelha();
-            }
+        }
+
+        if (count == 9 )
+        {
+            deuVelha();
         }
 
         if (vezJogarCount == 0)
