@@ -1016,11 +1016,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2883850635332247128, guid: e0b907a67097c4cbeaef5e12d60d8bd5, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 72
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 2883850635332247128, guid: e0b907a67097c4cbeaef5e12d60d8bd5, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 2883850635332247128, guid: e0b907a67097c4cbeaef5e12d60d8bd5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1367,6 +1367,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicaDeFundo: {fileID: 1490276363}
+  _hudControl: {fileID: 0}
 --- !u!1 &1125340180
 GameObject:
   m_ObjectHideFlags: 0
@@ -3130,11 +3131,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2883850635332247128, guid: e0b907a67097c4cbeaef5e12d60d8bd5, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 72
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 2883850635332247128, guid: e0b907a67097c4cbeaef5e12d60d8bd5, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 2883850635332247128, guid: e0b907a67097c4cbeaef5e12d60d8bd5, type: 3}
       propertyPath: m_LocalPosition.x
