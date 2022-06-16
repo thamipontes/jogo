@@ -63,6 +63,10 @@ PrefabInstance:
       propertyPath: portal
       value: 
       objectReference: {fileID: 750930618410011489, guid: a5de48b170402fedda7d6a63ebf4ea5d, type: 3}
+    - target: {fileID: 574040705024729368, guid: c57d505d5e93cb5f39e3052a7c046519, type: 3}
+      propertyPath: vidaChefao
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 2013082549600610110, guid: c57d505d5e93cb5f39e3052a7c046519, type: 3}
       propertyPath: end.x
       value: 64.58
@@ -87,6 +91,14 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 2b04188fc02600157b383b0451dc4269, type: 2}
+    - target: {fileID: 4226173393590607792, guid: c57d505d5e93cb5f39e3052a7c046519, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4226173393590607792, guid: c57d505d5e93cb5f39e3052a7c046519, type: 3}
+      propertyPath: m_TagString
+      value: Water
+      objectReference: {fileID: 0}
     - target: {fileID: 4263214110446789975, guid: c57d505d5e93cb5f39e3052a7c046519, type: 3}
       propertyPath: m_Name
       value: fase 2 chefao
@@ -95,5 +107,13 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 886288a0ecb6c0d84aa9f95a475bb81d, type: 2}
+    - target: {fileID: 8086008441307190588, guid: c57d505d5e93cb5f39e3052a7c046519, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8086008441307190588, guid: c57d505d5e93cb5f39e3052a7c046519, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c57d505d5e93cb5f39e3052a7c046519, type: 3}

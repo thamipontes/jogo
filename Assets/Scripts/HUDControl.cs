@@ -46,8 +46,10 @@ public class HUDControl : MonoBehaviour
       gasolinaBarScale.x = gasolinaBarScale.x + porcentagem;
       gasolinaBarScale.y = 275f;
       gasolinaBarScale.z = 357f;
-      gasolinaBarTransform.localScale = gasolinaBarScale;
-      Debug.Log(gasolinaBarTransform.localScale);
+      if (gasolinaBarScale.x < 240)
+      {
+        gasolinaBarTransform.localScale = gasolinaBarScale;
+      }
     }
     
     public static void SalvaGasolina(){
