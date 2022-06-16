@@ -65,7 +65,7 @@ PrefabInstance:
       objectReference: {fileID: 750930618410011489, guid: a5de48b170402fedda7d6a63ebf4ea5d, type: 3}
     - target: {fileID: 574040705024729368, guid: c57d505d5e93cb5f39e3052a7c046519, type: 3}
       propertyPath: vidaChefao
-      value: 1000
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 2013082549600610110, guid: c57d505d5e93cb5f39e3052a7c046519, type: 3}
       propertyPath: end.x
