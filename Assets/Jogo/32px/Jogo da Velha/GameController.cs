@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class GameController : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class GameController : MonoBehaviour
         count = 0;
         vezJogarCount = 0;
         alguemGanhou = true;
+        StartCoroutine(esperaTempo());
 
         for (int i = 0; i < jogoDaVelhaSpaces.Length; i++)
         {
@@ -36,6 +38,7 @@ public class GameController : MonoBehaviour
     public void jogoDaVelhaGrid(int NumeroGrid)
     {
         marcarFiguraNoGrid(NumeroGrid, figuraX);
+
         computerTurn();
     }
 
@@ -64,6 +67,7 @@ public class GameController : MonoBehaviour
 
     void computerTurn()
     {
+
         int randomNumber = Random.Range(0, 8);
 
         if (jogoDaVelhaSpaces[randomNumber].GetComponent<Button>().IsInteractable())
@@ -82,7 +86,9 @@ public class GameController : MonoBehaviour
         jogoDaVelhaSpaces[index].interactable = false;
 
         gridMarcada[index] = vezJogarCount + 1;
+    
         count++;
+        Debug.Log(count);
 
         if (count > 4 && alguemGanhou)
         {
@@ -113,5 +119,11 @@ public class GameController : MonoBehaviour
     void deuVelha()
     {
         panel.SetActive(true);
+    }
+
+    IEnumerator esperaTempo()
+    {
+        yield return new WaitForSecondsRealtime(2);
+        
     }
 }
