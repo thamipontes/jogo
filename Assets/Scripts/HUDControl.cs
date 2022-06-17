@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 /*
@@ -22,17 +20,17 @@ public class HUDControl : MonoBehaviour
 
     //Imagem dos corações
     public Image coracao;
-
-    //
-    //
-    //
-    //
-    //
+  
     public Sprite[] sprite = new Sprite[10];
     public Sprite[] moedaSprite = new Sprite[54];
 
     //Atributo do objeto ame
     public GameObject ame;
+
+    public Transform gasolinaBarTransform;
+
+    public static Vector3 gasolinaBarScale;
+    private Vector3 gasolinaBarScaleAtual;
 
     //Garante que hControl sempre tenha o valor this
     private void Awake()
@@ -41,6 +39,32 @@ public class HUDControl : MonoBehaviour
         {
             hControl = this;
         }
+    }
+    
+    public void UpdateGasolinaBar(float porcentagem)
+    {
+      gasolinaBarScale.x = gasolinaBarScale.x + porcentagem;
+      gasolinaBarScale.y = 275f;
+      gasolinaBarScale.z = 357f;
+      if (gasolinaBarScale.x < 240)
+      {
+        gasolinaBarTransform.localScale = gasolinaBarScale;
+      }
+    }
+    
+    public static void SalvaGasolina(){
+      PlayerPrefs.SetFloat("gasolinaX",  gasolinaBarScale.x);
+      PlayerPrefs.SetFloat("gasolinaY",  gasolinaBarScale.y);
+      PlayerPrefs.SetFloat("gasolinaZ",  gasolinaBarScale.z);
+      PlayerPrefs.Save();
+    }
+
+    public static Vector3 GetGasolina()
+    {
+        gasolinaBarScale.x = PlayerPrefs.GetFloat("gasolinaX");
+        gasolinaBarScale.y = PlayerPrefs.GetFloat("gasolinaY");
+        gasolinaBarScale.z = PlayerPrefs.GetFloat("gasolinaZ");
+        return gasolinaBarScale;
     }
 
     /*
@@ -60,6 +84,7 @@ public class HUDControl : MonoBehaviour
             Destroy(ame);
             Coins.coins = 0;
             Coins.SalvaMoedas();
+            SalvaGasolina();
         }
 
         Coracoes();
