@@ -8,9 +8,12 @@ public class FecharJogo : MonoBehaviour
 
     private HUDControl _hudControl;
 
+    public float x = -9f;
+    public float y = 1.3f;
+
     public void FechaJogo()
     {
-        _salvarPosicao.SalvarLocalizacao(-9f, 1.3f);
+        _salvarPosicao.SalvarLocalizacao(x, y);
         Coins.coins = 0;
         Coins.SalvaMoedas();
         HUDControl.gasolinaBarScale.x = 0;

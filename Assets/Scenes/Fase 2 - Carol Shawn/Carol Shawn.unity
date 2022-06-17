@@ -10144,6 +10144,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _salvarPosicao: {fileID: 63413949}
+  x: -8.16
+  y: 2.73
 --- !u!1001 &853928144
 PrefabInstance:
   m_ObjectHideFlags: 0
