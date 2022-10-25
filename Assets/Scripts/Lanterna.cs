@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using PartII;
 using UnityEngine;
-using UnityEngine.Experimental.Rendering.Universal;
+
 
 public class Lanterna : MonoBehaviour
 {
-    private Light2D light2D;
+    private UnityEngine.Rendering.Universal.Light2D light2D;
     public int velocidadeCarga;
     public GameObject gameOver;
     void Awake()
     {
-        light2D = GetComponent<Light2D>();
+        light2D = GetComponent<UnityEngine.Rendering.Universal.Light2D>();
     }
 
     // Update is called once per frame
