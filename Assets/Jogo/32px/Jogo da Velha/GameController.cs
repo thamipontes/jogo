@@ -11,6 +11,7 @@ public class GameController : MonoBehaviour
     private int vezJogarCount;
     public GameObject[] linhasVermelhas;
     public GameObject panel;
+    public GameObject panel2;
     private bool alguemGanhou;
     private const int figuraX = 0;
     private const int figuraO = 1;
@@ -112,7 +113,7 @@ public class GameController : MonoBehaviour
 
     void escolherLinhasVermelhas(int index)
     {
-        panel.SetActive(true);
+        panel2.SetActive(true);
         linhasVermelhas[index].SetActive(true);
     }
 
